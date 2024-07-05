@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>CodeKata | GUVI</title>
+        <meta name="title" content="CodeKata | GUVI">
+        <meta name="description" content="Practice to write code on CodeKata that offers 1500+ Coding Exercises & coding problem statements asked by Top Companies like Amazon, Walmart, JusPay & more." />
+        <link rel="canonical" href="https://www.guvi.in/code-kata/">
+        <!-- Google fonts -->
+        <!-- <link rel='icon' href='images/favicon.ico' type='image/x-icon' /> -->
+        <link rel="icon" href="/images/guvi-icon.png" type="image/x-icon" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,700&display=swap" rel="stylesheet">
+        <link href="/css/4.css" rel="stylesheet">
+        <link href="/css/stylev2.css" rel="stylesheet">
+        <link href="/css/guviv2.css?stamp=1660984018" rel="stylesheet">
+        <script type="text/javascript" src="/js/library/dependency.js"></script>
+        <script type="text/javascript" src="/js/sidebar.js"></script>
+    </head>
+
+    <body>
+
+        <main role="main" class="container-fluid" id="code-kata-page" pop-data="Codekata">
+
+        <!-- Header  -->
+        <header class="row bg-white">
+            <nav class="col navbar navbar-expand-md navbar-light shadow-sm guvi-navheade-fixed">
+
+                <button id="sidebarToggle" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sidebar" aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="material-icons">menu</i>
+                </button>
+
+                <!-- <a class="navbar-brand" href="#">
+                    <img src="/images/minified/foot-guvi-logo.png" alt="GUVI : Learn to code in your native language" width="95px"/>
+                </a> -->
+                <a class="navbar-brand" href="#">
+                    <img src="/images/guvi-logo-new.png" class="lazyload ml-3" alt="GUVI : Learn to code in your native language"  width="95px"/>
+                </a>
+                <!-- AccountGroup -->
+                <div class="list-group list-group-horizontal-md user-profile" id="accountGroup">
+                    <a class="btn pt-2" href="/faq/"><img src="/images/minified/faq-head-icons.png" class="faq_img"></a>
+                    <!-- <button class="btn dropdown notification-box-toggler " data-toggle="collapse" data-target="#notification-box">
+                        <img src="/images/minified/notifications-icon.png">
+                    </button> -->
+
+                    <button class="btn dropdown account-box-toggler" type="button" data-toggle="collapse" data-target="#account-box" aria-expanded="false" aria-controls="account-box">
+                        <div class="gravatar-wrap">
+                            <img src="/images/profile-pic-sample.jpeg" class="gravatar" alt="username">
+                        </div>
+                    </button>
+
+                    <div class="accordion-group">
+
+                        <!-- NotificationBox -->
+                        <div class="collapse notification-box" id="notification-box" data-parent="#accountGroup">
+                            <div class="card card-body">
+                                <ul class="list-group">
+
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- /NotificationBox -->
+
+                        <!-- AccountBox -->
+                        <div class="collapse account-box" id="account-box" data-parent="#accountGroup">
+                            <div class="card card-body">
+
+                                <!-- UserAccount information -->
+                                <div class="d-flex flex-row border-bottom mb-2" id="gravatarHide">
+                                    <div class="gravatar-wrap mr-2">
+                                        <img src="/images/profile-pic-sample.jpeg" class="gravatar" alt="username">
+                                    </div>
+                                    <div class="account-info">
+                                        <p class="mb-0"></p>
+                                        <p><a href=""></a></p>
+                                    </div>
+                                </div>
+                                <!-- /UserAccount information -->
+
+                                <!-- ScoreCard -->
+                                <div class="d-flex flex-row mb-2  pb-2 score-card" id="mainNavDefault navHide">
+                                    <p class="experience"><i class="icon-geekoin" aria-hidden="true"></i><span></p>
+                                    <p class="rank"><strong></strong><span></span></p>
+                                    <p class="level"><strong></strong><i class="icon-level"><span></span></i>
+                                    </p>
+                                </div>
+                                <!-- /ScoreCard -->
+
+                            </div>
+                        </div>
+                        <!-- /AccountBox -->
+
+                    </div>
+
+                </div>
+                <!-- /AccountGroup -->
+
+            </nav>
+            <!-- Sidebar -->
+            <div class="sidebar-container">
+                <div id="sidebar" class="sidebar-sticky sidebar-collapse collapse in shadow-sm">
+                    <ul class="nav flex-column  main-menu">
+                        <!-- <li class="nav-item index-link dashboard-link">
+                            <a class="nav-link" href="dashboard.html">
+                                <i class="material-icons">home</i>
+                                <span>Home</span>
+                            </a>
+                        </li> -->
+                        <li class="nav-item courses-link">
+                            <!-- <a class="nav-link" href="courses.html"> -->
+                            <a class="nav-link" href="/courses/">
+                                <i class="icons-courses"></i><span>Courses</span>
+                            </a>
+
+                        </li>
+
+                        <hr class="border-sidebar">
+
+                        <li class="nav-item code-kata-link active">
+                            <a class="nav-link" href="/code-kata/">
+                                <i class="icons-code-kata"></i><span>Code_Kata</span>
+                            </a>
+                        </li>
+
+                        <!-- <li class="nav-item micro-arc-link">
+                            <a class="nav-link" href="micro-arc.html">
+                                <i class="icons-ide"></i>
+                                <span>IDE</span>
+                            </a>
+                        </li> -->
+                        <!-- <li class="nav-item project-board-link">
+                            <a class="nav-link" href="project-board.html">
+                                <i class="icon-project-board"></i>
+                                <span>Project Board</span>
+                            </a>
+                        </li> -->
+                        <hr class="border-sidebar">
+                        <li class="nav-item leader-board-link">
+                            <!-- <a class="nav-link" href="leader-board.html"> -->
+                            <a class="nav-link" href="/leader-board/">
+                                <i class="icons-Leaderboard"></i>
+                                <span>Leaderboard</span>
+                            </a>
+                        </li>
+                        <li class="nav-item rewards-link">
+                            <!-- <a class="nav-link" href="rewards.html"> -->
+                            <a class="nav-link" href="/rewards/">
+                                <i class="icons-rewards"></i>
+                                <span>Rewards</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <!-- <a class="nav-link" href="referral.html"> -->
+                            <a class="nav-link" href="/referral/">
+                                <i class="icons-referral"></i>
+                                <span>Referral</span>
+                            </a>
+                        </li>
+                        <!-- <li class="nav-item jobs-link">
+                            <a class="nav-link" href="jobs.html">
+                                <i class="material-icons">work</i>
+                                <span>Jobs</span>
+                            </a>
+                        </li> -->
+                        <!-- <li class="nav-item jobs-link" id="forum_link">
+                            <a class="nav-link">
+                                <i class="material-icons">forum</i>
+                                <span>Forum <img src="/images/beta.svg"></span>
+                            </a>
+                        </li> -->
+                    </ul>
+
+                    <!-- Code kata menu -->
+                    <ul class="nav flex-column code-kata-menu" id="ckMenuTabs" role="tablist">
+                        <li class="nav-item ck-questions-link">
+                            <a class="nav-link active" id="ck-questions-tab" data-toggle="tab" href="#ck-questions" role="tab" aria-controls="ck-questions" aria-selected="true">
+                                <i class="icon-ck-questions"></i>
+                                <span>Questions</span>
+                            </a>
+                        </li>
+                        <li class="nav-item ck-instructions-link">
+                            <a class="nav-link" id="ck-instructions-tab" data-toggle="tab" href="#ck-instructions" role="tab" aria-controls="ck-instructions" aria-selected="false">
+                                <i class="icon-ck-instructions"></i>
+                                <span>Instructions</span>
+                            </a>
+                        </li>
+                        <li class="nav-item ck-github-link">
+                            <a class="nav-link" id="ck-github-tab" data-toggle="tab" href="#ck-github" role="tab" aria-controls="ck-github" aria-selected="false">
+                                <i class="icon-ck-github"></i>
+                                <span>github</span>
+                            </a>
+                        </li>
+                        <li class="nav-item ck-peer-submission-link">
+                            <a class="nav-link" id="ck-peer-submission-tab" data-toggle="tab" href="#ck-peer-submission" role="tab" aria-controls="ck-peer-submission" aria-selected="false">
+                                <i class="icon-ck-peer-submission"></i>
+                                <span>Peer submissions</span>
+                            </a>
+                        </li>
+                        <li class="nav-item ck-path-link">
+                            <a class="nav-link" id="ck-path-tab" data-toggle="tab" href="#ck-path" role="tab" aria-controls="ck-path" aria-selected="false">
+                                <i class="icon-ck-path"></i>
+                                <span>Topic path</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /Code kata menu -->
+
+                </div>
+            </div>
+
+            <!-- /Sidebar -->
+        </header>
+        <!-- static height -->
+        <div class="static-height"></div>
+        <!-- /Header  -->
+        <div class="container-fluid">
+            <!-- Body container -->
+            <div class="row">
+                <div class="col-sm-12 offset-md-1 col-md-11 bodyContainer">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 d-flex flex-column justify-content-around">
+
+                            <div class="page-header">
+                                <h1><i class="icon-code-kata product-head"></i>CODEKATA</h1>
+                                <!-- <p>Codekata  a series of programs curated by experts from the industry. Practising on Codekata will take your coding skills to next level. We will recommend your profile to recruiting companies based on your performance in codekata.
+                                You can be a better programmer and crack interviews by completing Codekata.</p> -->
+                                <p>CodeKata is a series of programs curated by the veterans in IT & Software industry. It hosts coding problems asked by top MNCs like Microsoft, Walmart, Samsung & so on. Practising on Codekata will take your coding skills to next level. We will recommend your profile to recruiting companies based on your performance in codekata. You can be a better programmer & crack coding interviews upon practising on CodeKata.</p>
+                            </div>
+
+                            <!-- SearchForm -->
+                            <div>
+                                <div class="content-search-form">
+                                    <label for="searchConcepts">Search</label>
+                                    <input type="text" class="form-control form-rounded" id="searchConcepts" aria-describedby="helpId" placeholder="Search concept">
+                                    <button class="btn search-btn"><i class="material-icons">search</i></button>
+                                </div>
+                            </div>
+                            <!-- /SearchForm -->
+
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+
+                            <!-- Milestone -->
+                            <!-- <div class="card stepper-card milestone shadow-sm">
+                                <div class="card-header d-flex">
+                                    <strong class="milestone-header">Milestone </strong>
+                                    <span class="total-gems">Total: 185 <i class="icon-gem" aria-hidden="true"></i></span>
+                                </div>
+                                <div class="card-body">
+                                    <ul class="list-unstyled stepper">
+                                        <li><span class="task">Complete 5 problems</span> <span class="gems">50<i class="icon-gem" aria-hidden="true"></i></span></li>
+                                        <li class="completed"><span class="task">Complete 5 problems</span> <span class="gems">50<i class="icon-gem" aria-hidden="true"></i></span></li>
+                                        <li class="completed"><span class="task">Complete 5 problems</span> <span class="gems">50<i class="icon-gem" aria-hidden="true"></i></span></li>
+                                        <li class="completed"><span class="task">Complete 5 problems</span> <span class="gems">50<i class="icon-gem" aria-hidden="true"></i></span></li>
+                                        <li class="completed"><span class="task">Complete 5 problems</span> <span class="gems">50<i class="icon-gem" aria-hidden="true"></i></span></li>
+                                    </ul>
+                                </div>
+                            </div> -->
+                            <!-- /Milestone -->
+                        </div>
+                    </div>
+
+                    <div id="ck-concepts-list" class="ck-concepts-list">
+                        <div class="row concepts-list list" id="codekataTags">
+                            <!-- <div class="col-md-12 col-lg-6 col-xl-4" id="array">
+                                <div class="card concept-card shadow-sm locked-card">
+                                    <div class="card-header d-flex flex-row">
+                                        <h5 class="concept-topic" style="text-transform: capitalize;">array</h5>
+                                    </div>
+                                    <div class="card-body">
+
+                                        <ul class="list-group list-group-horizontal  list-group-flush card-score">
+                                            <li class="list-group-item glass-blur"><strong>9/307</strong><span>Solved</span></li>
+                                            <li class="list-group-item glass-blur"><strong>510/16280</strong><span>Geekoins</span></li>
+                                            <li class="list-group-item"><i class="icon-award-none"></i></li>
+                                        </ul>
+                                        <div class="d-flex justify-content-between"><span class="card-text text-highlight glass-blur">Submissions : 39</span><a href="code-kata-main.html?concept=array" class="btn btn-primary up-lift">Unlock Now</a></div>
+                                        <div class="layer">
+                                        </div>
+                                    </div>
+                            </div>
+                            </div> -->
+
+                            <!-- Concept: Searching - linear / Binary -->
+
+                            <!-- /concept: Searching - linear / Binary -->
+
+
+
+
+
+
+
+                    </div>
+
+                </div>
+            </div>
+            <!-- /Body container -->
+
+        </main>
+        <div id="freeUserModal" class="modal fade" tabindex="-1" role="dialog">
+             <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                            <span aria-hidden="true">&times</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="d-flex flex-row justify-content-center mb-3">
+                            <h2 class="text-center" style="color: #212529;">Become a Premium member by purchasing our courses</h2>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-md-12 col-lg-6 col-xl-5">
+                                <div class="card shadow codekata-card">
+                                   <div class="card-header basic-header d-flex justify-content-center before-card rounded-bottom">
+                                       <strong class="text-white">Free Membership</strong>
+                                   </div>
+                                   <div class="card-body">
+                                       <div class="d-flex justify-content-between">
+                                        <div class="d-flex justify-content-start">
+                                              <i class="fas fa-check-circle mt-1 mr-2 text-primary"></i>
+                                              <p class="font-weight-bold">Codekata</p>
+                                          </div>
+                                          <p class="font-weight-bold">Limited Access</p>
+                                       </div>
+                                       <div class="d-flex justify-content-between">
+                                          <div class="d-flex justify-content-start">
+                                              <i class="fas fa-check-circle mt-1 mr-2 text-primary"></i>
+                                              <p class="font-weight-bold">MicroARC</p>
+                                          </div>
+                                          <p class="font-weight-bold">Limited Access</p>
+                                       </div>
+                                   </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-lg-6 col-xl-5">
+                                <div class="card shadow codekata-card">
+                                    <div class="card-header premium-header d-flex justify-content-center after-card rounded-bottom">
+                                        <strong class="text-white">Premium Membership</strong>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between">
+                                            <div class="d-flex justify-content-start">
+                                              <i class="fas fa-check-circle mt-1 mr-2 text-primary"></i>
+                                              <p class="font-weight-bold">Codekata</p>
+                                            </div>
+                                            <p class="font-weight-bold">Unlimited Access</p>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                          <div class="d-flex justify-content-start">
+                                              <i class="fas fa-check-circle mt-1 mr-2 text-primary"></i>
+                                              <p class="font-weight-bold">MicroARC</p>
+                                          </div>
+                                          <p class="font-weight-bold">Unlimited Access</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row justify-content-center mt-3">
+                            <a id="subscriptionGoToCourses">
+                                <button type="button" class="btn btn-primary rounded-button pl-5 pr-5">Go to Courses</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="premiumPopup" tabindex="-1" role="dialog" aria-labelledby="premiumPopup" aria-hidden="true">
+            <div class="modal-dialog modal-md modal-dialog-centered mx-auto" role="document">
+                <div class="modal-content">
+                    <div class="modal-body p-0">
+                        <div class="advisorModalTop p-3">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span class="text-dark" aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div >
+                            <div>
+                                <div class="pl-4 pr-4 pb-0">
+                                    <img src="/images/microarcnew/modal/codekata-unlock-popup.png" class="premiumPopup-mob-img" alt="microArc">
+                                </div>
+                                <div class="p-sm-4 bg-white getcompletedacc">
+                                    <!-- <h1 class="font-weight-bold premiumPopup-header-mob">Get complete access</h1> -->
+                                    <h2 class="font-weight-bold premiumPopup-header-mob">Get complete access</h2>
+                                   <p>Buy any Premium course to get access to 1000+ questions of Codekata and Webkata</p>
+                                    <!-- <a class="btn btn-primary premiumPopup-btn" href="courses.html">Explore Courses</a> -->
+                                    <a class="btn btn-primary premiumPopup-btn" href="/courses/">Explore Courses</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+           <script type="text/javascript" src="/js/steroid.js?dss"></script>
+           <script type="text/javascript" src="/js/timer.js"></script>
+           <script type="text/javascript" src="/js/code-kata.js?stamp=1660984018dss"></script>
+           <script type="text/javascript" src="/js/googleAnalytics.js"></script>
+    </body>
+
+</html>

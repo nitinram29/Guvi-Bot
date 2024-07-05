@@ -1,0 +1,3550 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
+
+<channel>
+	<title>Tarun Singh &#8211; GUVI Blogs</title>
+	<atom:link href="https://www.guvi.in/author/tarun/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.guvi.in/blog</link>
+	<description></description>
+	<lastBuildDate>Sat, 29 Jun 2024 05:02:48 +0000</lastBuildDate>
+	<language>en-GB</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.3.2</generator>
+
+<image>
+	<url>https://www.guvi.in/blog/wp-content/uploads/2021/03/cropped-20210111091003159396O4KG1V112112pngcompguviwebsitemoengage-32x32.png</url>
+	<title>Tarun Singh &#8211; GUVI Blogs</title>
+	<link>https://www.guvi.in/blog</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+<site xmlns="com-wordpress:feed-additions:1">191360660</site>	<item>
+		<title>useState() Hook in React for Beginners &#124; React Hooks 2024</title>
+		<link>https://www.guvi.in/blog/usestate-hook-in-react-for-beginners-react-hooks/</link>
+					<comments>https://www.guvi.in/blog/usestate-hook-in-react-for-beginners-react-hooks/#respond</comments>
+		
+		<dc:creator><![CDATA[Tarun Singh]]></dc:creator>
+		<pubDate>Tue, 31 Jan 2023 12:56:52 +0000</pubDate>
+				<category><![CDATA[MERN]]></category>
+		<category><![CDATA[use state]]></category>
+		<category><![CDATA[use state syntax]]></category>
+		<guid isPermaLink="false">https://www.guvi.in/blog/?p=16769</guid>
+
+					<description><![CDATA[<p>State is a way to store and manipulate data that controls the behavior and rendering of a component in react. In this blog, we will be focusing on the useState() Hook, which is a built-in way to add state to functional components.&#160; If you&#8217;re new to React, you might be wondering why we&#8217;re talking about [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://www.guvi.in/blog/usestate-hook-in-react-for-beginners-react-hooks/">useState() Hook in React for Beginners | React Hooks 2024</a> appeared first on <a rel="nofollow" href="https://www.guvi.in/blog">GUVI Blogs</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<p>State is a way to store and manipulate data that controls the behavior and rendering of a component in react. In this blog, we will be focusing on the <a href="https://legacy.reactjs.org/docs/hooks-state.html" target="_blank" data-type="link" data-id="https://legacy.reactjs.org/docs/hooks-state.html" rel="noreferrer noopener">useState()</a> Hook, which is a built-in way to add state to functional components.&nbsp;</p>
+
+
+
+<p>If you&#8217;re new to React, you might be wondering why we&#8217;re talking about functional components instead of class-based components. This is because functional components are easy and simpler to understand than class-based components, and React&#8217;s Hooks API is designed to make it easier to manage state and disadvantages in these types of components.</p>
+
+
+
+<p>A React Hook is a JavaScript function that allows you to use state and other React features in functional components, instead of having to use class-based components. Hooks allow you to reuse stateful logic across your components without having to re-write the same code or change the component hierarchy.&nbsp;</p>
+
+
+
+<p>Hooks are of 2 types: <strong>built-in Hooks</strong> and <strong>custom Hooks</strong>. Built-in Hooks, such as useState, useEffect, are provided by React and are used to manage state, side effects, and context in functional components whereas custom hooks are user-defined Hooks that allow you to reuse stateful logic across multiple components</p>
+
+
+
+<h2 class="wp-block-heading"><strong>What is a useState() Hook</strong></h2>
+
+
+
+<p>useState() hook in react allows you to add state to functional components. It returns an array consisting of two elements: <strong>the current state</strong> and a <strong>function </strong>to update it. The first time the component is rendered, the initial state is passed as the argument to useState.</p>
+
+
+
+<h2 class="wp-block-heading"><strong>Syntax</strong></h2>
+
+
+
+<pre class="wp-block-code"><code>import React, { useState } from ‘react’
+
+const &#91;count, setCount] = useState(initialState);</code></pre>
+
+
+
+<p><strong><em>Before diving into the next section, ensure you&#8217;re solid on full-stack development essentials like front-end frameworks, back-end technologies, and database management. React is a major part of the FSD curriculum. </em></strong></p>
+
+
+
+<p><strong><em>If you are looking for a detailed Full Stack Development career program, you can join <a href="https://www.guvi.in/zen-class/full-stack-development-course/?utm_source=blog&amp;utm_medium=organic&amp;utm_campaign=React-hooks" data-type="link" data-id="https://www.guvi.in/zen-class/full-stack-development-course/?utm_source=blog&amp;utm_medium=organic&amp;utm_campaign=React-hooks">GUVI’s Full Stack Development Career Program</a> with Placement Assistance. You will be able to master the MERN stack (MongoDB, Express.js, React, Node.js) and build real-life projects.</em></strong></p>
+
+
+
+<p><strong><em>Additionally, if you want to explore JavaScript through a self-paced course, try<a href="https://www.guvi.in/courses/web-development/advanced-javascript/?utm_source=blog&amp;utm_medium=organic&amp;utm_campaign=React-hooks"> GUVI’s JavaScript self-paced certification course.</a></em></strong></p>
+
+
+
+<h3 class="wp-block-heading"><strong>Explanation:</strong></h3>
+
+
+
+<p>You might have thought, what has been done above in the syntax of useState hook. Don’t worry! Let’s understand the syntax in detail.</p>
+
+
+
+<h4 class="wp-block-heading"><strong>Import</strong></h4>
+
+
+
+<p>To use the useState hook, we first import it into our component as seen above.</p>
+
+
+
+<h4 class="wp-block-heading"><strong>Parameters</strong>&nbsp;</h4>
+
+
+
+<ul>
+<li><strong>initialState</strong>: This is the value that you want the state to be initially. It can be a value of any type, but there is a special behavior for functions.</li>
+
+
+
+<li>Now, when we pass a function as initialState, it will be called as an initializer function. This must be pure, must not take any arguments, and must return a value of any type. React will call your initializer function when initializing the component, and store its return value as the initial state.</li>
+</ul>
+
+
+
+<h4 class="wp-block-heading"><strong>Returns</strong></h4>
+
+
+
+<p>Here, useState is a Hook that is imported from the React library. It is called with the initial value of the state that you want to add to the component. useState returns an array with two elements: the current state and a function to update it.&nbsp;</p>
+
+
+
+<ul>
+<li>The first element of the array is the current state, which is stored in a variable. This variable can be named anything, but it&#8217;s common to use the same name as the state you&#8217;re storing, such as count.&nbsp;</li>
+
+
+
+<li>The second element of the array is the function that updates the state, which is stored in another variable. This variable is commonly named with the same name as the state and &#8220;set&#8221; as a prefix, such as setCount.</li>
+</ul>
+
+
+
+<h2 class="wp-block-heading"><strong>Usage</strong></h2>
+
+
+
+<p>Let&#8217;s understand that how we can use the useState hook in a detailed manner.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>Import the useState hook</strong></h3>
+
+
+
+<p>For using the useState hook, we’ll first need to import it. To import the hook, just write the following code at start of your react app:</p>
+
+
+
+<pre class="wp-block-code"><code>import React, { useState } from "react";</code></pre>
+
+
+
+<p>Or</p>
+
+
+
+<pre class="wp-block-code"><code>import { useState } from "react";</code></pre>
+
+
+
+<p><strong>Note</strong>: Above in the second statement, we are destructuring <strong>useState </strong>from <strong>react </strong>as it is a named export.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>Adding state to a component&nbsp;</strong></h3>
+
+
+
+<p>Now we have imported our hook from react and let’s see how it is added &amp; initialized to a component. For initialization a state we call it in our functional component. As discussed in the syntax above, it accepts an initial state and return two values:</p>
+
+
+
+<ul>
+<li>A current state</li>
+
+
+
+<li>A function to update it</li>
+</ul>
+
+
+
+<p>Initialize state at the top of the function component as show below:</p>
+
+
+
+<pre class="wp-block-code"><code>import { useState } from "react";
+
+function App() {
+
+&nbsp;&nbsp;&nbsp;const &#91; count, setCount ] = useState(0);
+
+}</code></pre>
+
+
+
+<p>Here, we have <strong>count </strong>as our initial state variable and <strong>setCount </strong>as a function to update the state. Finally, we have set our initial state as 0. ( <strong>useState(0)</strong> )</p>
+
+
+
+<h3 class="wp-block-heading"><strong>Updating state based on the previous state&nbsp;</strong></h3>
+
+
+
+<p>To update state based on the previous state in React, you can use a function that takes in the previous state as an argument, instead of directly passing the new state.&nbsp;</p>
+
+
+
+<p>Here&#8217;s an example of how you might update state based on the previous state using useState() hook:</p>
+
+
+
+<pre class="wp-block-code"><code>import React, { useState } from 'react';
+
+function Example() {
+
+&nbsp;&nbsp;const &#91;count, setCount] = useState(0);
+
+&nbsp;&nbsp;return (
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;You clicked {count} times&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button onClick={() =&gt; setCount(prCount =&gt; prCount + 1)}&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;click
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/button&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;);
+}</code></pre>
+
+
+
+<p>In this example, we are using an <strong>updater function</strong> that takes in the previous state (prCount) as an argument, and returns the updated state (prCount + 1). With this pattern, you can ensure that the state updates correctly, even if multiple updates are made at one time because the function is called with the current value of the state, ensuring that it always has access to the current state when finding the new value.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>Using Multiple State Variables</strong></h3>
+
+
+
+<p>To use multiple state variables in a functional component using the useState Hook, we simply need to call the hook multiple times, once for each piece of state that we want to add. Each call to useState will return a separate array containing the current state and a function to update it.</p>
+
+
+
+<pre class="wp-block-code"><code>function manyStateDeclare() {
+&nbsp;&nbsp;&nbsp;const &#91; name, setName ] = useState(‘GUVI’);
+&nbsp;&nbsp;&nbsp;const &#91; age, setAge ] = useState(23);
+&nbsp;&nbsp;&nbsp;const &#91; count, setCount ] = useState(0);
+&nbsp;&nbsp;&nbsp;…
+}</code></pre>
+
+
+
+<p>In the above component, we have name, age, and count as different state variables, and we can update them individually with different functions. We don’t have to use many state variables as they can hold objects and arrays.</p>
+
+
+
+<h2 class="wp-block-heading"><strong>Last words</strong></h2>
+
+
+
+<p>Concluding the blog, the useState Hook is a powerful tool in React that allows you to add state to components. It provides a simple and consistent way to manage state, and it also allows you to reuse stateful logic across your components. By understanding the basics of how useState() hook works, we can now start building more dynamic and interactive UI with React.&nbsp;</p>
+
+
+
+<p>It&#8217;s important to remember that the state updates are asynchronous and batched and we can use multiple state variables in a component by calling useState hook multiple times. By keeping these things in mind, you&#8217;ll be well on your way to mastering state management in React with the useState() Hook.</p>
+
+
+
+<p><strong><em>Kickstart your Full Stack Development journey by enrolling in <a href="https://www.guvi.in/zen-class/full-stack-development-course/?utm_source=blog&amp;utm_medium=organic&amp;utm_campaign=react-hooks">GUVI&#8217;s certified Full Stack Development Career Program</a> with Placement Assistance where you will master the MERN stack (MongoDB, Express.js, React, Node.js) and build interesting real-life projects. This program is crafted by our team of experts to help you upskill and assist you in placements. </em></strong></p>
+
+
+
+<p><strong><em>Alternatively, if you want to explore JavaScript through a self-paced course, try <a href="https://www.guvi.in/courses/web-development/advanced-javascript/?utm_source=blog&amp;utm_medium=organic&amp;utm_campaign=react-hooks">GUVI’s JavaScript self-paced course.</a></em></strong></p>
+
+
+
+<p>So, what are you waiting for? Hurry up!</p>
+
+
+
+<p></p>
+<p>The post <a rel="nofollow" href="https://www.guvi.in/blog/usestate-hook-in-react-for-beginners-react-hooks/">useState() Hook in React for Beginners | React Hooks 2024</a> appeared first on <a rel="nofollow" href="https://www.guvi.in/blog">GUVI Blogs</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://www.guvi.in/blog/usestate-hook-in-react-for-beginners-react-hooks/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">16769</post-id>	</item>
+		<item>
+		<title>Top 5 Tech Careers of the Future [2024]</title>
+		<link>https://www.guvi.in/blog/top-tech-careers-of-the-future/</link>
+					<comments>https://www.guvi.in/blog/top-tech-careers-of-the-future/#respond</comments>
+		
+		<dc:creator><![CDATA[Tarun Singh]]></dc:creator>
+		<pubDate>Thu, 26 Jan 2023 09:30:00 +0000</pubDate>
+				<category><![CDATA[Career]]></category>
+		<category><![CDATA[data science]]></category>
+		<category><![CDATA[machine learning]]></category>
+		<category><![CDATA[Roadmap to become DevOps Engineer]]></category>
+		<category><![CDATA[software developer]]></category>
+		<category><![CDATA[technology careers]]></category>
+		<guid isPermaLink="false">https://www.guvi.in/blog/?p=16117</guid>
+
+					<description><![CDATA[<p>The tech industry is continuously evolving and the careers in the technology sector in the coming years are projected to be more exciting and rewarding than ever. As the world becomes increasingly reliant on technology, the demand for skilled tech professionals is expected to grow exponentially. From software developers to AI or ML experts, these [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://www.guvi.in/blog/top-tech-careers-of-the-future/">Top 5 Tech Careers of the Future [2024]</a> appeared first on <a rel="nofollow" href="https://www.guvi.in/blog">GUVI Blogs</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<p>The tech industry is continuously evolving and the careers in the technology sector in the coming years are projected to be more exciting and rewarding than ever. As the world becomes increasingly reliant on technology, the demand for skilled tech professionals is expected to grow exponentially.</p>
+
+
+
+<p>From software developers to AI or ML experts, these tech careers of the future will require individuals with the right combination of technical expertise, creativity, and problem-solving skills. Having the right qualifications, these tech careers will open up a world of opportunities for individuals where they can look into making a positive impact on society.&nbsp;</p>
+
+
+
+<p>As technology advances, the job market in the IT sector especially is shifting to meet the demands of the future. Many traditional careers are becoming obsolete, while new information technology-centric roles are emerging. </p>
+
+
+
+<p>In this blog, we&#8217;ll explore the top 5 tech careers of 2024 that are going to boom in the coming future and how one should prepare themselves to pursue them. </p>
+
+
+
+<p>We&#8217;ll also look at some of the technical skills and qualifications needed to succeed in these careers. With the right knowledge and experience, you can be on the cutting edge of the tech industry.&nbsp;</p>
+
+
+
+<p>Are you a techie? Looking for what are some of the top tech careers in 2024 or the future? Let’s look into the list of the top 5 careers in the tech industry.</p>
+
+
+
+
+
+<h2 class="wp-block-heading"><strong>List of Top 5 tech careers</strong></h2>
+
+
+
+<h3 class="wp-block-heading">1. <strong>Machine Learning Engineer</strong></h3>
+
+
+
+<p>A machine learning engineer or ML engineer works with data scientists to develop and deploy machine learning models for businesses. ML engineers are responsible for designing and building machine learning systems, testing the models evaluating models, and deploying solutions to production. </p>
+
+
+
+<p>Apart from this, they also collaborate with other team members like data scientists to explore new data sources and develop new models.</p>
+
+
+
+<p>ML engineers are the core part of Artificial Intelligence as they are primarily responsible for creating complex algorithms with the help of big data that allows the machines or computers to perform tasks automatically without human intervention or assistance and adjust actions accordingly.</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-large"><a href="https://www.guvi.in/mlp/machine-learning-course?utm_source=GUVI-Website&amp;utm_medium=GUVI-Products&amp;utm_campaign=Common-Page"><img decoding="async" fetchpriority="high" width="1200" height="800" src="https://www.guvi.in/blog/wp-content/uploads/2023/01/ai-nuclear-energy-background-future-innovation-disruptive-technology-1200x800.jpg" alt="Artificial Intelligence and Machine Learning" class="wp-image-16124" srcset="https://www.guvi.in/blog/wp-content/uploads/2023/01/ai-nuclear-energy-background-future-innovation-disruptive-technology-1200x800.jpg 1200w, https://www.guvi.in/blog/wp-content/uploads/2023/01/ai-nuclear-energy-background-future-innovation-disruptive-technology-300x200.jpg 300w, https://www.guvi.in/blog/wp-content/uploads/2023/01/ai-nuclear-energy-background-future-innovation-disruptive-technology-768x512.jpg 768w, https://www.guvi.in/blog/wp-content/uploads/2023/01/ai-nuclear-energy-background-future-innovation-disruptive-technology-1536x1024.jpg 1536w, https://www.guvi.in/blog/wp-content/uploads/2023/01/ai-nuclear-energy-background-future-innovation-disruptive-technology-2048x1365.jpg 2048w, https://www.guvi.in/blog/wp-content/uploads/2023/01/ai-nuclear-energy-background-future-innovation-disruptive-technology-150x100.jpg 150w" sizes="(max-width: 1200px) 100vw, 1200px" /></a><figcaption class="wp-element-caption">Artificial Intelligence and Machine Learning</figcaption></figure></div>
+
+
+<h4 class="wp-block-heading">Skills you need</h4>
+
+
+
+<p>Below are the skills that you need to become an ML Engineer:</p>
+
+
+
+<ul>
+<li>Knowledge of Mathematics like calculus, probability, linear algebra, etc.</li>
+
+
+
+<li>Ability to Work with Large Data Sets</li>
+
+
+
+<li>In programming, python or R language should be known</li>
+
+
+
+<li>Strong knowledge of computer science or data science with good problem-solving skills</li>
+</ul>
+
+
+
+<h4 class="wp-block-heading">Growth opportunities</h4>
+
+
+
+<p>Machine learning engineers will be in high demand in the near future as more businesses are recognizing the value of AI and ML. A career in machine learning will help the person in growing and will be expected to develop high-end AI solutions to solve real-world problems, such as natural language processing (NLP) and computer vision. The pay scale of a ML engineer is very competitive and best in the tech field.</p>
+
+
+
+<p>Get certified and become an ML Engineer from an Industry’s leading Advanced Learning Platform &#8211; GUVI&#8217;s Career Program which offers the best machine learning course online with Placement Assistance. <a href="https://www.guvi.in/zen-class/machine-learning-course/?utm_source=blog&amp;utm_medium=organic&amp;utm_campaign=top-tech-careers-of-the-future" target="_blank" data-type="link" data-id="https://www.guvi.in/zen-class/machine-learning-course/?utm_source=blog&amp;utm_medium=organic&amp;utm_campaign=top-tech-careers-of-the-future" rel="noreferrer noopener">Learn Machine learning course with IIT-CE certification</a> from IIT Madras faculty and industry experts.</p>
+
+
+
+<h4 class="wp-block-heading">Average Salary</h4>
+
+
+
+<p>$136,000</p>
+
+
+
+<h3 class="wp-block-heading">2. <strong>Blockchain Engineer</strong></h3>
+
+
+
+<p>A blockchain engineer is a software engineer who is responsible for developing and maintaining the underlying blockchain infrastructure. They write code, develop new blockchain applications, and monitor the network. Apart from this they are also involved in research &amp; development, to create new protocols and algorithms to improve blockchain technology.</p>
+
+
+
+<p>Blockchain engineers are responsible for researching new technologies, staying up-to-date with industry trends, and educating others on blockchain principles and applications.</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-large"><img decoding="async" width="1200" height="800" src="https://www.guvi.in/blog/wp-content/uploads/2023/01/5429482-1200x800.jpg" alt="Blockchain technology" class="wp-image-16123" srcset="https://www.guvi.in/blog/wp-content/uploads/2023/01/5429482-1200x800.jpg 1200w, https://www.guvi.in/blog/wp-content/uploads/2023/01/5429482-300x200.jpg 300w, https://www.guvi.in/blog/wp-content/uploads/2023/01/5429482-768x512.jpg 768w, https://www.guvi.in/blog/wp-content/uploads/2023/01/5429482-1536x1024.jpg 1536w, https://www.guvi.in/blog/wp-content/uploads/2023/01/5429482-2048x1365.jpg 2048w, https://www.guvi.in/blog/wp-content/uploads/2023/01/5429482-150x100.jpg 150w" sizes="(max-width: 1200px) 100vw, 1200px" /><figcaption class="wp-element-caption">Blockchain technology</figcaption></figure></div>
+
+
+<h4 class="wp-block-heading">Skills you need</h4>
+
+
+
+<p>To become a Blockchain developer, one must have a bachelor&#8217;s degree or above in computer science or a related field ad apart from this below skills are also needed to become a Blockchain Engineer/Developer:</p>
+
+
+
+<ul>
+<li>Knowledge of cryptography and hash functions is essential for understanding how blockchain works.</li>
+
+
+
+<li>Proficient in programming languages and other computer science subjects.</li>
+
+
+
+<li>Good understanding of computer networks and database</li>
+
+
+
+<li>Knowing how to implement security measures is critical for any blockchain engineer.</li>
+</ul>
+
+
+
+<h4 class="wp-block-heading">Growth opportunities</h4>
+
+
+
+<p>The future of blockchain engineering is expected to be very bright, with a very good amount of jobs in the years to come. As more organizations adopt the blockchain, blockchain engineers will be needed to develop and maintain the heavy systems.&nbsp;</p>
+
+
+
+<h4 class="wp-block-heading">Average Salary</h4>
+
+
+
+<p>$120,000</p>
+
+
+
+<h3 class="wp-block-heading">3. <strong>Data Scientist</strong></h3>
+
+
+
+<p>A data scientist is a professional who analyzes data to gain insights, solve business problems, and make decisions. They are responsible for using a wide range of tools and techniques to collect, store, analyze, and interpret data in order to draw conclusions and make informed decisions.</p>
+
+
+
+<p>Looking on how to become a successful data scientist and the roadmap! Check the latest blog on <a href="https://www.guvi.in/blog/how-to-become-a-top-data-scientist/">A Profound Data Scientist roadmap</a>. Read more blogs on <a href="https://www.guvi.in/blog/category/data-science/">Data Science</a>.</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-large"><a href="https://www.guvi.in/IIT-Certified-Programming-Professional-and-Master-Data-Science?utm_source=GUVI-Website&amp;utm_medium=GUVI-Products&amp;utm_campaign=Common-Page"><img decoding="async" width="1200" height="800" src="https://www.guvi.in/blog/wp-content/uploads/2023/01/paper-analysis-1200x800.jpg" alt="Data science" class="wp-image-16122" srcset="https://www.guvi.in/blog/wp-content/uploads/2023/01/paper-analysis-1200x800.jpg 1200w, https://www.guvi.in/blog/wp-content/uploads/2023/01/paper-analysis-300x200.jpg 300w, https://www.guvi.in/blog/wp-content/uploads/2023/01/paper-analysis-768x512.jpg 768w, https://www.guvi.in/blog/wp-content/uploads/2023/01/paper-analysis-1536x1024.jpg 1536w, https://www.guvi.in/blog/wp-content/uploads/2023/01/paper-analysis-2048x1365.jpg 2048w, https://www.guvi.in/blog/wp-content/uploads/2023/01/paper-analysis-150x100.jpg 150w" sizes="(max-width: 1200px) 100vw, 1200px" /></a><figcaption class="wp-element-caption">Data Science</figcaption></figure></div>
+
+
+<h4 class="wp-block-heading">Skills you need</h4>
+
+
+
+<ul>
+<li>Must be proficient in programming languages such as Python, R, etc.</li>
+
+
+
+<li>Strong knowledge of statistics, probability, etc, and be able to apply them to data sets.</li>
+
+
+
+<li>Good problem-solving and data visualization skills.</li>
+
+
+
+<li>Ability to understand machine learning algorithms and the related data sets.</li>
+</ul>
+
+
+
+<h4 class="wp-block-heading">Growth opportunities</h4>
+
+
+
+<p>Data is one thing that is part of almost every organization because it is necessary for them to analyze different trends for the users, etc. and due to this data scientists will have a bright future ahead. Data scientists have the potential to become highly sought-after professionals due to their ability to leverage data to provide organizations with actionable insights.</p>
+
+
+
+<p>Build a progressive career in Data Science with Placement Assistance from an industry-leading platform- GUVI&#8217;s Data Science Professional with IIT Certification in Advanced Programming career program. Get hands-on experience by working on Real-time Projects from IIT-M recognized institute of excellence.</p>
+
+
+
+<h4 class="wp-block-heading">Average Salary</h4>
+
+
+
+<p>$121,000</p>
+
+
+
+<h3 class="wp-block-heading">4. <strong>DevOps Engineer</strong></h3>
+
+
+
+<p>A DevOps Engineer is an engineer who has a wide range of knowledge of both development and operations teams, like coding, cloud, databases, etc, and ensures the successful release and operation of software applications. They are responsible for creating and managing the tools and processes that allow the software to be developed and deployed with reliability and speed.&nbsp;</p>
+
+
+
+<p>The engineers use a variety of technologies including scripting languages, cloud and automation tools, etc, to facilitate collaboration between developers and operations teams.</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-large is-resized"><a href=" https://www.guvi.in/zen-class/devops-course/"><img decoding="async" width="1024" height="1024" src="https://www.guvi.in/blog/wp-content/uploads/2023/01/7031548-1024x1024.jpg" alt="DevOps" class="wp-image-16121" style="width:910px;height:910px" srcset="https://www.guvi.in/blog/wp-content/uploads/2023/01/7031548-1024x1024.jpg 1024w, https://www.guvi.in/blog/wp-content/uploads/2023/01/7031548-300x300.jpg 300w, https://www.guvi.in/blog/wp-content/uploads/2023/01/7031548-150x150.jpg 150w, https://www.guvi.in/blog/wp-content/uploads/2023/01/7031548-768x768.jpg 768w, https://www.guvi.in/blog/wp-content/uploads/2023/01/7031548-1536x1536.jpg 1536w, https://www.guvi.in/blog/wp-content/uploads/2023/01/7031548-96x96.jpg 96w, https://www.guvi.in/blog/wp-content/uploads/2023/01/7031548.jpg 2000w" sizes="(max-width: 1024px) 100vw, 1024px" /></a><figcaption class="wp-element-caption">DevOps</figcaption></figure></div>
+
+
+<h4 class="wp-block-heading">Skills you need</h4>
+
+
+
+<ul>
+<li>Well versed with programming languages such as python, ruby, etc.</li>
+
+
+
+<li>Good understanding of Linux OS.</li>
+
+
+
+<li>Experience in software development and system administration</li>
+
+
+
+<li>Experience in CI/CD tools, like Jira, Red hat, etc.</li>
+
+
+
+<li>Prior experience in Cloud infrastructure such as Amazon AWS, Google GCP, or Microsoft Azure.</li>
+</ul>
+
+
+
+<h4 class="wp-block-heading">Growth opportunities</h4>
+
+
+
+<p>As cloud computing grows and becomes more complex, the need for DevOps engineers who can manage and automate the cloud infrastructure will also grow in the coming years. Security will be a major focus for DevOps engineers in the future. A good salary is also a benefit as this career is on boom and being adopted by more companies. </p>
+
+
+
+<p>Unlock the power of DevOps with an industry-leading DevOps Live Mentor Program. <a href="https://www.guvi.in/zen-class/machine-learning-course/?utm_source=blog&amp;utm_medium=organic&amp;utm_campaign=top-tech-careers-of-the-future" target="_blank" data-type="link" data-id="https://www.guvi.in/zen-class/devops-course/" rel="noreferrer noopener">GUVI&#8217;s DevOps career program</a> is live bootcamp course in which you will learn the main characteristics of DevOps processes, tools, and people involved during the lifecycle. Apart from this, there is placement assistance, mentor support from Top Global Product companies, and many more. So, what are you waiting for, Enroll now!</p>
+
+
+
+<h4 class="wp-block-heading">Average Salary</h4>
+
+
+
+<p>$110,000</p>
+
+
+
+<h3 class="wp-block-heading">5. <strong>Software Developer</strong></h3>
+
+
+
+<p>A software developer is one who designs, develops, and maintains software applications and systems. They have good experience with various programming languages and development tools to create software or applications that meet the needs of customers or users. A software developer can be responsible to create a website, mobile application, etc., and therefore can also be called a Full Stack Developer or a Mobile Developer as per skills.</p>
+
+
+
+<p>A software developer knows how to solve a real-world problem by taking the user idea and converting it into the software application. Software developers can create a website or a mobile application.</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-large"><a href=" https://www.guvi.in/zen-class/full-stack-development-course/?utm_source=GUVI-Website&amp;utm_medium=GUVI-Products&amp;utm_campaign=Common-Page"><img decoding="async" width="1200" height="826" src="https://www.guvi.in/blog/wp-content/uploads/2023/01/1904.i402.013..Web-development-isometric-concept-composition-1200x826.jpg" alt="Software Development" class="wp-image-16120" srcset="https://www.guvi.in/blog/wp-content/uploads/2023/01/1904.i402.013..Web-development-isometric-concept-composition-1200x826.jpg 1200w, https://www.guvi.in/blog/wp-content/uploads/2023/01/1904.i402.013..Web-development-isometric-concept-composition-300x206.jpg 300w, https://www.guvi.in/blog/wp-content/uploads/2023/01/1904.i402.013..Web-development-isometric-concept-composition-768x528.jpg 768w, https://www.guvi.in/blog/wp-content/uploads/2023/01/1904.i402.013..Web-development-isometric-concept-composition-1536x1057.jpg 1536w, https://www.guvi.in/blog/wp-content/uploads/2023/01/1904.i402.013..Web-development-isometric-concept-composition-2048x1409.jpg 2048w, https://www.guvi.in/blog/wp-content/uploads/2023/01/1904.i402.013..Web-development-isometric-concept-composition-150x103.jpg 150w" sizes="(max-width: 1200px) 100vw, 1200px" /></a><figcaption class="wp-element-caption">Software Development</figcaption></figure></div>
+
+
+<h4 class="wp-block-heading">Skills you need</h4>
+
+
+
+<ul>
+<li>Good problem-solving skills to convert the idea into software.</li>
+
+
+
+<li>Strong programming fundamentals of languages like Java, C++, Python, etc.</li>
+
+
+
+<li>Technical skills including HTML/CSS/JS (for web developers), Android, C#, and Java (for Mobile app developers).</li>
+
+
+
+<li>Strong knowledge of software engineering principles and computer science.</li>
+
+
+
+<li>Testing, debugging, and deploying of software product knowledge.</li>
+</ul>
+
+
+
+<h4 class="wp-block-heading">Growth opportunities</h4>
+
+
+
+<p>The software has been developed since 1948 and will continue to be in high demand in the future as technology advances and companies rely more heavily on software solutions to complete their day-to-day business operations. As the demand for software solutions grows, developers will need to become more creative and efficient and be able to think outside of the box to develop innovative solutions.</p>
+
+
+
+<p>Become a Full Stack Developer with<a href="https://www.guvi.in/zen-class/full-stack-development-course/" target="_blank" rel="noreferrer noopener"> our industry-leading project-based career program on Full Stack Development</a>&nbsp;which provides you with placement assistance, globally recognized certification, helps in mastering front-end, and back-end,&nbsp; while building your awesome career portfolio.</p>
+
+
+
+<h4 class="wp-block-heading">Average Salary</h4>
+
+
+
+<p>$105,000</p>
+
+
+
+<h2 class="wp-block-heading"><strong>Ace your next tech job&nbsp;</strong></h2>
+
+
+
+<p>To be successful in getting your tech job, make sure you follow the below tips.</p>
+
+
+
+<h3 class="wp-block-heading">Work on your communication skills</h3>
+
+
+
+<p>Having excellent communication skills is essential for getting a tech job. Being able to communicate clearly with colleagues, potential employers, and customers is a must in the tech industry. Employers are looking for someone who can articulate complex technical information in a simple, understandable way.</p>
+
+
+
+<h3 class="wp-block-heading">Make your best portfolio</h3>
+
+
+
+<p>A great portfolio is essential when applying for a tech job. It should showcase your technical skills and experience, and provide evidence of your ability to solve complex problems. It should also demonstrate your creative and organizational abilities, as well as your enthusiasm for the work.</p>
+
+
+
+<h3 class="wp-block-heading">Create a single-page resume</h3>
+
+
+
+<p>Try to create a single page or max of two-page resume. But make sure to include everything about you so that the employer can know more about you.</p>
+
+
+
+<h3 class="wp-block-heading">Make good LinkedIn connections</h3>
+
+
+
+<p>Connecting with people in the tech industry, such as hiring managers and recruiters, can open up a lot of doors to get your perfect job. For doing that, join groups related to your field, etc.</p>
+
+
+
+<h3 class="wp-block-heading">Apply for multiple companies&nbsp;</h3>
+
+
+
+<p>Applying to multiple organizations will increase the chances of getting hired. Start by researching and creating a list of potential organizations in your area of expertise.</p>
+<p>The post <a rel="nofollow" href="https://www.guvi.in/blog/top-tech-careers-of-the-future/">Top 5 Tech Careers of the Future [2024]</a> appeared first on <a rel="nofollow" href="https://www.guvi.in/blog">GUVI Blogs</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://www.guvi.in/blog/top-tech-careers-of-the-future/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">16117</post-id>	</item>
+		<item>
+		<title>Deploy a React app for Free To Firebase, Vercel &#038; Netlify</title>
+		<link>https://www.guvi.in/blog/how-to-deploy-a-react-app-for-free-using-firebase-vercel-and-netlify/</link>
+					<comments>https://www.guvi.in/blog/how-to-deploy-a-react-app-for-free-using-firebase-vercel-and-netlify/#respond</comments>
+		
+		<dc:creator><![CDATA[Tarun Singh]]></dc:creator>
+		<pubDate>Tue, 24 Jan 2023 06:02:41 +0000</pubDate>
+				<category><![CDATA[MERN]]></category>
+		<category><![CDATA[react app]]></category>
+		<category><![CDATA[react tutorials]]></category>
+		<guid isPermaLink="false">https://www.guvi.in/blog/?p=16218</guid>
+
+					<description><![CDATA[<p>Are you looking for a fast and easy way to deploy your React app for free? Firebase, Vercel, and Netlify are the most popular options for developers. All of them offer a robust set of features and provide a great platform for deploying your React applications. In this blog, we will discuss how to deploy [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://www.guvi.in/blog/how-to-deploy-a-react-app-for-free-using-firebase-vercel-and-netlify/">Deploy a React app for Free To Firebase, Vercel &#038; Netlify</a> appeared first on <a rel="nofollow" href="https://www.guvi.in/blog">GUVI Blogs</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<p>Are you looking for a fast and easy way to deploy your React app for free? Firebase, Vercel, and Netlify are the most popular options for developers. All of them offer a robust set of features and provide a great platform for deploying your React applications. In this blog, we will discuss how to deploy your React app for free on Firebase, Vercel, and Netlify. </p>
+
+
+
+<p>Vercel is a cloud platform for static sites and serverless functions that enables developers to deploy, host, and manage their web projects with ease and makes it easy to deploy and host React apps with a simple, intuitive workflow. </p>
+
+
+
+<p>It offers a wide range of features and tools, such as automatic HTTPS, serverless functions, CDN edge caching, and more, to help developers build and deploy React apps quickly and easily. </p>
+
+
+
+<p>Apart from this, it also offers integration with a variety of popular services, such as GitHub, Slack, and Figma, to help streamline the development process. Additionally, It provides free hosting for open-source projects.</p>
+
+
+
+<p>Firebase is a cloud-based platform that can be used to host web applications built with React. It provides tools used for authentication, storage, real-time databases, hosting, analytics, and much more. Firebase also provides a command-line interface that makes it easy to set up and deploy React apps with just a few commands. Additionally, Firebase also offers hosting services that can be used to deploy React apps with minimal effort. </p>
+
+
+
+<p>Netlify is a platform designed specifically for hosting modern web applications. It supports static sites built with React, as well as dynamic applications that use popular JavaScript frameworks like Next.js, Vite, etc. With the help of Netlify, you can easily deploy a React app with just a few clicks.</p>
+
+
+
+<p>For this blog, we are going to use an existing react app project to deploy to multiple websites for Free. Read the <a href="https://www.guvi.in/blog/how-to-fetch-data-using-api-in-react/">blog</a> to know more about how to create a new react application using create-react-app command.</p>
+
+
+
+<h2 class="wp-block-heading"><strong>Deploy React App to Firebase</strong></h2>
+
+
+
+<p>Firebase Hosting is one of a service provided by Firebase, a Google product used for building mobile and web applications. Firebase Hosting allows developers to easily deploy and host their web applications, including static, single-page apps, and progressive web applications.</p>
+
+
+
+<p>Before diving into the next section, ensure you&#8217;re solid on full-stack development essentials like front-end frameworks, back-end technologies, and database management. If you are looking for a detailed Full Stack Development career program, you can join <strong><a href="https://www.guvi.in/zen-class/full-stack-development-course/?utm_source=blog&amp;utm_medium=organic&amp;utm_campaign=how-to-deploy-a-react-app-for-free-using-firebase-vercel-and-netlify">GUVI’s Full Stack Development Career Program</a></strong> with Placement Assistance. You will be able to master the MERN stack (MongoDB, Express.js, React, Node.js) and build real-life projects.</p>
+
+
+
+<p>Additionally, if you want to explore React through a self-paced course, try <strong><a href="https://www.guvi.in/courses/web-development/react-js/?utm_source=blog&amp;utm_medium=organic&amp;utm_campaign=how-to-deploy-a-react-app-for-free-using-firebase-vercel-and-netlify">GUVI’s React self-paced certification course.</a></strong></p>
+
+
+
+<h3 class="wp-block-heading"><strong>Steps to deploy app to firebase:</strong></h3>
+
+
+
+<p>Here is a step-by-step guide on how to deploy a React app for free on Firebase. </p>
+
+
+
+<p><strong>Step 1: Go to <a href="https://console.firebase.google.com/?pli=1" data-type="link" data-id="https://console.firebase.google.com/?pli=1" target="_blank" rel="noopener">https://console.firebase.google.com/</a> and create a new project on console</strong></p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter"><img decoding="async" src="https://lh6.googleusercontent.com/P2DglxxZ0MACKhTtJsB3dig4duZ1WkvmHG2A7vL3RW3_DczzPPdeh6Ba3YgcESn5NQTHzqPtzAMN3UeMbhqzSiBIqbBp0i5tbv9eaVtyHMj5t2AXuFKnEf8IQIgzpUZM7d77sviWzhnDGD8dCCr14_h7D7zfS7O58YeBis-wEtDb7OUQ_XhK9EUjWurDTg" alt=""/><figcaption class="wp-element-caption">Firebase console</figcaption></figure></div>
+
+
+<p><strong>Step 2: Enable the Firebase hosting feature from the Build dropdown menu.</strong></p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter"><img decoding="async" src="https://lh4.googleusercontent.com/JJbdgBsA5jmjEmOliSextJdeQip_gAS1oduduyf-0x7PDxYsZr89iqjYSHO-z0tg_N4AR31mBe7TGmcFroirikl45fQY0KDJvBDdMJBheA1r1fZc13Y_Q_WdeNZMumGjXJh9Ix5fGCBDqdhR--cKFC2c5m7EEsxDdlkVSYSufQJk92yPOPLaXEP_UqcSMw" alt=""/><figcaption class="wp-element-caption">Firebase hosting dashboard</figcaption></figure></div>
+
+
+<p><strong>Step 3: Set up firebase hosting</strong></p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter"><img decoding="async" src="https://lh4.googleusercontent.com/Qq3sBjqxISdYH3PpSPX3mMoMXa91HlDnnYmZ4VpAHEa8jUgwSsYTNOHr7mZKM2AQaz6nz6DqDOWBt7tuMd3Afh_w5oU5eOQSAFF1jpgmMFtfL2_kPbLCIJQU1xAbtMstwRQCdg0WTNBot1pnE-OdcjdOTyQjlEnt2lrbRQ7Uuk8jSFxBAb5nN0y5uSAsJw" alt=""/><figcaption class="wp-element-caption">Install firebase CLI</figcaption></figure></div>
+
+<div class="wp-block-image">
+<figure class="aligncenter"><img decoding="async" src="https://lh6.googleusercontent.com/iuOm1b3qDK2c69MMpn6uaw4twmHxndi86pUeCLXZcx3Wba1MVThHK4u6jPkpc1TZLingESprYZ8CzXKrQ4pFlX9QnD05juJ1RniSxWm5KFLTauVQJgI5vd8DIixOt__LqTIga5vfurFaMD4bDYzaYS27EqFt_wl78S9vNVcRbfScPCRqNWvwpGa4uKh9xg" alt=""/><figcaption class="wp-element-caption">Initialize project on firebase</figcaption></figure></div>
+
+<div class="wp-block-image">
+<figure class="aligncenter"><img decoding="async" src="https://lh3.googleusercontent.com/Bxhx6nfizcIuXbWdE8p3XbW4wnAzuQUs3DCi5s7PW649UA__VAal_927BK4NAO_8Sdu7haj6KvNogQeWl2tigBrG6ztvpTRI5NBbSQ-hV9QKIgx-hPF0YPN_baaBS7bhpIV-_hAvanw1sjT2y2G48w2cZ4JAceNgDexesty5CCcKos_2jWK4iDmJQgqz5w" alt=""/><figcaption class="wp-element-caption">Deploy to firebase</figcaption></figure></div>
+
+
+<p>Go through the given steps and continue to console.</p>
+
+
+
+<p><strong>Step 4: Install the firebase tools CLI</strong></p>
+
+
+
+<p>Now let&#8217;s begin the firebase installation process into our react app. Open your react app project directory, and run the following:</p>
+
+
+
+<pre class="wp-block-code"><code>npm install -g firebase-tools</code></pre>
+
+
+
+<p><strong>Step 5: Initialize firebase in project</strong></p>
+
+
+
+<pre class="wp-block-code"><code>firebase init</code></pre>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://lh5.googleusercontent.com/Npqp0wx5UwLlhnV11u6ZitpwGauR8NlY9NlLDpZjmQF4zQyNjY_TTZoswFyd004Cq4rPstUXC9_60YTfEHBnIo3tN6cRXo0je1gmdvXMHckyjza6crK3vygOdO0p3iN6rUYNhcNHHmrSviPKQuP5j4uGCg4cHrHPDFj7LsRBJOD6fETBrxnzp2OPQUc6VQ" alt=""/></figure>
+
+
+
+<p><strong>Step 6: Proceed further and select “Hosting: Configure files” option</strong></p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://lh4.googleusercontent.com/PqT-JSLKC9OVebqwk08hlBc4HPpt4P13xojMMOVdhmwQL1FaOAUrOyKUQZ2qFfFq2xRk6kjI_JnIobU5qH1W-Iirh5rKKZP4PXRr0rvW8-FKwJoSG_7EGylfIOVRszSttNMGUndZAvVTHR-lrZmAIL9PyK8PP5aRE-6ghNCgjOE86bY8Jv-nrnAyv78xjg" alt=""/></figure>
+
+
+
+<p><strong>Step 7: Select “use an existing project”</strong></p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://lh4.googleusercontent.com/Fk1Hzp8qIfKPVNYlxsiIIMzFYDNSXMteJ3zOtIxeQd9161tJyCXqz1Z6u76gjW6PCujTMprS-Tq3ZIa2c-lbicBTR2A83BhYiqoVoFA7zPCZNAsMnZuZHW_hTlP-KLQSchmgvdZ_1d3H-9ulr9R-iR3aYD8UIBn0YS2uXgLHrgVVHU3FsxmdRHbxRI1YVQ" alt=""/></figure>
+
+
+
+<p><strong>Step 8: Write “build” to use as your public directory because through this folder react app will run</strong></p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://lh5.googleusercontent.com/lsFp0mgd2mEEFK816bch8B80MoJGkbQlpRnvoIaKIpY8ud828EF9wtS8YBb7gbC358zvECjCyzEcQj2pdP7-qhxwY6JDtWEGF3U9q84GwjR6AnajZX0cCqgqCr6szlRVBdNlhgMJTja_5E_-_QUd8iitkVe2AP-1_1w5ngxH7r2Qn-lfoCbFFBegNFiaIw" alt=""/></figure>
+
+
+
+<p>&nbsp;<strong>Step 9: Select “Y” to continue</strong></p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://lh4.googleusercontent.com/XQQobnc8ADvW9x_3QIxOy9duE3h1dT6XJSRn5p3w9UcyWsmVyWVCRsJMTnd3eH6FUTeUiPyJzO0xqsfAuYOqv0A89oYOhb5-qLa-u1C00yRm6jpBrBEPhgtIj_1mrl1qRjcj8hx_uJyu75eSWrcSudVYDMoyIBtxdEjj4sDg6iNDMztbmlgpk7R_Oq9tfw" alt=""/></figure>
+
+
+
+<p>Hooray! Now you’re done with initialization. Let’s host it now.</p>
+
+
+
+<p><strong>Step 9: Run the build command</strong></p>
+
+
+
+<pre class="wp-block-code"><code>npm run build</code></pre>
+
+
+
+<p><strong>Step 10: Run the firebase deploy command</strong></p>
+
+
+
+<pre class="wp-block-code"><code>firebase deploy</code></pre>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://lh6.googleusercontent.com/NOMqDGxADq9oiQNXGroJLKSx5LQSPAvgaKNP53IAXI9I-lrlNQZ57fWqTeUpeWZtu60TK8EZSuc_UyBYYswjvB9Dr4T5xPdrAlGz9cuJry-qmoFhNQXzuHjX4aBrGqyY0zYjLQ_kBQI9pBXtKi-FUj4aIDtsI9KjYJGkSmkYBmRkQxGa-Q9E2ZYqP44gCQ" alt=""/></figure>
+
+
+
+<p>Now you should see your website at the given url. See the example screenshot below.</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-large is-resized"><img decoding="async" width="1200" height="600" src="https://www.guvi.in/blog/wp-content/uploads/2023/01/Untitled-design-2-1200x600.png" alt="" class="wp-image-16666" style="width:910px;height:455px" srcset="https://www.guvi.in/blog/wp-content/uploads/2023/01/Untitled-design-2-1200x600.png 1200w, https://www.guvi.in/blog/wp-content/uploads/2023/01/Untitled-design-2-300x150.png 300w, https://www.guvi.in/blog/wp-content/uploads/2023/01/Untitled-design-2-768x384.png 768w, https://www.guvi.in/blog/wp-content/uploads/2023/01/Untitled-design-2-1536x768.png 1536w, https://www.guvi.in/blog/wp-content/uploads/2023/01/Untitled-design-2-2048x1024.png 2048w, https://www.guvi.in/blog/wp-content/uploads/2023/01/Untitled-design-2-150x75.png 150w" sizes="(max-width: 1200px) 100vw, 1200px" /><figcaption class="wp-element-caption">React App deploy on Firebase</figcaption></figure></div>
+
+
+<h2 class="wp-block-heading"><strong>Deploy react app to Vercel</strong></h2>
+
+
+
+<p><a href="https://vercel.com/" target="_blank" rel="noreferrer noopener">Vercel </a>is another popular option for deploying React apps. You can use Vercel’s free plan to deploy your React app for free. To get started, you will need to create a Vercel account. Once your account is created, you can deploy your React app.</p>
+
+
+
+<p>Vercel is another popular option for deploying React apps. You can use Vercel’s free plan to deploy your React app for free. To get started, you will need to create a Vercel account. Once your account is created, you can deploy your React app.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>Steps to deploy app to Vercel:</strong></h3>
+
+
+
+<p>Here is a step-by-step guide on how to deploy a React app for free on Vercel. Deploying a react app to vercel requires us to have our project to GitHub. So, first we&#8217;ll see how to add our react app to GitHub with just few clicks.&nbsp;</p>
+
+
+
+<p><strong>Step 1: Create a new github repository</strong></p>
+
+
+
+<p>Go to your GitHub account and create a new repository to deploy the project</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter"><img decoding="async" src="https://lh6.googleusercontent.com/LKQC8UU9rbGr7Cc5_KI1t68xUaSxK3vpNl_YfyEgGVPYjnHkE6uRLrUCQiSqVgxDkbiSB56OeLVIQQ31-b1CspHisDrmlKO0v4D87ONp3hPJeGgJtuog26jrKj7PcloyjRjZzPb92yaIC83PGLZhkPrIefngdm5S93EAIeNypBdidf3iXYrcXFYdTvAiOg" alt=""/><figcaption class="wp-element-caption">New GitHub Repository</figcaption></figure></div>
+
+
+<p><strong>Step 2: Deploy react app to gitHub repository</strong></p>
+
+
+
+<p>Back in the terminal, let’s start by staging all our files so we can commit them to the repository we’ve created using the following commands:</p>
+
+
+
+<pre class="wp-block-code"><code>git init&nbsp;
+git add .&nbsp;
+git commit -m "first commit"&nbsp;
+git branch -M main</code></pre>
+
+
+
+<p>Once this is done, push the files to the created remote repository using the following commands:&nbsp;</p>
+
+
+
+<pre class="wp-block-code"><code>git remote add origin https://github.com/tarunguvi/demoapp.git&nbsp;
+git push -u origin main</code></pre>
+
+
+
+<p><strong>Step 3: Go to </strong><a href="https://vercel.com/dashboard" target="_blank" rel="noreferrer noopener"><strong>https://vercel.com/dashboard</strong></a><strong> and create a new project</strong></p>
+
+
+
+<p>Now you are ready to deploy your app to the vercel site. Visit the dashboard and create a new project.</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter"><img decoding="async" src="https://lh4.googleusercontent.com/JOgqI-1hjx_LtkhR9UImwtEnALvCBLTLM5AzYX_Iu4WbfYnsI6ZvPvmAw_F2lvICMMknaAlTyB_CFmJcB2Ts4ZJgg0K8X0XQgt2gZXvcJbsCoNxcTHzzaBNAqp2gYmVwX_wD562c1-4qaVRA_l6cqQQUIMbj9Q2ZaUGApw4KLELvuARlazEsfysrdeIJOA" alt=""/><figcaption class="wp-element-caption">Vercel Dashboard</figcaption></figure></div>
+
+
+<p>After creating a new project, it will redirect you to the page where you can import your github project.</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter"><img decoding="async" src="https://lh3.googleusercontent.com/sNbpCz22odrNABLbr7MqM6gS-3tE4HD-rzheBUMnAZhPGRUUMtfiuJmkKJYZ6Fk3hSMUqv_qUrcj_QiEmU-5x4eBYsAK217c1-eXmBgdC-uRwfrp5ZYd-n8rkBLF6sDZ8MxUC-SofZn4RknESxuVjMJNKZPCrMK7YO0GA2-KFO_k6Y3UkRWjD4-Yq5MHDg" alt=""/><figcaption class="wp-element-caption">Import repository on Vercel</figcaption></figure></div>
+
+
+<p>A popup will be displayed to authorize the github account from which the site will be deployed.</p>
+
+
+
+<p><strong>Step 4: Click the Import button and configure the project</strong></p>
+
+
+
+<p>After clicking the import and add your project name and edit your root directory as <strong><em>build </em></strong>and click <strong>deploy.</strong></p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter"><img decoding="async" src="https://lh4.googleusercontent.com/NGaEvEO4lWQTmUWMCIz5ZhMkhDFS5Zuw7fP3o08dc_BIakpVPjDmRybquSYQVnt3L2sgfw-daxb5pAk1-GFiWXv72_yz_kks4tRixHpS4Cb9qOwt58tZWIHgW4B7nL4YwgeZGNAH7EAtgJFRQUB53jk8iCIOyuFhvdWol83ImC3iK0EQ7niDFo_bGMeejA" alt=""/><figcaption class="wp-element-caption">Configure project</figcaption></figure></div>
+
+
+<p>Once done, you see the production deployment complete. The <strong>domain </strong>is available as: <a href="https://demoapp-jade.vercel.app/" target="_blank" rel="noreferrer noopener">https://demoapp-jade.vercel.app/</a>&nbsp;</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter"><img decoding="async" src="https://lh3.googleusercontent.com/x9h7KUa4jgdXfYSE2TR08rs6YD5knnKIUpM6xDpjxJev0B-H3V230fTSvw8OfTtoRq7byvW7AQs4hJ1VxU7bLCgXmcv0vRmOIfLqNU_gWeNC2Z4PmJ7mJV2iALLa0sPSVHW1k25SgrheKm_L_bpyKDFvLfQEajihz-e_DPGXFPq5hE3Rs83lDRBE0DfbHQ" alt=""/><figcaption class="wp-element-caption">Vercel Deployment</figcaption></figure></div>
+
+<div class="wp-block-image">
+<figure class="aligncenter size-large"><img decoding="async" width="1200" height="600" src="https://www.guvi.in/blog/wp-content/uploads/2023/01/Untitled-design-3-1200x600.png" alt="" class="wp-image-16665" srcset="https://www.guvi.in/blog/wp-content/uploads/2023/01/Untitled-design-3-1200x600.png 1200w, https://www.guvi.in/blog/wp-content/uploads/2023/01/Untitled-design-3-300x150.png 300w, https://www.guvi.in/blog/wp-content/uploads/2023/01/Untitled-design-3-768x384.png 768w, https://www.guvi.in/blog/wp-content/uploads/2023/01/Untitled-design-3-1536x768.png 1536w, https://www.guvi.in/blog/wp-content/uploads/2023/01/Untitled-design-3-2048x1024.png 2048w, https://www.guvi.in/blog/wp-content/uploads/2023/01/Untitled-design-3-150x75.png 150w" sizes="(max-width: 1200px) 100vw, 1200px" /><figcaption class="wp-element-caption">React App deploy on Vercel</figcaption></figure></div>
+
+
+<p>Congratulations! You have successfully deployed your react app to Vercel.</p>
+
+
+
+<h2 class="wp-block-heading"><strong>Deploy react app to Netlify</strong></h2>
+
+
+
+<p>Till now you saw that how we can deploy our react app to Firebase and Vercel. Now let&#8217;s see what are the steps involved in deploying a react app to Netlify. <a href="https://app.netlify.com/" target="_blank" data-type="URL" data-id="https://app.netlify.com/" rel="noreferrer noopener">Netlify </a>is a hosting and development platform that allows developers to easily deploy, manage, and host their web applications. We can deploy static HTML websites, JavaScript applications, and serverless functions with a very simple process.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>Steps to deploy app to Vercel:</strong></h3>
+
+
+
+<p>Here is a step-by-step guide on how to deploy a React app for free on Netlify.&nbsp;</p>
+
+
+
+<p><strong>Note:</strong> For deploying your react app to netlify requires you to have your project on github. Above all the steps are already explained how to deploy an app to github.</p>
+
+
+
+<p><strong>Step 1: Go to </strong><a href="https://app.netlify.com/" target="_blank" rel="noreferrer noopener"><strong>https://app.netlify.com/</strong></a><strong>&nbsp; and login with github</strong></p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter"><img decoding="async" src="https://lh3.googleusercontent.com/3MthJfyezqgNQBO4Q5_xxbFXAib6s_7enkVztVcvdOJqK7EA6C2mEQVYjpV3iD16i6g-CkkxyxKkGOVC0HM9KiVeqnM40oTT-g4ySd9Y8IQV2azuixwIKqfkpEgIwPOs6VUMt4pSKNlwBHHaT9c8NN3ozKbTNhpbTrR3iLoTRKmpDGneonegx9wLQ6Y7Cw" alt=""/><figcaption class="wp-element-caption">Netlify</figcaption></figure></div>
+
+
+<p><strong>Step 2: Import existing github project</strong></p>
+
+
+
+<p>Choose the <strong>Import from Git </strong>option to select the github existing project.</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter"><img decoding="async" src="https://lh6.googleusercontent.com/-_e3r34L5R4mjNCxid5DtOkdO7AAQb2zqyMWYQHt4w95JotRsoCoPR35V0L46iA2BFbAkqe_ESSPHCSkp49qBEzaovn8_2OXpX9ZyHWXGBiJKxhKteRH9cAZxBtaqCiY7LUA1GjJV8QO1SucW6-Qq5lKWhxSdgi2cqZZP35a_ZZRkw2hR5l7_0MjivFz4g" alt=""/><figcaption class="wp-element-caption">Import Git on Netlify</figcaption></figure></div>
+
+
+<p>Connect to Git provider by clicking on <strong>GitHub</strong> button</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter"><img decoding="async" src="https://lh5.googleusercontent.com/0sVBe9K05R5PC31KiTN7sJ8gv-b2IfGNx5rTNqDlIAJxMzgXv6pOV_i4UaNI0Fxx1_ZIVyU1wz7eGp-R0CGdBBoFjK1SV_CC3UnXAmA2cAvY-9qHk4lRuzbqYS-bciWWLvn0BUAPpITbfVdHPmt5V9vxAruhK0LUuEDwBCPmkszFvClL0rapQUnXelJhqw" alt=""/><figcaption class="wp-element-caption">Connect to Github</figcaption></figure></div>
+
+
+<p>Select the repository you want to deploy as site</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter"><img decoding="async" src="https://lh4.googleusercontent.com/0BMvSCCetKhjEwgHLDTq-9zBZeKUidjcRD6jiOjjubRBOrojCjOX2G41FxwliyFeZBbG8ATVC4P0QTEcRWTC3ezOxW_ykhv31ytSFxuap8U0v6UE-MSR0WCXUmmgJ0v7lGbSp91Gm7v5t1X5UerXuIOUsC2na4NR4LhU3mPwUVCJjMNJGe9n93s0dgcnzw" alt=""/><figcaption class="wp-element-caption">Import existing git repo</figcaption></figure></div>
+
+
+<p><strong>Step 3: Deploy to Netlify</strong></p>
+
+
+
+<p>Once your React app is connected to Netlify, you can now deploy it simply by clicking the <strong>Deploy site</strong> button.</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter"><img decoding="async" src="https://lh4.googleusercontent.com/sfn8zGXiwnfz5ov8GRWDtQi8bnar_sUPVTv3KRQIBC1kppHnggTjDYGcNb-eRLAUw1MDEStNHuKC-nnEDWHWASSxZ4YdcNBxCS3c8gGA56Osv7QWWoPrOv_HnkgMORLigUUIhdjPDgzHuq3ZzSmIdv977RDLSfAcSPY7bIwNCc8IBvdXXZMzgCcYVUf9AA" alt=""/><figcaption class="wp-element-caption">Deploy to Netlify</figcaption></figure></div>
+
+
+<p>After a successful deployment, your React app will be live and the link will be available at the dashboard.</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter is-resized"><img decoding="async" src="https://lh6.googleusercontent.com/yGFjKq8UI5RseyMcX3mO2wS57iem10Yfc02HkZDkUlKoZTsAgvRkNHuizrBwkidtlUpcGYakSPoneqWWjogNGMb3tO0cgQQWAOQKMvCFsEE0cz5euIYVTPfczYjhQfuJbYrC1XgJ243qSN3YD3UPvbzWpXEaTxF1dYRPwJUNKU6i5nbZ-1-SBa6Aq_Fhkw" alt="" style="width:910px;height:538px"/><figcaption class="wp-element-caption">Netlify Dashboard</figcaption></figure></div>
+
+<div class="wp-block-image">
+<figure class="aligncenter size-large is-resized"><img decoding="async" width="1200" height="600" src="https://www.guvi.in/blog/wp-content/uploads/2023/01/Untitled-design-4-1200x600.png" alt="" class="wp-image-16663" style="width:910px;height:455px" srcset="https://www.guvi.in/blog/wp-content/uploads/2023/01/Untitled-design-4-1200x600.png 1200w, https://www.guvi.in/blog/wp-content/uploads/2023/01/Untitled-design-4-300x150.png 300w, https://www.guvi.in/blog/wp-content/uploads/2023/01/Untitled-design-4-768x384.png 768w, https://www.guvi.in/blog/wp-content/uploads/2023/01/Untitled-design-4-1536x768.png 1536w, https://www.guvi.in/blog/wp-content/uploads/2023/01/Untitled-design-4-2048x1024.png 2048w, https://www.guvi.in/blog/wp-content/uploads/2023/01/Untitled-design-4-150x75.png 150w" sizes="(max-width: 1200px) 100vw, 1200px" /><figcaption class="wp-element-caption">React App deploy on Netlify</figcaption></figure></div>
+
+
+<p>Hooray! Now you have understood all the 3 commonly used methods for deploying your react app. The process for deploying a React app using all three methods was very easy to understand.</p>
+
+
+
+<p>Kickstart your Full Stack Development journey by enrolling in <a href="https://www.guvi.in/zen-class/full-stack-development-course/?utm_source=blog&amp;utm_medium=organic&amp;utm_campaign=how-to-deploy-a-react-app-for-free-using-firebase-vercel-and-netlify"><strong>GUVI&#8217;s certified Full Stack Development Career Program</strong></a><strong> with Placement Assistance</strong> where you will master the MERN stack (MongoDB, Express.js, React, Node.js) and build interesting real-life projects. This program is crafted by our team of experts to help you upskill and assist you in placements. </p>
+
+
+
+<p>Alternatively, if you want to explore React through a self-paced course, try <strong><a href="https://www.guvi.in/courses/web-development/react-js/?utm_source=blog&amp;utm_medium=organic&amp;utm_campaign=how-to-deploy-a-react-app-for-free-using-firebase-vercel-and-netlify">GUVI’s React self-paced course.</a></strong></p>
+
+
+
+<h2 class="wp-block-heading"><strong>Conclusion</strong></h2>
+
+
+
+<p>Deploying a React app for free is possible with Firebase, Vercel, and Netlify but there are other options also to look into. All three platforms offer a comprehensive set of characteristics, an easy setup process, and an intuitive UI. </p>
+
+
+
+<p>With Firebase, you can use its free tier plan to host and deploy a React application, while Vercel and Netlify offer free hosting and deployment services with added features. Whichever platform you choose, you can be sure that your React app is in good hands.</p>
+<p>The post <a rel="nofollow" href="https://www.guvi.in/blog/how-to-deploy-a-react-app-for-free-using-firebase-vercel-and-netlify/">Deploy a React app for Free To Firebase, Vercel &#038; Netlify</a> appeared first on <a rel="nofollow" href="https://www.guvi.in/blog">GUVI Blogs</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://www.guvi.in/blog/how-to-deploy-a-react-app-for-free-using-firebase-vercel-and-netlify/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">16218</post-id>	</item>
+		<item>
+		<title>How to Setup React Router v6? &#124; Tutorial 2024</title>
+		<link>https://www.guvi.in/blog/how-to-setup-react-router-v6-tutorial/</link>
+					<comments>https://www.guvi.in/blog/how-to-setup-react-router-v6-tutorial/#respond</comments>
+		
+		<dc:creator><![CDATA[Tarun Singh]]></dc:creator>
+		<pubDate>Thu, 19 Jan 2023 05:39:31 +0000</pubDate>
+				<category><![CDATA[MERN]]></category>
+		<guid isPermaLink="false">https://www.guvi.in/blog/?p=16392</guid>
+
+					<description><![CDATA[<p>Are you looking to learn how to set up React Router v6 and start routing your React applications? This guide will show you step-by-step how to setup React Router v6 and start building dynamic, single-page applications. With React Router v6, you can create powerful and dynamic routing solutions with ease. React Router v6.4.0 is a [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://www.guvi.in/blog/how-to-setup-react-router-v6-tutorial/">How to Setup React Router v6? | Tutorial 2024</a> appeared first on <a rel="nofollow" href="https://www.guvi.in/blog">GUVI Blogs</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<p><strong>Are you looking to learn how to set up React Router v6 and start routing your React applications?</strong> This guide will show you step-by-step <strong><em>how to setup React Router v6 and start building dynamic, single-page applications. </em></strong>With React Router v6, you can create powerful and dynamic routing solutions with ease.</p>
+
+
+
+<p><strong>React Router</strong> v6.4.0 is a library for routing in React applications and provides a routing solution that allows developers to declaratively map routes to components and manage the URL and navigation state of the application. It also provides features like <strong>route preloading, lazy loading, and query parameters.</strong></p>
+
+
+
+<p>Routing allows the user to <strong>navigate through different pages of your app without refreshing the whole page. </strong>With the help of routing, you can create a single-page application (SPA) that allows users to navigate through different pages of your web app without refreshing the whole page and improve the overall user experience by making your application faster, more responsive, and more dynamic.</p>
+
+
+
+<h2 class="wp-block-heading"><strong>Step-by-Step Guide to Setup React Router</strong></h2>
+
+
+
+<p><em>Follow the setup instructions carefully to add an easy navigation feature to your React app with different pages.</em></p>
+
+
+
+<p><strong>Getting Started with React Router:</strong></p>
+
+
+
+<p><em>Before diving into the next section, ensure you&#8217;re solid on full-stack development essentials like front-end frameworks, back-end technologies, and database management. If you are looking for a detailed Full Stack Development career program, you can join <a href="https://www.guvi.in/zen-class/full-stack-development-course/?utm_source=blog&amp;utm_medium=organic&amp;utm_campaign=How+to+Setup+React+Router+v6%3F+%7C+Tutorial+2024" data-type="link" data-id="https://www.guvi.in/zen-class/full-stack-development-course/?utm_source=blog&amp;utm_medium=organic&amp;utm_campaign=How+to+Setup+React+Router+v6%3F+%7C+Tutorial+2024" target="_blank" rel="noreferrer noopener"><strong>GUVI’s Full Stack Development Career Program</strong></a> with Placement Assistance. You will be able to master the MERN stack (MongoDB, Express.js, React, Node.js) and build real-life projects.</em></p>
+
+
+
+<p><em>Additionally, if you want to explore JavaScript through a self-paced course, try<a href="https://www.guvi.in/courses/web-development/advanced-javascript/?utm_source=blog&amp;utm_medium=organic&amp;utm_campaign=How+to+Setup+React+Router+v6%3F+%7C+Tutorial+2024" data-type="link" data-id="https://www.guvi.in/courses/web-development/advanced-javascript/?utm_source=blog&amp;utm_medium=organic&amp;utm_campaign=How+to+Setup+React+Router+v6%3F+%7C+Tutorial+2024" target="_blank" rel="noreferrer noopener"> GUVI’s JavaScript self-paced certification course.</a></em></p>
+
+
+
+<h3 class="wp-block-heading"><strong>Step 1: Installing React Router</strong></h3>
+
+
+
+<p><em>To install<strong> <a href="https://reactrouter.com/en/main" target="_blank" rel="noopener">React Router</a>,</strong> you&#8217;ll need Node.js installed for the npm command line tool, after which you have to run the following command:</em></p>
+
+
+
+<pre class="wp-block-code"><code>npm install react-router-dom</code></pre>
+
+
+
+<p>and wait for the installation to complete.&nbsp;</p>
+
+
+
+<h4 class="wp-block-heading">What is npm?</h4>
+
+
+
+<p>npm stands for Node Package Manager, which is a library and registry for JavaScript software packages. It is free and used by more than 11 million developers worldwide.<strong>Open source developers from every continent use npm to share and borrow packages, and many organizations use npm to manage private development as well</strong>. It also has command-line tools to help you install the different packages and manage their dependencies. </p>
+
+
+
+<p>If you are using <strong>Yarn</strong> then run the following command:&nbsp;</p>
+
+
+
+<pre class="wp-block-code"><code>yarn add react-router-dom</code></pre>
+
+
+
+<h3 class="wp-block-heading"><strong>Step 2: Adding React Router</strong></h3>
+
+
+
+<p>The first thing to do after installing react-router-dom is to make React Router available anywhere in your app. For this, we use a &lt;BrowserRouter&gt; that stores the current location in the browser&#8217;s address bar using clean URLs and navigates using the browser&#8217;s built-in history stack.</p>
+
+
+
+<p>To do this, open the index.js file in the src folder and replace the &lt;<strong><em>React.StrictMode&gt;</em></strong> with &lt;<strong><em>BrowserRouter&gt; </em></strong>by importing it from react-router-dom and then wrapping the root component in it.</p>
+
+
+
+<p><strong>index.js file before changes:</strong></p>
+
+
+
+<pre class="wp-block-code"><code>
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  &lt;React.StrictMode&gt;
+    &lt;App /&gt;
+  &lt;/React.StrictMode&gt;
+);
+
+reportWebVitals();
+</code></pre>
+
+
+
+<p><strong>index.js file after changes:</strong></p>
+
+
+
+<pre class="wp-block-code"><code>
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
+import { BrowserRouter } from 'react-router-dom';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  &lt;BrowserRouter&gt;
+    &lt;App /&gt;
+  &lt;/BrowserRouter&gt;
+);
+
+reportWebVitals();
+</code></pre>
+
+
+
+<p>So, now you can access all the features of <strong>react-router-dom</strong> like routers, routes, etc.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>Step 3: Routing and Rendering Components</strong></h3>
+
+
+
+<h4 class="wp-block-heading">1. <strong>Creating Multiple Components</strong></h4>
+
+
+
+<p>To render different components for routing, we’ll create some components in our project. In your project src folder, create a new folder as Pages. In that, create some components such as <strong>Home.js</strong>, <strong>Courses.js</strong>, <strong>Live.js</strong>, and <strong>Contact.js</strong>.</p>
+
+
+
+<p>See the code for all the components below:</p>
+
+
+
+<h5 class="wp-block-heading"><strong>Home.js</strong></h5>
+
+
+
+<pre class="wp-block-code"><code>import React from 'react'
+
+function Home() {
+  return (
+    &lt;div&gt;Home&lt;/div&gt;
+  )
+}
+
+export default Home
+</code></pre>
+
+
+
+<h5 class="wp-block-heading"><strong>Contact.js</strong></h5>
+
+
+
+<pre class="wp-block-code"><code>import React from 'react'
+
+function Contact() {
+  return (
+    &lt;div&gt;Contact&lt;/div&gt;
+  )
+}
+
+export default Contact
+</code></pre>
+
+
+
+<h5 class="wp-block-heading"><strong>Courses.js</strong></h5>
+
+
+
+<pre class="wp-block-code"><code>import React from 'react'
+
+function Courses() {
+  return (
+    &lt;div&gt;Courses&lt;/div&gt;
+  )
+}
+
+export default Courses
+</code></pre>
+
+
+
+<h5 class="wp-block-heading"><strong>Live.js</strong></h5>
+
+
+
+<pre class="wp-block-code"><code>import React from 'react'
+
+function Live() {
+  return (
+    &lt;div&gt;Live&lt;/div&gt;
+  )
+}
+
+export default Live
+</code></pre>
+
+
+
+<p>After creating all the component files, the project directory should look like this:</p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://lh3.googleusercontent.com/JG1cZhdqSjNhac2FB6QLYKYSbcAANioUgibXATql9t_kuNovZB_NsTItopg3CR5bbIpqpvFwJ8rxELuizGFv6_ikhzL5qnrNm6n9T_buIlq1UHk5nDO_fBe7TiY_2JAFXMknBh1mshtENnpUmxigSw7fNai9wG3iR0a9jNT5HNfEYrdkBDVHkXz9aKGtCQ" alt=""/></figure>
+
+
+
+<h4 class="wp-block-heading">2. <strong>Define routes</strong></h4>
+
+
+
+<p>Our root component is the App.js component, where our React code gets rendered initially. We will be creating all our routes in it.&nbsp;</p>
+
+
+
+<p>To define the routes, we are going to use two things: <strong>Routes </strong>and <strong>Route</strong>. Import both components from react-router-dom and use them to route the components. The syntax for defining the routes is as follows:</p>
+
+
+
+<pre class="wp-block-code"><code>&lt;Routes&gt;
+&nbsp;&nbsp;&nbsp;&lt;Route path="/" element={&lt;Home /&gt;} /&gt;
+&nbsp;&nbsp;&nbsp;&lt;Route path="/course" element={&lt;Courses /&gt;} /&gt;
+&nbsp;&nbsp;&nbsp;&lt;Route path="/live" element={&lt;Live /&gt;} /&gt;
+&nbsp;&nbsp;&nbsp;&lt;Route path="/contact" element={&lt;Contact /&gt;} /&gt;
+&lt;/Routes&gt;</code></pre>
+
+
+
+<p>Let’s understand this syntax in detail:</p>
+
+
+
+<ul>
+<li><strong>&lt;Routes&gt;- </strong>The &lt;Routes&gt; component is used to define the different routes that are available in your application. Each individual route is defined using a &lt;Route&gt; component.</li>
+
+
+
+<li><strong>&lt;Route&gt;- </strong>The &lt;Route&gt; component takes in a path prop, which is a string that defines the URL path that the route should match.</li>
+
+
+
+<li><strong>path- </strong>The path prop defines the route path.&nbsp;</li>
+
+
+
+<li><strong>element- </strong>The component prop defines the React component to render when the route path matches the current URL.</li>
+</ul>
+
+
+
+<h4 class="wp-block-heading">3. <strong>Link to Navigate to Components</strong></h4>
+
+
+
+<p>Now we will use the <strong>&lt;Link&gt; </strong>component of react-router-dom to create clickable links that change the URL of the browser and render a different component based on the new URL. </p>
+
+
+
+<p>This component takes in a <strong>to </strong>prop, which is a string that defines the URL path that the link should navigate to, and when the user clicks on a &lt;Link&gt; component, the URL of the browser will change to the path specified in the to prop. The appropriate component associated with that route will be rendered.&nbsp;</p>
+
+
+
+<p>In our example, we have defined a route with a path prop of &#8216;/contact’, therefore we can create a &lt;Link&gt; component with a <strong>to </strong>prop of &#8216;/contact’ to allow the user to navigate to the contact page. The same procedure goes for all of the components to navigate through the different pages.&nbsp;</p>
+
+
+
+<p>We will now use &lt;Link&gt; to navigate to different pages based on the routes and pathnames we have defined in the App component, as shown below:</p>
+
+
+
+<pre class="wp-block-code"><code>import "./App.css";
+import React from "react";
+import { Link } from "react-router-dom";
+
+import Home from "../src/Pages/Home";
+import Courses from "../src/Pages/Courses";
+import Live from "../src/Pages/Live";
+import Contact from "../src/Pages/Contact";
+
+function App() {
+  return (
+      &lt;nav&gt;
+        &lt;ul&gt;
+          &lt;Link to="/" class="list"&gt;
+            Home
+          &lt;/Link&gt;
+          &lt;Link to="/course" class="list"&gt;
+            Courses
+          &lt;/Link&gt;
+          &lt;Link to="/live" class="list"&gt;
+            Live course
+          &lt;/Link&gt;
+          &lt;Link to="/contact" class="list"&gt;
+            Contact
+          &lt;/Link&gt;
+        &lt;/ul&gt;
+      &lt;/nav&gt;
+  );
+}
+
+export default App;
+</code></pre>
+
+
+
+<h2 class="wp-block-heading"><strong>Final Code</strong></h2>
+
+
+
+<p><em>If you followed and coded along with us through the blog, then your <strong>App.js</strong> file should look like this:</em></p>
+
+
+
+<pre class="wp-block-code"><code>import "./App.css";
+import React from "react";
+import { Link, Route, Routes } from "react-router-dom";
+
+import Home from "../src/Pages/Home";
+import Courses from "../src/Pages/Courses";
+import Live from "../src/Pages/Live";
+import Contact from "../src/Pages/Contact";
+
+function App() {
+  return (
+    &lt;div className="container"&gt;
+      &lt;nav&gt;
+        &lt;ul&gt;
+          &lt;Link to="/" class="list"&gt;
+            Home
+          &lt;/Link&gt;
+          &lt;Link to="/course" class="list"&gt;
+            Courses
+          &lt;/Link&gt;
+          &lt;Link to="/live" class="list"&gt;
+            Live course
+          &lt;/Link&gt;
+          &lt;Link to="/contact" class="list"&gt;
+            Contact
+          &lt;/Link&gt;
+        &lt;/ul&gt;
+      &lt;/nav&gt;
+
+      {/* Defining routes path and rendering components as element */}
+      &lt;Routes&gt;
+        &lt;Route path="/" element={&lt;Home /&gt;} /&gt;
+        &lt;Route path="/course" element={&lt;Courses /&gt;} /&gt;
+        &lt;Route path="/live" element={&lt;Live /&gt;} /&gt;
+        &lt;Route path="/contact" element={&lt;Contact /&gt;} /&gt;
+      &lt;/Routes&gt;
+    &lt;/div&gt;
+  );
+}
+
+export default App;
+</code></pre>
+
+
+
+<figure class="wp-block-image size-large"><a href="https://www.guvi.in/mlp/premium-pass-10years?utm_source=blog&amp;utm_medium=bannerinline&amp;utm_campaign=10yranniversary" target="_blank" rel="noreferrer noopener"><img decoding="async" width="1200" height="317" src="https://www.guvi.in/blog/wp-content/uploads/2024/06/premium_pass_1135_300-1-1200x317.webp" alt="Premium Pass Banner" class="wp-image-54254" srcset="https://www.guvi.in/blog/wp-content/uploads/2024/06/premium_pass_1135_300-1-1200x317.webp 1200w, https://www.guvi.in/blog/wp-content/uploads/2024/06/premium_pass_1135_300-1-300x79.webp 300w, https://www.guvi.in/blog/wp-content/uploads/2024/06/premium_pass_1135_300-1-768x203.webp 768w, https://www.guvi.in/blog/wp-content/uploads/2024/06/premium_pass_1135_300-1-1536x406.webp 1536w, https://www.guvi.in/blog/wp-content/uploads/2024/06/premium_pass_1135_300-1-2048x541.webp 2048w, https://www.guvi.in/blog/wp-content/uploads/2024/06/premium_pass_1135_300-1-150x40.webp 150w" sizes="(max-width: 1200px) 100vw, 1200px" /></a></figure>
+
+
+
+<h2 class="wp-block-heading">Output</h2>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img decoding="async" width="600" height="391" src="https://www.guvi.in/blog/wp-content/uploads/2023/01/ezgif.com-gif-maker-2023-01-18T125505.138.gif" alt="" class="wp-image-16402"/><figcaption class="wp-element-caption">React Router v6</figcaption></figure></div>
+
+
+<h2 class="wp-block-heading"><strong>Conclusion</strong></h2>
+
+
+
+<p>To Set up React Router in your application, is a straightforward process that can greatly enhance the user experience of your app. With React Router, you can easily define and manage routes, and create clickable links that change the URL without refreshing the whole page.</p>
+
+
+
+<p>At this point, you have seen how setup React Router to navigate to different pages in your web application. Not only this, but you also saw how routing works and rendered the components in react. </p>
+
+
+
+<p>By following these simple steps, you can add powerful routing functionality to your React application, allowing the users to easily navigate through different pages of your web app. Hope you learned a lot from this blog but don’t stop learning here!</p>
+
+
+
+<p><em>Kickstart your Full Stack Development journey by enrolling in <a href="https://www.guvi.in/zen-class/full-stack-development-course/?utm_source=blog&amp;utm_medium=organic&amp;utm_campaign=How+to+Setup+React+Router+v6%3F+%7C+Tutorial+2024" data-type="link" data-id="https://www.guvi.in/zen-class/full-stack-development-course/?utm_source=blog&amp;utm_medium=organic&amp;utm_campaign=How+to+Setup+React+Router+v6%3F+%7C+Tutorial+2024" target="_blank" rel="noreferrer noopener"><strong>GUVI&#8217;s certified Full Stack Development Career Program</strong></a><strong> with Placement Assistance</strong> where you will master the MERN stack (MongoDB, Express.js, React, Node.js) and build interesting real-life projects. This program is crafted by our team of experts to help you upskill and assist you in placements. </em></p>
+
+
+
+<p><em>Alternatively, if you want to explore JavaScript through a self-paced course, try <a href="https://www.guvi.in/courses/web-development/advanced-javascript/?utm_source=blog&amp;utm_medium=organic&amp;utm_campaign=How+to+Setup+React+Router+v6%3F+%7C+Tutorial+2024" data-type="link" data-id="https://www.guvi.in/courses/web-development/advanced-javascript/?utm_source=blog&amp;utm_medium=organic&amp;utm_campaign=How+to+Setup+React+Router+v6%3F+%7C+Tutorial+2024" target="_blank" rel="noreferrer noopener">GUVI’s JavaScript self-paced course.</a></em></p>
+
+
+
+<p><strong>Sign up today and unleash your coding potential!</strong></p>
+
+
+
+<h2 class="wp-block-heading">FAQs</h2>
+
+
+<div id="rank-math-faq" class="rank-math-block">
+<div class="rank-math-list ">
+<div id="faq-question-1692002278476" class="rank-math-list-item">
+<h3 class="rank-math-question ">Q1. How do I add react router v6?</h3>
+<div class="rank-math-answer ">
+
+<p><strong>Ans</strong>. Here are a few steps to add react router v6:<br />Step 1: Installing React Router. <br />Step 2: Adding React Router. <br />Step 3: Routing and Rendering components</p>
+
+</div>
+</div>
+<div id="faq-question-1692002307639" class="rank-math-list-item">
+<h3 class="rank-math-question ">Q2. What is react router v6?</h3>
+<div class="rank-math-answer ">
+
+<p><strong>Ans</strong>. React Router v6 is <strong>a popular and powerful routing library for React applications</strong>. It provides a declarative, component-based approach to routing and handles the common tasks of dealing with URL params, redirects, and loading data.</p>
+
+</div>
+</div>
+<div id="faq-question-1692002353571" class="rank-math-list-item">
+<h3 class="rank-math-question ">Q3. How to install react router dom in your application?</h3>
+<div class="rank-math-answer ">
+
+<p><strong>Ans</strong>. You just need to type the command<strong> npm install react-router-dom@6 </strong>in the preferred location in the console window and hit enter. This installs the react router dom of version 6 in your application and you&#8217;re good to go. </p>
+
+</div>
+</div>
+</div>
+</div><p>The post <a rel="nofollow" href="https://www.guvi.in/blog/how-to-setup-react-router-v6-tutorial/">How to Setup React Router v6? | Tutorial 2024</a> appeared first on <a rel="nofollow" href="https://www.guvi.in/blog">GUVI Blogs</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://www.guvi.in/blog/how-to-setup-react-router-v6-tutorial/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">16392</post-id>	</item>
+		<item>
+		<title>Build a Search Component in React [just in 3 simple steps]</title>
+		<link>https://www.guvi.in/blog/build-a-search-filter-component-in-react/</link>
+					<comments>https://www.guvi.in/blog/build-a-search-filter-component-in-react/#respond</comments>
+		
+		<dc:creator><![CDATA[Tarun Singh]]></dc:creator>
+		<pubDate>Thu, 12 Jan 2023 05:03:28 +0000</pubDate>
+				<category><![CDATA[MERN]]></category>
+		<category><![CDATA[react tutorials]]></category>
+		<guid isPermaLink="false">https://www.guvi.in/blog/?p=16137</guid>
+
+					<description><![CDATA[<p>If you&#8217;re building an app that has a lot of data, whether in the form of a list or any other form, and you want the users to be able to search and get filtered results, then we need to create a way for the users to be able to find data they’re searching for [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://www.guvi.in/blog/build-a-search-filter-component-in-react/">Build a Search Component in React [just in 3 simple steps]</a> appeared first on <a rel="nofollow" href="https://www.guvi.in/blog">GUVI Blogs</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<p>If you&#8217;re building an app that has a lot of data, whether in the form of a list or any other form, and you want the users to be able to search and get filtered results, then we need to create a way for the users to be able to find data they’re searching for from the list easily. To cover this solution, adding a search and filter component to a react application can be a great way to improve the user experience by making it easier &amp; time saving for users to find what they are looking for. In this blog post, we will discuss how to add a search and filter component to a React application.</p>
+
+
+
+<h1 class="wp-block-heading"><strong>What is a Search Component?</strong></h1>
+
+
+
+<p>Search bars or fields are a great way of helping users find what they need on the website. Not only this, they provide good analytics if we want to keep track of what our visitors are searching for on the website. Here we are going to use react to build a search bar that filters and displays data as the user types. With the help of React hooks and the JavaScript map and filter array methods, the result displayed is responsive with a functional search box.&nbsp;</p>
+
+
+
+<p>Let&#8217;s now see how does a search component works in react.</p>
+
+
+
+<p><em>Before diving into the next section, ensure you&#8217;re solid on full-stack development essentials like front-end frameworks, back-end technologies, and database management. If you are looking for a detailed Full Stack Development career program, you can join <a href="https://www.guvi.in/zen-class/full-stack-development-course/?utm_source=blog&amp;utm_medium=organic&amp;utm_campaign=Build+a+Search+Component+in+React+%5Bjust+in+3+simple+steps%5D" target="_blank" data-type="link" data-id="https://www.guvi.in/zen-class/full-stack-development-course/?utm_source=blog&amp;utm_medium=organic&amp;utm_campaign=Build+a+Search+Component+in+React+%5Bjust+in+3+simple+steps%5D" rel="noreferrer noopener">GUVI’s Full Stack Development Career Program</a> with Placement Assistance. You will be able to master the MERN stack (MongoDB, Express.js, React, Node.js) and build real-life projects.</em></p>
+
+
+
+<p><em>Additionally, if you want to explore JavaScript through a self-paced course, try<a href="https://www.guvi.in/courses/web-development/advanced-javascript/?utm_source=blog&amp;utm_medium=organic&amp;utm_campaign=Build+a+Search+Component+in+React+%5Bjust+in+3+simple+steps%5D" target="_blank" data-type="link" data-id="https://www.guvi.in/courses/web-development/advanced-javascript/?utm_source=blog&amp;utm_medium=organic&amp;utm_campaign=Build+a+Search+Component+in+React+%5Bjust+in+3+simple+steps%5D" rel="noreferrer noopener"> GUVI’s JavaScript self-paced certification course.</a></em></p>
+
+
+
+<p></p>
+
+
+
+<h1 class="wp-block-heading"><strong>How does Search works in react</strong></h1>
+
+
+
+<p>The search component in React works by allowing users to enter search terms into an input field and then filtering the results based on the search terms. This can be done by setting up an event handler for the input field to listen for changes and then using the search terms to filter the results. This can also be done with the help of JavaScript or a library like React-SearchBox but for now let’s do this manually with the help of hooks and other things.</p>
+
+
+
+<p>To demonstrate how the search works in react, we’ll be using the mock data to create a list provided freely by <a href="https://jsonplaceholder.typicode.com/" target="_blank" rel="noreferrer noopener">https://jsonplaceholder.typicode.com/</a> in JSON format. We are going to use the user’s endpoint from that API i.e., <a href="https://jsonplaceholder.typicode.com/users" target="_blank" rel="noreferrer noopener">https://jsonplaceholder.typicode.com/users</a>. The JSON data that comes from API looks like below:</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter"><img decoding="async" src="https://lh5.googleusercontent.com/tOvLU55AXIteLYWiri7lfbhfztXT47qEVMN1nrH4C4E2cWT8mnILmxhenI0DoeRkHha5KGCn6b6uXpkFZ1X72qWWlXepUjIcEc4qp868Qi0-OM44r0NfplWyyWHINEmSiQWr5qMqCxIjzLm1K0QCOso5llABZitU7oqsHSHAdaXoi6OUUr-_d1qrOdLZeQ" alt=""/><figcaption class="wp-element-caption">JSON data</figcaption></figure></div>
+
+
+<p>Don’t get confused from the above photo, it’s just an array of data displayed in JSON format. We will be using some of the data from the given array and display it in our react app for the purpose of searching and filtering.</p>
+
+
+
+<h1 class="wp-block-heading"><strong>Creating a react app from scratch</strong></h1>
+
+
+
+<p>Before moving onto the steps of adding a search component, first we need to have a react application. To create a new react application we are going to use <strong>create-react-app </strong>as it is the<strong> </strong>best way to create a single-page application.</p>
+
+
+
+<pre class="wp-block-code"><code>npx create-react-app demo
+
+cd demo
+
+npm start</code></pre>
+
+
+
+<h1 class="wp-block-heading"><strong>Steps to add a Search functionality in react</strong></h1>
+
+
+
+<h2 class="wp-block-heading"><strong>Fetching Data</strong></h2>
+
+
+
+<p>To fetch data in react we use JavaScript Fetch API. It works by taking one argument and the path from where the data is to be fetched and then returning a promise in an JSON object.</p>
+
+
+
+<p>In our previous blog we have already discussed <a href="https://www.guvi.in/blog/how-to-fetch-data-using-api-in-react/">How to Fetch and Display data using API</a> so we are not going to discuss that again here in detail.</p>
+
+
+
+<p><em>App.js file</em></p>
+
+
+
+<pre class="wp-block-code"><code>function App() {
+
+&nbsp;&nbsp;const url = "https://jsonplaceholder.typicode.com/users";
+&nbsp;&nbsp;const &#91;data, setData] = useState(&#91;]);
+
+&nbsp;&nbsp;const fetchData = () =&gt; {
+&nbsp;&nbsp;&nbsp;&nbsp;return fetch(url)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.then((res) =&gt; res.json())
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.then((d) =&gt; setData(d));
+&nbsp;&nbsp;};
+
+&nbsp;&nbsp;useEffect(() =&gt; {
+&nbsp;&nbsp;&nbsp;&nbsp;fetchData();
+&nbsp;&nbsp;}, &#91;]);
+
+&nbsp;&nbsp;return (
+&nbsp;&nbsp;&nbsp;&nbsp;...
+&nbsp;&nbsp;);
+}
+
+export default App;</code></pre>
+
+
+
+<p>Above, we have used the JavaScript Fetch API to fetch the data by making a request to the endpoint and then storing the returned data in <strong>data</strong> state using <strong>setData(d)</strong> and used the useEffect() hook to make the function run every time the page loads.</p>
+
+
+
+<h2 class="wp-block-heading"><strong>Displaying Data</strong></h2>
+
+
+
+<p>Now we have the data, so we are going to display it. In the App.js file, add the following code in the return() statement of the function.</p>
+
+
+
+<pre class="wp-block-code"><code>function App() {
+
+&nbsp;&nbsp;const url = "https://jsonplaceholder.typicode.com/users";
+&nbsp;&nbsp;const &#91;data, setData] = useState(&#91;]);
+
+&nbsp;&nbsp;const fetchData = () =&gt; {
+&nbsp;&nbsp;&nbsp;&nbsp;return fetch(url)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.then((res) =&gt; res.json())
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.then((d) =&gt; setData(d));
+&nbsp;&nbsp;};
+
+&nbsp;&nbsp;useEffect(() =&gt; {
+&nbsp;&nbsp;&nbsp;&nbsp;fetchData();
+&nbsp;&nbsp;}, &#91;]);
+
+&nbsp;&nbsp;return (
+
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;center&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{data.map((dataObj) =&gt; {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return (
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div className="box"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="card"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="category"&gt;@{dataObj.username} &lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="heading"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{dataObj.name}
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="author"&gt;{dataObj.email}&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;})}
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/center&gt;
+
+&nbsp;&nbsp;);
+
+}
+
+export default App;</code></pre>
+
+
+
+<p>Here, we display three things: <strong>username, email, </strong>and<strong> name</strong>, from the data fetched from users API endpoint.</p>
+
+
+
+<figure class="wp-block-image size-large"><a href="https://www.guvi.in/mlp/premium-pass-10years?utm_source=blog&amp;utm_medium=bannerinline&amp;utm_campaign=10yranniversary" target="_blank" rel="noreferrer noopener"><img decoding="async" width="1200" height="317" src="https://www.guvi.in/blog/wp-content/uploads/2024/06/premium_pass_1135_300-1-1200x317.webp" alt="Premium Pass Banner" class="wp-image-54254" srcset="https://www.guvi.in/blog/wp-content/uploads/2024/06/premium_pass_1135_300-1-1200x317.webp 1200w, https://www.guvi.in/blog/wp-content/uploads/2024/06/premium_pass_1135_300-1-300x79.webp 300w, https://www.guvi.in/blog/wp-content/uploads/2024/06/premium_pass_1135_300-1-768x203.webp 768w, https://www.guvi.in/blog/wp-content/uploads/2024/06/premium_pass_1135_300-1-1536x406.webp 1536w, https://www.guvi.in/blog/wp-content/uploads/2024/06/premium_pass_1135_300-1-2048x541.webp 2048w, https://www.guvi.in/blog/wp-content/uploads/2024/06/premium_pass_1135_300-1-150x40.webp 150w" sizes="(max-width: 1200px) 100vw, 1200px" /></a></figure>
+
+
+
+<h2 class="wp-block-heading"><strong>Creating a Search component in React</strong></h2>
+
+
+
+<p>So, now we have created our list of data, let’s add the search component and see how the searched data is going to be returned.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>Step 1: Creating an Input field</strong></h3>
+
+
+
+<p>The first step is to create an input field. It allows the user to enter a search query just by typing into the search field.</p>
+
+
+
+<pre class="wp-block-code"><code>&lt;div className="input-box"&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;input
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; type="search"
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; name="search-form"
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; id="search-form"
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; className="search-input"
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; onChange={(e) =&gt; setSearchQuery(e.target.value)}
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; placeholder="Search user"
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;</code></pre>
+
+
+
+<p>With the help of the<strong> onChange </strong>event handler, anytime the value of the input field changes we set the value to <strong>searchQuery</strong> using the useState hook.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>Step 2: Getting search parameters</strong></h3>
+
+
+
+<p>Here, we are getting the search parameters from the data returned from the API.</p>
+
+
+
+<pre class="wp-block-code"><code>const search_parameters = Object.keys(Object.assign({}, ...data));</code></pre>
+
+
+
+<h3 class="wp-block-heading"><strong>Step 3: Function to query the search</strong></h3>
+
+
+
+<p>Next we need to use that <strong>searchQuery</strong> to search and filter out the data returned from our API.</p>
+
+
+
+<pre class="wp-block-code"><code>const search_params = Object.keys(Object.assign({}, ...data));
+
+&nbsp;&nbsp;function search(data) {
+
+&nbsp;&nbsp;&nbsp;&nbsp;return data.filter((data) =&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;search_params.some((param) =&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data&#91;param].toString().toLowerCase().includes(searchQuery)
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)
+
+&nbsp;&nbsp;&nbsp;&nbsp;);
+
+&nbsp;&nbsp;}</code></pre>
+
+
+
+<p>Let’s understand the above function. First we have created a function search() that takes the data as an argument. Using the <strong>Array.filter() </strong>and <strong>Array.some() </strong>methods we are checking if any of our Search query parameters include the value of our query includes(searchQuery).</p>
+
+
+
+<h3 class="wp-block-heading"><strong>Step 4: Displaying the search results</strong></h3>
+
+
+
+<p>As the last step, we are going to use the data returned from the search(data) function to display our users list.&nbsp;</p>
+
+
+
+<pre class="wp-block-code"><code>{search(data).map((dataObj) =&gt; {
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return (
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div className="box"&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="card"&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="category"&gt;@{dataObj.username} &lt;/div&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="heading"&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{dataObj.name}
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="author"&gt;{dataObj.email}&lt;/div&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;);
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;})}</code></pre>
+
+
+
+<p>And finally your App.js file should look like below.</p>
+
+
+
+<pre class="wp-block-code"><code>import "./App.css";
+
+import React, { useEffect, useState } from "react";
+
+function App() {
+
+&nbsp;&nbsp;const &#91;data, setData] = useState(&#91;]);
+
+&nbsp;&nbsp;const fetchData = () =&gt; {
+
+&nbsp;&nbsp;&nbsp;&nbsp;return fetch("https://jsonplaceholder.typicode.com/users")
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.then((res) =&gt; res.json())
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.then((d) =&gt; setData(d));
+
+&nbsp;&nbsp;};
+
+&nbsp;&nbsp;useEffect(() =&gt; {
+
+&nbsp;&nbsp;&nbsp;&nbsp;fetchData();
+
+&nbsp;&nbsp;}, &#91;]);
+
+&nbsp;&nbsp;const &#91;query, setQuery] = useState("");
+
+&nbsp;&nbsp;const search_parameters = Object.keys(Object.assign({}, ...data));
+
+&nbsp;&nbsp;function search(data) {
+
+&nbsp;&nbsp;&nbsp;&nbsp;return data.filter((data) =&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;search_parameters.some((parameter) =&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data&#91;parameter].toString().toLowerCase().includes(query)
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)
+
+&nbsp;&nbsp;&nbsp;&nbsp;);
+
+&nbsp;&nbsp;}
+
+&nbsp;&nbsp;return (
+
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div className="container"&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;center&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Search component in ReactJS&lt;/h1&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/center&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div className="input-box"&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type="search"
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name="search-form"
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id="search-form"
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;className="search-input"
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;onChange={(e) =&gt; setQuery(e.target.value)}
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;placeholder="Search user"
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;center&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{search(data).map((dataObj) =&gt; {
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return (
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div className="box"&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="card"&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="category"&gt;@{dataObj.username} &lt;/div&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="heading"&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{dataObj.name}
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="author"&gt;{dataObj.email}&lt;/div&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;);
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;})}
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/center&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+
+&nbsp;&nbsp;);
+
+}
+
+export default App;</code></pre>
+
+
+
+<h2 class="wp-block-heading"><strong>Output</strong></h2>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img decoding="async" width="600" height="272" src="https://www.guvi.in/blog/wp-content/uploads/2023/01/ezgif.com-gif-maker-2023-01-05T135613.710.gif" alt="" class="wp-image-16138"/><figcaption class="wp-element-caption">Search component in reactjs</figcaption></figure></div>
+
+
+<p>We often handle the search query functionality from the back end side by passing search query parameters in the API endpoint. And now we have seen how it can be handled from the front end side.&nbsp;</p>
+
+
+
+<p>Now that you’ve added a search component to your React application, you can easily allow your users to search for specific items or information. With a few simple steps, you can add a powerful and useful search component to your application.</p>
+
+
+
+<h1 class="wp-block-heading"><strong>Conclusion</strong></h1>
+
+
+
+<p>In this blog, we learned how to add a search component to a react application and saw how the data is filtered from a bunch of data. Search component helps the users in finding the important information on the website quickly and also helps them in navigating to different pages.&nbsp;</p>
+
+
+
+<p><em>Kickstart your Full Stack Development journey by enrolling in <a href="https://www.guvi.in/zen-class/full-stack-development-course/?utm_source=blog&amp;utm_medium=organic&amp;utm_campaign=Build+a+Search+Component+in+React+%5Bjust+in+3+simple+steps%5D" data-type="link" data-id="https://www.guvi.in/zen-class/full-stack-development-course/?utm_source=blog&amp;utm_medium=organic&amp;utm_campaign=Build+a+Search+Component+in+React+%5Bjust+in+3+simple+steps%5D" target="_blank" rel="noreferrer noopener"><strong>GUVI&#8217;s certified Full Stack Development Career Program</strong></a><strong> with Placement Assistance</strong> where you will master the MERN stack (MongoDB, Express.js, React, Node.js) and build interesting real-life projects. This program is crafted by our team of experts to help you upskill and assist you in placements. </em></p>
+
+
+
+<p><em>Alternatively, if you want to explore JavaScript through a self-paced course, try <a href="https://www.guvi.in/courses/web-development/advanced-javascript/?utm_source=blog&amp;utm_medium=organic&amp;utm_campaign=Build+a+Search+Component+in+React+%5Bjust+in+3+simple+steps%5D" data-type="link" data-id="https://www.guvi.in/courses/web-development/advanced-javascript/?utm_source=blog&amp;utm_medium=organic&amp;utm_campaign=Build+a+Search+Component+in+React+%5Bjust+in+3+simple+steps%5D" target="_blank" rel="noreferrer noopener">GUVI’s JavaScript self-paced course.</a></em></p>
+<p>The post <a rel="nofollow" href="https://www.guvi.in/blog/build-a-search-filter-component-in-react/">Build a Search Component in React [just in 3 simple steps]</a> appeared first on <a rel="nofollow" href="https://www.guvi.in/blog">GUVI Blogs</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://www.guvi.in/blog/build-a-search-filter-component-in-react/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">16137</post-id>	</item>
+		<item>
+		<title>How to Render an Array of Objects in React? [in 3 easy steps]</title>
+		<link>https://www.guvi.in/blog/how-to-render-an-array-of-objects-in-react/</link>
+					<comments>https://www.guvi.in/blog/how-to-render-an-array-of-objects-in-react/#comments</comments>
+		
+		<dc:creator><![CDATA[Tarun Singh]]></dc:creator>
+		<pubDate>Sat, 31 Dec 2022 05:10:52 +0000</pubDate>
+				<category><![CDATA[Programming Languages]]></category>
+		<category><![CDATA[array of objects]]></category>
+		<category><![CDATA[react app]]></category>
+		<category><![CDATA[react native]]></category>
+		<guid isPermaLink="false">https://www.guvi.in/blog/?p=16007</guid>
+
+					<description><![CDATA[<p>Do you have an array of objects or data items and want to list them in your React app? Well, you&#8217;re at the right place! Rendering an array of objects is pretty simple and this blog has been written to make it even more simpler for you. In this blog, we’ll learn how to render [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://www.guvi.in/blog/how-to-render-an-array-of-objects-in-react/">How to Render an Array of Objects in React? [in 3 easy steps]</a> appeared first on <a rel="nofollow" href="https://www.guvi.in/blog">GUVI Blogs</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<p>Do you have an array of objects or data items and want to list them in your React app? Well, you&#8217;re at the right place! Rendering an array of objects is pretty simple and this blog has been written to make it even more simpler for you. </p>
+
+
+
+<p>In this blog, we’ll learn <strong><em>how to render an array of objects or data items in a react component with JSX and work on react map array of objects, keys in react, and how you can filter out data items with the help of JavaScript methods. </em></strong></p>
+
+
+
+<p>Rendering arrays of objects in React can be a challenge for developers who are new to the framework. Fortunately, React provides a powerful yet simple way of rendering data in an efficient manner. Let&#8217;s discuss this at length:</p>
+
+
+
+
+
+<h2 class="wp-block-heading"><strong>What is an Array of Objects</strong>?</h2>
+
+
+
+<p>An array of objects simply called a &#8216;List&#8217; in React, is the collection of data having similar information. An array of objects can be anything like different data structures, car names, etc. </p>
+
+
+
+<p>The most popular way to create a list or render an array of objects in <a href="https://legacy.reactjs.org/docs/getting-started.html" target="_blank" rel="noopener">React</a> is using the <strong>array.map() </strong>method which takes an array of data and maps it to an array of components, so that each data item is represented by a corresponding component. </p>
+
+
+
+<p>If you would like to explore React through a self-paced course, try <a href="https://www.guvi.in/courses/web-development/react-js/?utm_source=blog&amp;utm_medium=organic&amp;utm_campaign=How+to+Render+an+Array+of+Objects+in+React">GUVI’s React Self-paced certification course</a>.</p>
+
+
+
+<p>Additionally, the map() function can help with debugging and performance. This was just to give you a gist of what we&#8217;re about to discuss, let&#8217;s dive into the details now!</p>
+
+
+
+<p>With the help of available JavaScript <em><strong>Array.map()</strong></em> and <em><strong>filter()</strong> </em>methods, the array of objects/items can be transformed into an array of components also known as a list. </p>
+
+
+
+<p>Lists are commonly used to store data retrieved from a server like any user information, etc. Each data object/item in the array consists of properties that can be easily accessed and manipulated. </p>
+
+
+
+<p>For example, an array of objects in React could contain a list of car names, each of which has its own model and name. See the below syntax:</p>
+
+
+
+<pre class="wp-block-code"><code>const carData = &#91;
+  {
+	name: ‘BMW’,
+	model: 2022
+  },
+ {
+	name: Audi,
+	model: 2021
+  },
+]
+</code></pre>
+
+
+
+<p>Given above is a list or array of objects consisting of names, and models of cars each of those having different properties. </p>
+
+
+
+<p>We can use these arrays of objects to pass information between different components, store data in a state, or even populate lists in a component.</p>
+
+
+
+<p>To render an array of objects/items in React, we have different ways such as: iterating a loop and using the map() and filter() functions. Out of all these methods, the most popular way is using <em><strong>Array.map()</strong>.</em></p>
+
+
+
+<p></p>
+
+
+
+<p><strong>Also Read: <a href="https://www.guvi.in/blog/how-to-use-props-in-react/">How to use Props in React.</a></strong></p>
+
+
+
+<h2 class="wp-block-heading"><strong>Rendering an array of objects using JavaScript map()</strong></h2>
+
+
+
+<p>To render an array of objects/items in React, we loop through the array using the <em><strong>.map()</strong></em><strong> </strong>method and return a single item. </p>
+
+
+
+<p>In the below example, we loop through the <em><strong>courses</strong></em> array and return a <strong>&lt;li&gt;</strong> element for each item. We can use this method when we want to display a single element for each item in the given array.&nbsp;</p>
+
+
+
+<p>When we call the <em>.map() </em>function in JavaScript it converts the array into whatever we return from the callback function we pass into it. This function always creates a new array. Let’s understand one <strong>example</strong> in detail, step by step.</p>
+
+
+
+<h2 class="wp-block-heading"><strong>Steps to render an array of objects/list:</strong></h2>
+
+
+
+<p>Below are the steps needed to render an array of objects or lists in React:</p>
+
+
+
+<h3 class="wp-block-heading"><strong>Step 1: Create a react application</strong></h3>
+
+
+
+<pre class="wp-block-code"><code>npx create-react-app demo</code></pre>
+
+
+
+<h3 class="wp-block-heading"><strong>Step 2: Changing the directory</strong></h3>
+
+
+
+<pre class="wp-block-code"><code>cd demo</code></pre>
+
+
+
+<h3 class="wp-block-heading"><strong>Step 3: Creating data as an array</strong></h3>
+
+
+
+<p>Once we have created a new react application, add the following code in the App.js file before the functional component App().</p>
+
+
+
+<pre class="wp-block-code"><code>const courses = &#91;
+&nbsp;&nbsp;"Full Stack Developement Program",
+&nbsp;&nbsp;"Python Automation Testing Program",
+&nbsp;&nbsp;"UI/UX Program",
+];</code></pre>
+
+
+
+<h3 class="wp-block-heading"><strong>Step 4: Mapping the array into a new array of JSX nodes as </strong><strong>arrayDataItems</strong></h3>
+
+
+
+<pre class="wp-block-code"><code>const arrayDataItems = courses.map((course) =&gt; &lt;li&gt;{course}&lt;/li&gt;);</code></pre>
+
+
+
+<h3 class="wp-block-heading"><strong>Step 5: Return </strong><strong>arrayDataItems </strong><strong>from the component wrapped in &lt;ul&gt;</strong></h3>
+
+
+
+<pre class="wp-block-code"><code>&lt;ul&gt;{arrayDataItems}&lt;/ul&gt;</code></pre>
+
+
+
+<h3 class="wp-block-heading"><strong>Complete Example:</strong></h3>
+
+
+
+<p><strong><em>App.js file</em></strong></p>
+
+
+
+<pre class="wp-block-code"><code>import "./App.css";
+
+import React from "react";
+
+//define the mock data
+
+const courses = &#91;
+&nbsp;&nbsp;"Full Stack Developement Program",
+&nbsp;&nbsp;"Python Automation Testing Program",
+&nbsp;&nbsp;"UI/UX Program",
+];
+
+function App(props) {
+
+&nbsp;&nbsp;/* Mapping the courses into a new array of JSX nodes as arrayDataItems */
+&nbsp;&nbsp;const arrayDataItems = courses.map((course) =&gt; &lt;li&gt;{course}&lt;/li&gt;);
+
+&nbsp;&nbsp;return (
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div className="container"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Render List/Array of Items&lt;/h1&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{/* returning arrayDataItems wrapped in &lt;ul&gt; */}
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul&gt;{arrayDataItems}&lt;/ul&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;);
+}
+
+export default App;</code></pre>
+
+
+
+<h3 class="wp-block-heading"><strong>Output:</strong></h3>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img decoding="async" width="491" height="304" src="https://www.guvi.in/blog/wp-content/uploads/2022/12/screely-1672385013415.png" alt="" class="wp-image-16010" srcset="https://www.guvi.in/blog/wp-content/uploads/2022/12/screely-1672385013415.png 491w, https://www.guvi.in/blog/wp-content/uploads/2022/12/screely-1672385013415-300x186.png 300w, https://www.guvi.in/blog/wp-content/uploads/2022/12/screely-1672385013415-150x93.png 150w" sizes="(max-width: 491px) 100vw, 491px" /><figcaption class="wp-element-caption">Render array of items/objects</figcaption></figure></div>
+
+
+<p>One thing that you may notice here is that the console will give you a warning such as the one below:</p>
+
+
+
+<pre class="wp-block-preformatted">Warning: Each child in a list should have a unique “key” prop.</pre>
+
+
+
+<p>This warning states that we need to provide a unique key to each data item in the array. Next, we will examine why we want to add a unique key to a list of elements rendered by an array.</p>
+
+
+
+<h2 class="wp-block-heading"><strong>Keys in React</strong></h2>
+
+
+
+<p>Keys in React help in knowing which array data item each component corresponds to. Also, Keys in React help in identifying and updating each item between renders without causing any bugs. </p>
+
+
+
+<p>Rendering an array of items into a react component makes it important to always provide a key to track the items between renders. Generally, we use id: as the key in various data arrays.</p>
+
+
+
+<p>Keys has some rules that we must follow to avoid any errors:</p>
+
+
+
+<ul>
+<li><strong>Keys must be unique</strong>&#8211; every item of the array must have a unique key.</li>
+
+
+
+<li><strong>Keys must be permanent</strong>&#8211; keys should not change their purpose or must not be changed between re-renders.</li>
+</ul>
+
+
+
+<h2 class="wp-block-heading"><strong>Example:</strong></h2>
+
+
+
+<p>Let’s understand how we use keys in React to render an array of objects/lists. We must use keys in our data. For demonstrating this example, step1 and step2 will be the same.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>Step 1: Creating data as an Array with Key</strong></h3>
+
+
+
+<p>Once we have created a new react application, add the following code in the App.js file before the functional component App(). </p>
+
+
+
+<p>Earlier we hadn’t specified the unique key in the data but now have used them in our structured data to avoid warnings/errors.</p>
+
+
+
+<pre class="wp-block-code"><code>const courses = &#91;
+
+&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;id: 0,
+&nbsp;&nbsp;&nbsp;&nbsp;name: 'Full Stack Developement Program',
+&nbsp;&nbsp;&nbsp;&nbsp;price: '89,999'
+
+&nbsp;&nbsp;},
+&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;id: 1,
+&nbsp;&nbsp;&nbsp;&nbsp;name: 'Python Automation Testing Program',
+&nbsp;&nbsp;&nbsp;&nbsp;price: '64,999'
+&nbsp;&nbsp;},
+&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;id: 2,
+&nbsp;&nbsp;&nbsp;&nbsp;name: 'UI/UX Program',
+&nbsp;&nbsp;&nbsp;&nbsp;price: '89,999'
+&nbsp;&nbsp;}
+]</code></pre>
+
+
+
+<h3 class="wp-block-heading"><strong>Step 2: Mapping the array into a new array of JSX nodes as </strong><strong>arrayDataItems</strong></h3>
+
+
+
+<pre class="wp-block-code"><code>const arrayDataItems = courses.map(course =&gt;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;li key={course.id}&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;{course.name}&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&gt;{course.price}&lt;/span&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;
+
+&nbsp;&nbsp;)</code></pre>
+
+
+
+<h3 class="wp-block-heading"><strong>Step 3: Return array Data Items from the component wrapped in &lt;ul&gt;</strong></h3>
+
+
+
+<pre class="wp-block-code"><code>&lt;ul&gt;{arrayDataItems}&lt;/ul&gt;</code></pre>
+
+
+
+<h3 class="wp-block-heading"><strong>Complete Example:</strong></h3>
+
+
+
+<p><strong><em>App.js file</em></strong></p>
+
+
+
+<pre class="wp-block-code"><code>import "./App.css";
+import React from "react";
+
+//define the mock data with keys
+const courses = &#91;
+
+&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;id: 0,
+&nbsp;&nbsp;&nbsp;&nbsp;name: 'Full Stack Developement Program',
+&nbsp;&nbsp;&nbsp;&nbsp;price: '89,999'
+&nbsp;&nbsp;},
+
+&nbsp;&nbsp;{
+
+&nbsp;&nbsp;&nbsp;&nbsp;id: 1,
+&nbsp;&nbsp;&nbsp;&nbsp;name: 'Python Automation Testing Program',
+&nbsp;&nbsp;&nbsp;&nbsp;price: '64,999'
+&nbsp;&nbsp;},
+
+&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;id: 2,
+&nbsp;&nbsp;&nbsp;&nbsp;name: 'UI/UX Program',
+&nbsp;&nbsp;&nbsp;&nbsp;price: '89,999'
+&nbsp;&nbsp;}
+
+]
+
+function App() {
+
+&nbsp;&nbsp;/* Mapping the courses into a new array of JSX nodes as arrayDataItems */
+
+&nbsp;&nbsp;const arrayDataItems = courses.map(course =&gt;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;li key={course.id}&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;{course.name}&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&gt;{course.price}&lt;/span&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;
+&nbsp;&nbsp;)
+
+&nbsp;&nbsp;return (
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div className="container"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Render List/Array of Items with Key&lt;/h1&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{/* returning arrayDataItems wrapped in &lt;ul&gt; */}
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul&gt;{arrayDataItems}&lt;/ul&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;);
+}
+
+export default App;</code></pre>
+
+
+
+<p><strong><em>App.css file</em></strong><em> </em>(Optional)</p>
+
+
+
+<pre class="wp-block-code"><code>.container {
+&nbsp;&nbsp;margin-left: 20px;
+}
+
+.container h1 {
+&nbsp;&nbsp;color: green
+}
+
+.container li {
+&nbsp;&nbsp;display: flex;
+&nbsp;&nbsp;flex-direction: column;
+&nbsp;&nbsp;font-size: 20px;
+&nbsp;&nbsp;background-color: #35F543;
+&nbsp;&nbsp;width: 400px;
+&nbsp;&nbsp;color: white;
+&nbsp;&nbsp;padding: 2px;
+&nbsp;&nbsp;border-radius: 20px;
+&nbsp;&nbsp;justify-content: center;
+&nbsp;&nbsp;align-items: center;
+&nbsp;&nbsp;margin-bottom: 10px;
+}</code></pre>
+
+
+
+<h3 class="wp-block-heading"><strong>Output:</strong></h3>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img decoding="async" width="743" height="610" src="https://www.guvi.in/blog/wp-content/uploads/2022/12/screely-1672385019204.png" alt="" class="wp-image-16012" srcset="https://www.guvi.in/blog/wp-content/uploads/2022/12/screely-1672385019204.png 743w, https://www.guvi.in/blog/wp-content/uploads/2022/12/screely-1672385019204-300x246.png 300w, https://www.guvi.in/blog/wp-content/uploads/2022/12/screely-1672385019204-150x123.png 150w" sizes="(max-width: 743px) 100vw, 743px" /><figcaption class="wp-element-caption">Keys in React</figcaption></figure></div>
+
+
+<figure class="wp-block-image size-large"><a href="https://www.guvi.in/mlp/premium-pass-10years?utm_source=blog&amp;utm_medium=bannerinline&amp;utm_campaign=10yranniversary" target="_blank" rel="noreferrer noopener"><img decoding="async" width="1200" height="317" src="https://www.guvi.in/blog/wp-content/uploads/2024/06/premium_pass_1135_300-1-1200x317.webp" alt="Premium Pass Banner" class="wp-image-54254" srcset="https://www.guvi.in/blog/wp-content/uploads/2024/06/premium_pass_1135_300-1-1200x317.webp 1200w, https://www.guvi.in/blog/wp-content/uploads/2024/06/premium_pass_1135_300-1-300x79.webp 300w, https://www.guvi.in/blog/wp-content/uploads/2024/06/premium_pass_1135_300-1-768x203.webp 768w, https://www.guvi.in/blog/wp-content/uploads/2024/06/premium_pass_1135_300-1-1536x406.webp 1536w, https://www.guvi.in/blog/wp-content/uploads/2024/06/premium_pass_1135_300-1-2048x541.webp 2048w, https://www.guvi.in/blog/wp-content/uploads/2024/06/premium_pass_1135_300-1-150x40.webp 150w" sizes="(max-width: 1200px) 100vw, 1200px" /></a></figure>
+
+
+
+<h2 class="wp-block-heading"><strong>Filtering arrays of items</strong></h2>
+
+
+
+<p>Till now we are returning a full array of items but what if we only want to show courses with a specific category? Then, we can use <strong>JavaScript&#8217;s filter() method </strong>to return just those with a matching category. </p>
+
+
+
+<p>Filter() method takes an array of objects/items, passes and checks whether the function returns true or false, and finally returns a new array of filtered items that returned true. Let’s understand with the help of an example.</p>
+
+
+
+<pre class="wp-block-code"><code>const courses = &#91;
+&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;id: 0,
+&nbsp;&nbsp;&nbsp;&nbsp;name: 'Full Stack Developement Program',
+&nbsp;&nbsp;&nbsp;&nbsp;price: '89,999',
+&nbsp;&nbsp;&nbsp;&nbsp;category: Software Development’
+&nbsp;&nbsp;},
+&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;id: 1,
+&nbsp;&nbsp;&nbsp;&nbsp;name: 'Python Automation Testing Program',
+&nbsp;&nbsp;&nbsp;&nbsp;price: '64,999',
+&nbsp;&nbsp;&nbsp;&nbsp;category: Testing’
+&nbsp;&nbsp;},
+&nbsp;&nbsp;{
+&nbsp;&nbsp; &nbsp;id: 2,
+&nbsp;&nbsp;&nbsp;&nbsp;name: 'UI/UX Program',
+&nbsp;&nbsp;&nbsp;&nbsp;price: '89,999',
+&nbsp;&nbsp;&nbsp;&nbsp;category: design’
+&nbsp;&nbsp;}
+]</code></pre>
+
+
+
+<p>In the above data, we have three different categories and let’s say we want only courses related to “Testing”, then the filter() method will return the course having a category as “Testing”.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>Step 1: Create a new array having the category “Testing”&nbsp;</strong></h3>
+
+
+
+<pre class="wp-block-code"><code>const testings = courses.filter(course&nbsp; =&gt;
+&nbsp;&nbsp;course.category === 'Testing’
+);</code></pre>
+
+
+
+<h3 class="wp-block-heading"><strong>Step 2: Mapping over “Testing”&nbsp;</strong></h3>
+
+
+
+<pre class="wp-block-code"><code>const arrayDataItems = testings.map(course =&gt;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;li key={course.id}&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;{course.name}&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&gt;{course.price}&lt;/span&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;{course.category}&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;
+&nbsp;&nbsp;)</code></pre>
+
+
+
+<h3 class="wp-block-heading"><strong>Step 3: Return </strong><strong>arrayDataItems </strong><strong>from the component wrapped in &lt;ul&gt;</strong></h3>
+
+
+
+<pre class="wp-block-code"><code>&lt;ul&gt;{arrayDataItems}&lt;/ul&gt;</code></pre>
+
+
+
+<h3 class="wp-block-heading"><strong>Complete Example:</strong></h3>
+
+
+
+<p><strong><em>App.js file</em></strong></p>
+
+
+
+<pre class="wp-block-code"><code>import "./App.css";
+import React from "react";
+
+//define the mock data with keys
+const courses = &#91;
+
+&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;id: 0,
+&nbsp;&nbsp;&nbsp;&nbsp;name: 'Full Stack Developement Program',
+&nbsp;&nbsp;&nbsp;&nbsp;price: '89,999',
+&nbsp;&nbsp;&nbsp;&nbsp;category: 'Software Developmen',
+&nbsp;&nbsp;},
+&nbsp;&nbsp;{
+
+&nbsp;&nbsp;&nbsp;&nbsp;id: 1,
+&nbsp;&nbsp;&nbsp;&nbsp;name: 'Python Automation Testing Program',
+&nbsp;&nbsp;&nbsp;&nbsp;price: '64,999',
+&nbsp;&nbsp;&nbsp;&nbsp;category: 'Testing',
+&nbsp;&nbsp;},
+&nbsp;&nbsp;{
+
+&nbsp;&nbsp;&nbsp;&nbsp;id: 2,
+&nbsp;&nbsp;&nbsp;&nbsp;name: 'UI/UX Program',
+&nbsp;&nbsp;&nbsp;&nbsp;price: '89,999',
+&nbsp;&nbsp;&nbsp;&nbsp;category: 'design'
+&nbsp;&nbsp;}
+]
+
+function App() {
+
+&nbsp;&nbsp;/* new array of only 'testing' category */
+&nbsp;&nbsp;const testings = courses.filter(course&nbsp; =&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;course.category === 'Testing'
+&nbsp;&nbsp;);
+
+&nbsp;&nbsp;/* Mapping the courses into a new array of JSX nodes as arrayDataItems */
+&nbsp;&nbsp;const arrayDataItems = testings.map(course =&gt;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;li key={course.id}&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;{course.name}&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&gt;{course.price}&lt;/span&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p id="category"&gt;{course.category}&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;
+
+&nbsp;&nbsp;)
+
+&nbsp;&nbsp;return (
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div className="container"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Filtering List/Array of Items&lt;/h1&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{/* returning arrayDataItems wrapped in &lt;ul&gt; */}
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul&gt;{arrayDataItems}&lt;/ul&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;);
+}
+
+export default App;</code></pre>
+
+
+
+<p><strong>Wondering how you can code like this with ease? We&#8217;ve got the perfect learning resource: <a href="https://www.guvi.in/zen-class/full-stack-development-course/">GUVI&#8217;s highly accredited Full Stack Development Bootcamp</a> will turn you into a coding and development ninja in no time! Follow the link to learn more.</strong></p>
+
+
+
+<h3 class="wp-block-heading"><strong>Output:</strong></h3>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img decoding="async" width="557" height="389" src="https://www.guvi.in/blog/wp-content/uploads/2022/12/screely-1672385024774.png" alt="" class="wp-image-16011" srcset="https://www.guvi.in/blog/wp-content/uploads/2022/12/screely-1672385024774.png 557w, https://www.guvi.in/blog/wp-content/uploads/2022/12/screely-1672385024774-300x210.png 300w, https://www.guvi.in/blog/wp-content/uploads/2022/12/screely-1672385024774-150x105.png 150w" sizes="(max-width: 557px) 100vw, 557px" /><figcaption class="wp-element-caption">Filtering arrays in React</figcaption></figure></div>
+
+
+<p><em>If you&#8217;re a React learner, must read the<a href="https://www.guvi.in/blog/prerequisites-for-reactjs/"> <strong>6 Essential Prerequisites For Learning ReactJS</strong></a>.</em></p>
+
+
+
+<h2 class="wp-block-heading">Concluding Thoughts&#8230;</h2>
+
+
+
+<p>I hope this blog has helped you gain a much better understanding of rendering a list or array of objects in React. To render an array of objects, we saw <strong>how to use an array.map() function</strong> (and use react map array of objects). </p>
+
+
+
+<p>Apart from this, we learned <strong>how to create an array of filtered items using JavaScript’s filter() method. </strong>We also noticed, that whilst rendering an element inside the component, we must use a unique key to avoid any errors. </p>
+
+
+
+<p>Regardless of which method we use, it is important to remember that we need to access the data within the object to render it correctly.</p>
+
+
+<div id="rank-math-faq" class="rank-math-block">
+<div class="rank-math-list ">
+<div id="faq-question-1683863921977" class="rank-math-list-item">
+<h3 class="rank-math-question ">How do you render multiple objects in React?</h3>
+<div class="rank-math-answer ">
+
+<p>You can <strong>use the Array&#8217;s map functionality</strong> to render multiple elements in React. Simply map all your objects into React fragments, so that your Function component can make use of it. But don&#8217;t forget to set a unique key prop!</p>
+
+</div>
+</div>
+<div id="faq-question-1683863986735" class="rank-math-list-item">
+<h3 class="rank-math-question ">How do I render multiple components?</h3>
+<div class="rank-math-answer ">
+
+<p>Even if we have multiple elements to render, there can only be a single root element. This means that if we want to render two or more elements, we have to <strong>wrap them in another element or component</strong>. Commonly, the element used for this is a &lt;div> tag.</p>
+
+</div>
+</div>
+<div id="faq-question-1683864224284" class="rank-math-list-item">
+<h3 class="rank-math-question ">How to render an array of objects in React?</h3>
+<div class="rank-math-answer ">
+
+<p>Using these simple and easy steps, you can render an array of objects in React:</p>
+<p><em><strong>Step 1: </strong>Create a react application. <br /><strong>Step 2: </strong>Change directory. <br /><strong>Step 3: </strong>Create</em> data as an <em>array. <br /><strong>Step 4: </strong>Mapping the array into a new array of JSX nodes as arrayDataItems. <br /><strong>Step 5:</strong> Return arrayDataItems from the component wrapped in &lt;ul></em></p>
+
+</div>
+</div>
+<div id="faq-question-1693296319774" class="rank-math-list-item">
+<h3 class="rank-math-question ">How do you iterate an array of objects in React JS?</h3>
+<div class="rank-math-answer ">
+
+<p>To iterate through an array of objects in ReactJS, you must use the mao() method. It creates a new array by applying a provided function to each element of the original array. Within the function, you can access and render each object&#8217;s properties as and when needed, effectively iterating through and rendering them in your React component.</p>
+
+</div>
+</div>
+<div id="faq-question-1693296494404" class="rank-math-list-item">
+<h3 class="rank-math-question ">How do you set an array of objects in state in React JS?</h3>
+<div class="rank-math-answer ">
+
+<p>To set an array of objects in the state of a React component, you can use the &#8216;useState&#8217; hook. So to do this, first, import &#8216;useState&#8217; from &#8216;react&#8217;. Then, declare a state variable using useState and initialize it with your array of objects. To update the state, use the setter function provided by the useState hook. And voila, now you can easily manage and modify the array of objects within your component&#8217;s state.</p>
+
+</div>
+</div>
+</div>
+</div><p>The post <a rel="nofollow" href="https://www.guvi.in/blog/how-to-render-an-array-of-objects-in-react/">How to Render an Array of Objects in React? [in 3 easy steps]</a> appeared first on <a rel="nofollow" href="https://www.guvi.in/blog">GUVI Blogs</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://www.guvi.in/blog/how-to-render-an-array-of-objects-in-react/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">16007</post-id>	</item>
+		<item>
+		<title>How to use Props in React [in 3 simple steps]</title>
+		<link>https://www.guvi.in/blog/how-to-use-props-in-react/</link>
+					<comments>https://www.guvi.in/blog/how-to-use-props-in-react/#respond</comments>
+		
+		<dc:creator><![CDATA[Tarun Singh]]></dc:creator>
+		<pubDate>Mon, 26 Dec 2022 06:30:39 +0000</pubDate>
+				<category><![CDATA[MERN]]></category>
+		<category><![CDATA[destructuring of props]]></category>
+		<category><![CDATA[react props]]></category>
+		<category><![CDATA[react tutorials]]></category>
+		<guid isPermaLink="false">https://www.guvi.in/blog/?p=15828</guid>
+
+					<description><![CDATA[<p>In this blog, we’ll learn what are props in react and how we can use them in our application to use dynamic data. We’ll also learn about props syntax, the different ways to pass props and the setting up of the default value of props. React &#8211; A very popular framework for developing beautiful UI [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://www.guvi.in/blog/how-to-use-props-in-react/">How to use Props in React [in 3 simple steps]</a> appeared first on <a rel="nofollow" href="https://www.guvi.in/blog">GUVI Blogs</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<p>In this blog, we’ll learn what are props in react and how we can use them in our application to use dynamic data. We’ll also learn about props syntax, the different ways to pass props and the setting up of the default value of props.</p>
+
+
+
+<p><a href="https://react.dev/" target="_blank" data-type="link" data-id="https://react.dev/" rel="noreferrer noopener">React</a> &#8211; A very popular framework for developing beautiful UI web applications. It is an open-source library developed by Facebook and a commonly used library. It is a JavaScript-based library that consists of multiple extensions for the entire application.</p>
+
+
+
+<p>With the help of React, we can create dynamic applications, as it needs less code and gives more functionality. Not only this, it also provides a dedicated tool for debugging the application to find errors or bugs.&nbsp;</p>
+
+
+
+<p>As react allows us to create dynamic web apps therefore we can pass different data to the components with the help of props. Props are used in passing data from one react component to another component. In simple terms, it is how an app shares data across different parts or components of the application.&nbsp;</p>
+
+
+
+
+
+<h2 class="wp-block-heading"><strong>Pre-requisites</strong></h2>
+
+
+
+<p>Before moving on to learning about react props, make sure to create a react application project so that we can use props. We have already explained how to create a new react application in one of our blogs. <a href="https://www.guvi.in/blog/how-to-fetch-data-using-api-in-react/" data-type="URL" data-id="https://www.guvi.in/blog/how-to-fetch-data-using-api-in-react/">Learn more</a>.</p>
+
+
+
+<p>Before diving into the next section, ensure you&#8217;re solid on full-stack development essentials like front-end frameworks, back-end technologies, and database management. If you are looking for a detailed Full Stack Development career program, you can join <strong><a href="https://www.guvi.in/zen-class/full-stack-development-course/?utm_source=blog&amp;utm_medium=organic&amp;utm_campaign=how-to-use-props-in-react">GUVI’s Full Stack Development Career Program</a></strong> with Placement Assistance. You will be able to master the MERN stack (MongoDB, Express.js, React, Node.js) and build real-life projects.</p>
+
+
+
+<p>Additionally, if you want to explore ReactJS through a self-paced course, try<a href="https://www.guvi.in/courses/web-development/advanced-javascript/?utm_source=blog&amp;utm_medium=organic&amp;utm_campaign=article_title"> </a><strong><a href="https://www.guvi.in/courses/web-development/react-js/?utm_source=blog&amp;utm_medium=organic&amp;utm_campaign=how-to-use-props-in-react">GUVI’s ReactJS self-paced certification course.</a></strong></p>
+
+
+
+<h2 class="wp-block-heading"><strong>What are Props in React?</strong></h2>
+
+
+
+<p>Props or properties in react are a functional argument by which different components communicate with each other. Props is just a data/information that allows us to pass in JSX tags. With the help of props, we can pass values like JavaScript objects, arrays or functions, etc.&nbsp;</p>
+
+
+
+<p>Props are passed from a parent component to the child component. Now, if you haven’t understood props yet, it allows us to reuse a component logic dynamically which means that the data or information in the component will not be static. We’ll understand this with the help of an example later on.&nbsp;</p>
+
+
+
+<h2 class="wp-block-heading"><strong>Props Syntax</strong></h2>
+
+
+
+<p>We can use the react props in two different ways and both have their own different syntaxes. The two ways of using props in react app are:</p>
+
+
+
+<h3 class="wp-block-heading"><strong>Without destructuring:</strong></h3>
+
+
+
+<p>The syntax of defining props without destructuring is given below.</p>
+
+
+
+<pre class="wp-block-code"><code>function Course(props) {
+    &lt;div&gt;{props.courseName}&lt;/div&gt;
+}
+</code></pre>
+
+
+
+<h3 class="wp-block-heading"><strong>With destructuring:</strong></h3>
+
+
+
+<p>The syntax of defining props as a destructuring argument is given below.</p>
+
+
+
+<pre class="wp-block-code"><code>function Course({courseName}) {
+    &lt;div&gt;{courseName}&lt;/div&gt;
+}
+</code></pre>
+
+
+
+<p>The detailed working of both the given methods is explained below in this blog.</p>
+
+
+
+<h2 class="wp-block-heading"><strong>How to use Props in React?</strong></h2>
+
+
+
+<p>Now let’s see a full example and understand how we can use props in a react app. Props are very easy to understand. In this example, we’ll need two things: first one is the main function component <strong>(App.js)</strong> and a second component <strong>(Course) </strong>which we is going to render in our App.js component.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>App.js Component File:</strong></h3>
+
+
+
+<p>This is the App component (parent) which is the main file of a React application and in this component, we’ll be rendering our second component i.e., Course component which acts as a child component in which we’ll be passing props.</p>
+
+
+
+<pre class="wp-block-code"><code>
+import React from "react";
+
+function App() {
+
+  return (
+    &lt;div&gt;
+	&lt;h1&gt;Guvi Courses&lt;/h1&gt;
+    &lt;/div&gt;
+  );
+}
+
+export default App;
+</code></pre>
+
+
+
+<h3 class="wp-block-heading"><strong>Course component</strong></h3>
+
+
+
+<p>This component will have a prop called <strong><em>courseName </em></strong>which will get its value dynamically after rendering inside the App.js component.</p>
+
+
+
+<pre class="wp-block-code"><code>function Course(props) {
+  return (
+    &lt;div&gt;
+      &lt;ul&gt;
+        &lt;li&gt;{props.courseName}&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  )
+}
+</code></pre>
+
+
+
+<p>Now render the <strong>Course</strong> component into the App component to pass the props. Finally your App.js file should look like below:</p>
+
+
+
+<pre class="wp-block-code"><code>import React from "react";
+
+function Course(props) {
+  return (
+    &lt;div&gt;
+      &lt;ul&gt;
+        &lt;li&gt;{props.courseName}&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  )
+}
+
+function App() {
+
+  return (
+    &lt;div&gt;
+      &lt;h1&gt;Guvi Courses&lt;/h1&gt;
+      &lt;Course courseName="Full Stack Development"  /&gt;
+    &lt;/div&gt;
+  );
+}
+
+export default App;
+</code></pre>
+
+
+
+<p>In the above code, first we have accessed the information from props in the &lt;li/&gt; element and then after that we are passing a prop called &#8220;courseName&#8221; in our &lt;Course /&gt; component reading the value of the prop as &#8220;Full Stack Development&#8221;.</p>
+
+
+
+<h2 class="wp-block-heading"><strong>Different ways of using props in react</strong></h2>
+
+
+
+<p>Till now we have understood the basic syntax of using props in react and now we’ll learn what are the ways through which we can use props in a react app. So, there are two ways of using props and those are discussed in detail below.</p>
+
+
+
+<h3 class="wp-block-heading">1. <strong>using Props without Destructuring</strong></h3>
+
+
+
+<p>The First way of using props is to use them without destructuring. When using props without destructuring we pass an argument known as <strong>props </strong>in the function. Let’s understand it step by step with the help of an example.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>Step 1: Pass &#8220;props&#8221; as argument in function</strong></h3>
+
+
+
+<p>To use props, we first pass the “props” keyword as an argument into our function which can be seen as follows.</p>
+
+
+
+<pre class="wp-block-code"><code>function Course(props) {
+	…
+}
+</code></pre>
+
+
+
+<h3 class="wp-block-heading"><strong>Step 2: Using variables directly in JSX template</strong></h3>
+
+
+
+<p>Here we are not declaring the variables before rather we are using them directly into our JSX template i.e., into our &lt;li&gt; element.</p>
+
+
+
+<pre class="wp-block-code"><code>function Course(props) {
+	return (
+    &lt;ul&gt;
+       	        &lt;li&gt;{props.courseName}&lt;/li&gt;
+      	    &lt;/ul&gt;
+)
+}
+
+export default Course;
+</code></pre>
+
+
+
+<h3 class="wp-block-heading"><strong>Step 3: Pass data in App.js component</strong></h3>
+
+
+
+<p>Now our data will be passed to the main component i.e. App.js and will look like we are passing the attributes.</p>
+
+
+
+<pre class="wp-block-code"><code>function App() {
+
+  return (
+    &lt;div className="container"&gt;
+      &lt;Course courseName="Full Stack Development"  /&gt;
+    &lt;/div&gt;
+  );
+}
+
+export default App;
+</code></pre>
+
+
+
+<p>Styles given below are optional to use.</p>
+
+
+
+<pre class="wp-block-code"><code>
+//App.css file
+
+.container {
+  margin-left: 20px;
+}
+
+.container h1 {
+  color: green
+}
+
+.container li {
+  font-size: 20px;
+}</code></pre>
+
+
+
+<h3 class="wp-block-heading"><strong>Output:</strong></h3>
+
+
+
+<p>After passing the props, your output will look like below.</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img decoding="async" width="396" height="260" src="https://www.guvi.in/blog/wp-content/uploads/2022/12/screely-1671693385911.png" alt="" class="wp-image-15835" srcset="https://www.guvi.in/blog/wp-content/uploads/2022/12/screely-1671693385911.png 396w, https://www.guvi.in/blog/wp-content/uploads/2022/12/screely-1671693385911-300x197.png 300w, https://www.guvi.in/blog/wp-content/uploads/2022/12/screely-1671693385911-150x98.png 150w" sizes="(max-width: 396px) 100vw, 396px" /><figcaption class="wp-element-caption">Props without destructuring</figcaption></figure></div>
+
+
+<p>So, now we can use data dynamically for any component with the above method and can declare multiple props as per our requirement. Next we’ll see how to use props with destructuring.</p>
+
+
+
+<h2 class="wp-block-heading">2. <strong>using Props with Destructuring</strong></h2>
+
+
+
+<p>Compared to the above method (without destructuring), this is the most commonly used method to use props as it becomes very easy to modify the function and also it takes less time therefore making it as an optimized way.</p>
+
+
+
+<p>In this method, we don&#8217;t declare variables first or pass them directly to the JSX template. Instead of passing the props as an argument we destructured and passed in the variables like the function argument. Let’s understand this in detail and see it step by step with the help of an example.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>Step 1: Destructuring the Course component</strong></h3>
+
+
+
+<p>Here we are not declaring the variables rather we are destructuring and passing the variables as function arguments. We can read these props by listing their names which are available inside <strong>({ and }) </strong>directly after the Course component.</p>
+
+
+
+<pre class="wp-block-code"><code>function Course({ courseName, courseType }) {
+     return (
+       &lt;ul&gt;
+       	   &lt;li&gt;{courseName}&lt;/li&gt;
+           &lt;li&gt;{courseType}&lt;/li&gt;
+       &lt;/ul&gt;
+     )
+}
+
+export default Course;
+</code></pre>
+
+
+
+<h3 class="wp-block-heading"><strong>Step 2: Pass data in App.js component</strong></h3>
+
+
+
+<p>Now our data will be passed to the main component i.e. App.js and will look like we are passing the attributes.</p>
+
+
+
+<pre class="wp-block-code"><code>function App() {
+
+  return (
+    &lt;div className="container"&gt;
+      &lt;h1&gt;Guvi Courses&lt;/h1&gt;
+      &lt;Course courseName="Full Stack Development" courseType="Development" /&gt;
+    &lt;/div&gt;
+  );
+}
+
+export default App;
+</code></pre>
+
+
+
+<h3 class="wp-block-heading"><strong>Output:</strong></h3>
+
+
+
+<p>After passing the props, your output will look like below.</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img decoding="async" width="404" height="272" src="https://www.guvi.in/blog/wp-content/uploads/2022/12/screely-1671693750341.png" alt="" class="wp-image-15836" srcset="https://www.guvi.in/blog/wp-content/uploads/2022/12/screely-1671693750341.png 404w, https://www.guvi.in/blog/wp-content/uploads/2022/12/screely-1671693750341-300x202.png 300w, https://www.guvi.in/blog/wp-content/uploads/2022/12/screely-1671693750341-150x101.png 150w" sizes="(max-width: 404px) 100vw, 404px" /><figcaption class="wp-element-caption">Props with destructuring</figcaption></figure></div>
+
+
+<h2 class="wp-block-heading"><strong>How to specify default value of prop</strong></h2>
+
+
+
+<p>Sometimes, we don’t want the props value to be empty or when no value is specified, at that time we can specify a default value just by destructuring and putting <strong>= </strong>sign and the default value right after the parameter as shown below.</p>
+
+
+
+<pre class="wp-block-code"><code>function Course({ courseName, courseType = "development" }) { 
+     ... 
+}
+</code></pre>
+
+
+
+<p>So, now when the &lt;Course /> is rendered with no course type prop, it will be automatically set to &#8220;development&#8221;.</p>
+
+
+
+<p>Kickstart your Full Stack Development journey by enrolling in <a href="https://www.guvi.in/zen-class/full-stack-development-course/?utm_source=blog&amp;utm_medium=organic&amp;utm_campaign=how-to-use-props-in-react"><strong>GUVI&#8217;s certified Full Stack Development Career Program</strong></a><strong> with Placement Assistance</strong> where you will master the MERN stack (MongoDB, Express.js, React, Node.js) and build interesting real-life projects. This program is crafted by our team of experts to help you upskill and assist you in placements. </p>
+
+
+
+<p>Alternatively, if you want to explore ReactJS through a self-paced course, try <strong><a href="https://www.guvi.in/courses/web-development/react-js/?utm_source=blog&amp;utm_medium=organic&amp;utm_campaign=how-to-use-props-in-react">GUVI’s ReactJS self-paced course.</a></strong></p>
+
+
+
+<h2 class="wp-block-heading"><strong>Conclusion</strong></h2>
+
+
+
+<p>In this blog, we learned about props in react, how they are used, their syntax, and different ways of using props. We hope you get a better understanding of how the default value of props are set. To read props, we saw two ways i.e., with and without destructuring. To get more understanding of props, make sure to do practice of them in a project.</p>
+<p>The post <a rel="nofollow" href="https://www.guvi.in/blog/how-to-use-props-in-react/">How to use Props in React [in 3 simple steps]</a> appeared first on <a rel="nofollow" href="https://www.guvi.in/blog">GUVI Blogs</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://www.guvi.in/blog/how-to-use-props-in-react/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">15828</post-id>	</item>
+		<item>
+		<title>Use ReactJS to Fetch and Display Data from API &#8211; 5 Simple Steps</title>
+		<link>https://www.guvi.in/blog/how-to-fetch-and-display-data-from-api-in-react/</link>
+					<comments>https://www.guvi.in/blog/how-to-fetch-and-display-data-from-api-in-react/#comments</comments>
+		
+		<dc:creator><![CDATA[Tarun Singh]]></dc:creator>
+		<pubDate>Mon, 19 Dec 2022 05:59:43 +0000</pubDate>
+				<category><![CDATA[MERN]]></category>
+		<guid isPermaLink="false">https://www.guvi.in/blog/?p=15692</guid>
+
+					<description><![CDATA[<p>In this blog, we’ll learn how to fetch and display data from APIs and use it in a ReactJS app. There are multiple ways to fetch data in a React application, and we’ll walk you through those methods. With the help of APIs, we can fetch the data from servers and display it in our [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://www.guvi.in/blog/how-to-fetch-and-display-data-from-api-in-react/">Use ReactJS to Fetch and Display Data from API &#8211; 5 Simple Steps</a> appeared first on <a rel="nofollow" href="https://www.guvi.in/blog">GUVI Blogs</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<p>In this blog, we’ll learn <strong>how to fetch and display data from APIs and use it in a ReactJS app.</strong> There are multiple ways to fetch data in a React application, and we’ll walk you through those methods. With the help of APIs, we can fetch the data from servers and display it in our application. Let&#8217;s first understand what an API is.</p>
+
+
+
+<p><strong>API </strong>stands for <strong>&#8220;Application Programming Interface&#8221;,</strong> which is a method of communication between different applications. <strong>ReactJS </strong>is an open-source JavaScript-based library developed by Facebook used to create web applications&#8217; user interfaces. As ReactJS is dynamic in nature, we can get the data using APIs and display it in our application.</p>
+
+
+
+<p>To render some data in our front end, we either need a backend to store our data and then make use of the data, or we can simply use APIs to have some mock data while building an application.</p>
+
+
+
+<p>When we use APIs, we don’t need a backend and are also not required to build anything from scratch. Mostly, we use the REST API or the GraphQL API to access the data added to the server. Before we go into depth, we should understand how an API works.</p>
+
+
+
+<h2 class="wp-block-heading">1) <strong>How does an API work</strong>?</h2>
+
+
+
+<p>The workings of an API are very easy to understand. Here&#8217;s an example, say we want to build a new application but don’t have our own backend. Now, to display the news in our application, we need some third-party APIs to access their backend server and display the data in our app.</p>
+
+
+
+<p>Now, there are three things we must have noted<strong>: an application, a server, and an API. </strong>Most times, the <em>API is in between the app and server because whenever the client requests the data, the API makes a GET request to the server and sends that back to the application for display.</em></p>
+
+
+
+<p class="has-text-align-center"><em><strong>Before diving into the next section, ensure you&#8217;re solid on full-stack development essentials like front-end frameworks, back-end technologies, and database management. If you are looking for a detailed Full Stack Development career program, you can join <a href="https://www.guvi.in/zen-class/full-stack-development-course/?utm_source=blog&amp;utm_medium=organic&amp;utm_campaign=Use+ReactJS+to+Fetch+and+Display+Data+from+API+-+5+Simple+Steps">GUVI’s Full Stack Development Career Program with Placement Assistance</a>. You will be able to master the MERN stack (MongoDB, Express.js, React, Node.js) and build real-life projects.</strong></em></p>
+
+
+
+<p class="has-text-align-center"><strong><em>Additionally, if you want to explore ReactJS through a self-paced course, try <a href="https://www.guvi.in/courses/web-development/react-js/?utm_source=blog&amp;utm_medium=organic&amp;utm_campaign=Use+ReactJS+to+Fetch+and+Display+Data+from+API+-+5+Simple+Steps">GUVI’s self-paced ReactJS certification course</a>.</em></strong></p>
+
+
+
+<h2 class="wp-block-heading">2) <strong>Methods to Fetch and Display Data from API</strong>:</h2>
+
+
+
+<p>We commonly use a Web API called REST, or <strong>REpresentational State Transfer API</strong>, which consists of HTTP methods to fetch data from the server and display it in the application. A REST API has several methods, which are discussed further below:</p>
+
+
+
+<ol>
+<li><strong>GET: </strong>This method is used to fetch data from a server endpoint.</li>
+
+
+
+<li><strong>POST: </strong>This method is used to post the data to a server endpoint.</li>
+
+
+
+<li><strong>DELETE: </strong>This method is used to delete the data from a server endpoint.</li>
+
+
+
+<li><strong>PUT: </strong>This method is used to update or modify the data from a server endpoint.</li>
+</ol>
+
+
+
+<p>Now that you have understood all the methods of the API, we can now move on to how the data is fetched from the server. To fetch the data, we use the <strong>GET </strong>method.</p>
+
+
+
+<p><em>The different ways of Fetching the data in a React application are given below:</em></p>
+
+
+
+<ul>
+<li>Using React Hooks</li>
+
+
+
+<li>Using JavaScript Fetch API</li>
+
+
+
+<li>Using async/await</li>
+
+
+
+<li>Using Axios library</li>
+
+
+
+<li>Using React query</li>
+</ul>
+
+
+
+<p>For now, we’ll only discuss the two ways of fetching data i.e., using <strong>JavaScript Fetch API </strong>and using <strong>Axios library API</strong>.</p>
+
+
+
+<p><strong>Here are the <a href="https://www.guvi.in/blog/prerequisites-for-reactjs/">6 Essential Prerequisites For Learning ReactJS</a> you must know in order to be proficient in ReactJS.</strong></p>
+
+
+
+<h2 class="wp-block-heading">3) Using JavaScript Fetch API</h2>
+
+
+
+<p>The JavaScript Fetch API is an inbuilt browser’s native API that gives an easy interface to fetch the data from the network. The simplest way to use fetch() is by taking one argument and the path from where the data is to be fetched and then returning a promise in a JSON object.</p>
+
+
+
+<p>In this example, we are going to use mock data provided freely by <a href="https://jsonplaceholder.typicode.com/" target="_blank" rel="noopener">JSONplaceholder</a> in JSON format. We are going to use the user&#8217;s endpoint from that API i.e., <a href="https://jsonplaceholder.typicode.com/users" target="_blank" rel="noopener">https://jsonplaceholder.typicode.com/users</a>.</p>
+
+
+
+<p><strong>See the below steps to implement and use Fetch API to fetch the data in a react app.</strong></p>
+
+
+
+<h3 class="wp-block-heading"><strong>Step 1. Create a React Application</strong></h3>
+
+
+
+<pre class="wp-block-code"><code>npx create-react-app demo</code></pre>
+
+
+
+<h3 class="wp-block-heading"><strong>Step 2. Change your <a href="https://www.guvi.in/blog/guide-for-currency-converter-app-using-reactjs/">Project</a> Directory</strong></h3>
+
+
+
+<pre class="wp-block-code"><code>cd demo</code></pre>
+
+
+
+<h3 class="wp-block-heading"><strong>Step 3. Access the API Endpoint</strong></h3>
+
+
+
+<p>Now, as done in the above method 1, where we’ll also access the API endpoint and store it in a const variable so that we can use it anytime and anywhere.</p>
+
+
+
+<pre class="wp-block-code"><code>const url = “https://jsonplaceholder.typicode.com/users”;</code></pre>
+
+
+
+<h3 class="wp-block-heading"><strong>Step 4. Import the useState() Hook and Set it to Hold Data</strong></h3>
+
+
+
+<pre class="wp-block-code"><code>import React, { useState } from 'react';
+
+const &#91;data, setData] = useState(&#91;])</code></pre>
+
+
+
+<h3 class="wp-block-heading"><strong>Step 5. Create a FetchInfo() Callback Function to Fetch and Store Data</strong></h3>
+
+
+
+<p>We will create a callback function that will store the user&#8217;s data and then use the useEffect() hook to make the function run every time the page loads.&nbsp;Now we get the data from the API using the fetch() method in the data variable.</p>
+
+
+
+<pre class="wp-block-code"><code>const fetchInfo = () =&gt; { 
+return fetch(url) 
+        .then((res) =&gt; res.json()) 
+        .then((d) =&gt; setData(d)) 
+}
+
+useEffect(() =&gt; {
+	fetchInfo();
+}, &#91;])</code></pre>
+
+
+
+<p>Now your App.js file should look like the below:</p>
+
+
+
+<pre class="wp-block-code"><code>import "./App.css";
+import React, { useState, useEffect } from "react";
+
+function App() {
+  const url = "https://jsonplaceholder.typicode.com/users";
+  const &#91;data, setData] = useState(&#91;]);
+
+  const fetchInfo = () =&gt; {
+    return fetch(url)
+      .then((res) =&gt; res.json())
+      .then((d) =&gt; setData(d))
+  }
+
+
+  useEffect(() =&gt; {
+    fetchInfo();
+  }, &#91;]);
+
+  return (
+    &lt;div className="App"&gt;
+      &lt;h1 style={{ color: "green" }}&gt;using JavaScript inbuilt FETCH API&lt;/h1&gt;
+      &lt;center&gt;
+        {data.map((dataObj, index) =&gt; {
+          return (
+            &lt;div
+              style={{
+                width: "15em",
+                backgroundColor: "#35D841",
+                padding: 2,
+                borderRadius: 10,
+                marginBlock: 10,
+              }}
+            &gt;
+              &lt;p style={{ fontSize: 20, color: 'white' }}&gt;{dataObj.name}&lt;/p&gt;
+            &lt;/div&gt;
+          );
+        })}
+      &lt;/center&gt;
+    &lt;/div&gt;
+  );
+}
+
+export default App;</code></pre>
+
+
+
+<p class="has-text-align-center"><em><strong>Also Read:<a href="https://www.guvi.in/blog/how-to-setup-react-router-v6-tutorial/"> How to Setup React Router v6? | Tutorial 2024</a></strong></em></p>
+
+
+
+<h3 class="wp-block-heading"><strong>Output</strong></h3>
+
+
+
+<p><strong>The output for the above example is as follows:</strong></p>
+
+
+
+<figure class="wp-block-image size-full"><img decoding="async" width="1194" height="946" src="https://www.guvi.in/blog/wp-content/uploads/2022/12/r1.png" alt="React Fetch API" class="wp-image-15699" srcset="https://www.guvi.in/blog/wp-content/uploads/2022/12/r1.png 1194w, https://www.guvi.in/blog/wp-content/uploads/2022/12/r1-300x238.png 300w, https://www.guvi.in/blog/wp-content/uploads/2022/12/r1-768x608.png 768w, https://www.guvi.in/blog/wp-content/uploads/2022/12/r1-150x119.png 150w" sizes="(max-width: 1194px) 100vw, 1194px" /></figure>
+
+
+
+<figure class="wp-block-image size-large"><a href="https://www.guvi.in/mlp/premium-pass-10years?utm_source=blog&amp;utm_medium=bannerinline&amp;utm_campaign=10yranniversary" target="_blank" rel="noreferrer noopener"><img decoding="async" width="1200" height="317" src="https://www.guvi.in/blog/wp-content/uploads/2024/06/premium_pass_1135_300-1-1200x317.webp" alt="Premium Pass Banner" class="wp-image-54254" srcset="https://www.guvi.in/blog/wp-content/uploads/2024/06/premium_pass_1135_300-1-1200x317.webp 1200w, https://www.guvi.in/blog/wp-content/uploads/2024/06/premium_pass_1135_300-1-300x79.webp 300w, https://www.guvi.in/blog/wp-content/uploads/2024/06/premium_pass_1135_300-1-768x203.webp 768w, https://www.guvi.in/blog/wp-content/uploads/2024/06/premium_pass_1135_300-1-1536x406.webp 1536w, https://www.guvi.in/blog/wp-content/uploads/2024/06/premium_pass_1135_300-1-2048x541.webp 2048w, https://www.guvi.in/blog/wp-content/uploads/2024/06/premium_pass_1135_300-1-150x40.webp 150w" sizes="(max-width: 1200px) 100vw, 1200px" /></a></figure>
+
+
+
+<h2 class="wp-block-heading">4) <strong>Using Axios Library</strong></h2>
+
+
+
+<p><strong>Axios is an online HTTP library running on node.js that allows us to make various HTTP requests to a given server endpoint.</strong> If we see it working, then it uses the <em>http </em>module on the server side, whereas it uses <em>XMLHttpRequests on the</em> browser side. </p>
+
+
+
+<p>For this example, we are going to use the GET method to fetch and display the data from API in our React application. Here we don’t need to convert the result into a JSON object; it already comes as a JSON object.</p>
+
+
+
+<p>See the below steps for the installation of the Axios library and the fetching process of the data in a react app.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>Step 1. Create a React Application</strong></h3>
+
+
+
+<p>The first thing to do is create a React application from scratch using the below <strong>npx command.</strong> Write or copy/paste the following to create a react app in your desired directory and name the project of your choice. For this example, we have created a project called &#8220;demo.&#8221;</p>
+
+
+
+<pre class="wp-block-code"><code>npx create-react-app demo</code></pre>
+
+
+
+<h3 class="wp-block-heading"><strong>Step 2. Change your Project Directory</strong></h3>
+
+
+
+<p>Once the project is created, change the directory to where the app folder is created.</p>
+
+
+
+<pre class="wp-block-code"><code>cd demo</code></pre>
+
+
+
+<h3 class="wp-block-heading"><strong>Step 3. Install the Axios Library with npm or yarn</strong></h3>
+
+
+
+<p>For using the axios library, we need to install that and we can do that using two ways i.e., either install using NPM or Yarn. Install it with any one of your choice or requirements.</p>
+
+
+
+<pre class="wp-block-code"><code>npm install axios</code></pre>
+
+
+
+<p>Or</p>
+
+
+
+<pre class="wp-block-code"><code>yarn add axios</code></pre>
+
+
+
+<h3 class="wp-block-heading"><strong>Step 4. Access the API Endpoint</strong></h3>
+
+
+
+<p>Now, as done in the above method 1, where we’ll also access the API endpoint and store it in a const variable so that we can use it anytime and anywhere.</p>
+
+
+
+<pre class="wp-block-code"><code>const url = “https://jsonplaceholder.typicode.com/users”;</code></pre>
+
+
+
+<h3 class="wp-block-heading"><strong>Step 5. Import the Axios and useState() Hook and Set it to Hold Data</strong></h3>
+
+
+
+<p>Import the installed axios library to the App.js file and also the useState() hook to&nbsp;hold the data in a variable.</p>
+
+
+
+<pre class="wp-block-code"><code>import React, { useState } from 'react';
+import axios from 'axios';
+
+const &#91;data, setData] = useState(&#91;])</code></pre>
+
+
+
+<h3 class="wp-block-heading"><strong>Step 6. Create a FetchInfo() Callback Function to Fetch and Store Data</strong></h3>
+
+
+
+<p>In this method also, we will create a callback function that will store the user&#8217;s data and then use the useEffect() hook to make the function run every time the page loads.&nbsp;</p>
+
+
+
+<pre class="wp-block-code"><code>const fetchInfo = () =&gt; { 
+  return axios.get(url) 
+           .then((response) =&gt; setUser(response.data));
+}
+
+useEffect(() =&gt; { 
+      fetchInfo(); 
+}, &#91;])</code></pre>
+
+
+
+<p>Now your App.js file should look like below:</p>
+
+
+
+<pre class="wp-block-code"><code>import "./App.css";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+
+function App() {
+  const url = "https://jsonplaceholder.typicode.com/users";
+  const &#91;data, setData] = useState(&#91;]);
+
+  const fetchInfo = () =&gt; {
+    return axios.get(url).then((res) =&gt; setData(res.data));
+  };
+
+  useEffect(() =&gt; {
+    fetchInfo();
+  }, &#91;]);
+
+  return (
+    &lt;div className="App"&gt;
+      &lt;h1 style={{ color: "green" }}&gt;using Axios Library to Fetch Data&lt;/h1&gt;
+      &lt;center&gt;
+        {data.map((dataObj, index) =&gt; {
+          return (
+            &lt;div
+              style={{
+                width: "15em",
+                backgroundColor: "#CD8FFD",
+                padding: 2,
+                borderRadius: 10,
+                marginBlock: 10,
+              }}
+            &gt;
+              &lt;p style={{ fontSize: 20, color: 'white' }}&gt;{dataObj.name}&lt;/p&gt;
+            &lt;/div&gt;
+          );
+        })}
+      &lt;/center&gt;
+    &lt;/div&gt;
+  );
+}
+
+export default App;</code></pre>
+
+
+
+<p class="has-text-align-center"><strong><em>Must Read: <a href="https://www.guvi.in/blog/how-to-render-an-array-of-objects-in-react/">How to Render an Array of Objects in React? [in 3 easy steps]</a></em></strong></p>
+
+
+
+<h3 class="wp-block-heading"><strong>Output</strong>:</h3>
+
+
+
+<p><strong>The output for the above example is as follows:</strong></p>
+
+
+
+<figure class="wp-block-image size-full"><img decoding="async" width="1194" height="950" src="https://www.guvi.in/blog/wp-content/uploads/2022/12/r2.png" alt="React Axios library" class="wp-image-15700" srcset="https://www.guvi.in/blog/wp-content/uploads/2022/12/r2.png 1194w, https://www.guvi.in/blog/wp-content/uploads/2022/12/r2-300x239.png 300w, https://www.guvi.in/blog/wp-content/uploads/2022/12/r2-768x611.png 768w, https://www.guvi.in/blog/wp-content/uploads/2022/12/r2-150x119.png 150w" sizes="(max-width: 1194px) 100vw, 1194px" /></figure>
+
+
+
+<p class="has-text-align-center"><strong><em>Kickstart your Full Stack Development journey by enrolling in <a href="https://www.guvi.in/zen-class/full-stack-development-course/?utm_source=blog&amp;utm_medium=organic&amp;utm_campaign=Use+ReactJS+to+Fetch+and+Display+Data+from+API+-+5+Simple+Steps">GUVI&#8217;s certified Full Stack Development Career Program with Placement Assistance</a> where you will master the MERN stack (MongoDB, Express.js, React, Node.js) and build interesting real-life projects. This program is crafted by our team of experts to help you upskill and assist you in placements. </em></strong></p>
+
+
+
+<p class="has-text-align-center"><strong><em>Alternatively, if you want to explore ReactJS through a self-paced course, try <a href="https://www.guvi.in/courses/web-development/react-js/?utm_source=blog&amp;utm_medium=organic&amp;utm_campaign=Use+ReactJS+to+Fetch+and+Display+Data+from+API+-+5+Simple+Steps">GUVI’s self-paced ReactJS certification course</a>.</em></strong></p>
+
+
+
+<h2 class="wp-block-heading">Summing Up</h2>
+
+
+
+<p>In this blog, we learned <strong>how to fetch data using an API in a React.js application</strong>. We hope you get a very good understanding of how an API works, how to fetch data from an API, and the different ways of fetching data using an API. </p>
+
+
+
+<p>Additionally, we learned how to use the inbuilt JavaScript Fetch API to fetch data and also saw how to use the Axios library, which is a better alternative to the inbuilt Fetch API.</p>
+
+
+
+<h2 class="wp-block-heading">FAQs</h2>
+
+
+<div id="rank-math-faq" class="rank-math-block">
+<div class="rank-math-list ">
+<div id="faq-question-1691999166508" class="rank-math-list-item">
+<h3 class="rank-math-question ">Q1. How to fetch data from API and display in JS?</h3>
+<div class="rank-math-answer ">
+
+<p><strong>Ans</strong>.To fetch data from an API and display it in JS, you need to <strong>define a const data and store it in JSON by await response. json() method. </strong>When we get the data from API by fetch() method in the data variable; pass it to the function which will show the data fetched.</p>
+
+</div>
+</div>
+<div id="faq-question-1692000906837" class="rank-math-list-item">
+<h3 class="rank-math-question ">Q2. How to display and extract JSON data from an API?</h3>
+<div class="rank-math-answer ">
+
+<p><strong>Ans</strong>. To get JSON from a REST API endpoint, you must <strong>send an HTTP GET request to the REST API server and provide an Accept: application/json request header</strong>. The Accept: application/json header tells the REST API server that the API client expects to receive data in JSON format.</p>
+
+</div>
+</div>
+<div id="faq-question-1692000927543" class="rank-math-list-item">
+<h3 class="rank-math-question ">Q3. What is a fetch API in JavaScript?</h3>
+<div class="rank-math-answer ">
+
+<p><strong>Ans</strong>. The Fetch API is <strong>a modern interface that allows you to make HTTP requests to servers from web browsers</strong>. If you have worked with XMLHttpRequest (XHR) object, the Fetch API can perform all the tasks as the XHR object does. In addition, the Fetch API is much simpler and cleaner.</p>
+
+</div>
+</div>
+</div>
+</div><p>The post <a rel="nofollow" href="https://www.guvi.in/blog/how-to-fetch-and-display-data-from-api-in-react/">Use ReactJS to Fetch and Display Data from API &#8211; 5 Simple Steps</a> appeared first on <a rel="nofollow" href="https://www.guvi.in/blog">GUVI Blogs</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://www.guvi.in/blog/how-to-fetch-and-display-data-from-api-in-react/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">15692</post-id>	</item>
+	</channel>
+</rss>

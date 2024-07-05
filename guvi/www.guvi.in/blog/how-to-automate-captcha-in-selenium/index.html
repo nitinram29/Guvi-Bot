@@ -1,0 +1,1587 @@
+<!DOCTYPE html>
+<html lang="en-GB" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+<!-- Search Engine Optimisation by Rank Math - https://s.rankmath.com/home -->
+<title>3 cool tricks to Automate Captcha In Selenium - GUVI Blogs</title>
+<meta name="description" content="Is captcha handling in selenium difficult? Learn what is captcha? And Automate Captcha in Selenium in 3 simple methods. Read now!"/>
+<meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"/>
+<link rel="canonical" href="https://www.guvi.in/blog/how-to-automate-captcha-in-selenium/" />
+<meta property="og:locale" content="en_GB" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="3 cool tricks to Automate Captcha In Selenium - GUVI Blogs" />
+<meta property="og:description" content="Is captcha handling in selenium difficult? Learn what is captcha? And Automate Captcha in Selenium in 3 simple methods. Read now!" />
+<meta property="og:url" content="https://www.guvi.in/blog/how-to-automate-captcha-in-selenium/" />
+<meta property="og:site_name" content="GUVI Blogs" />
+<meta property="article:publisher" content="https://www.facebook.com/guviofficial/" />
+<meta property="article:section" content="Software Automation &amp; Testing" />
+<meta property="og:updated_time" content="2024-03-26T10:26:48+05:30" />
+<meta property="og:image" content="https://www.guvi.in/blog/wp-content/uploads/2022/06/How-to-automate-Captcha-in-Selenium.png" />
+<meta property="og:image:secure_url" content="https://www.guvi.in/blog/wp-content/uploads/2022/06/How-to-automate-Captcha-in-Selenium.png" />
+<meta property="og:image:width" content="767" />
+<meta property="og:image:height" content="424" />
+<meta property="og:image:alt" content="Automate Captcha in Selenium" />
+<meta property="og:image:type" content="image/png" />
+<meta property="article:published_time" content="2022-06-02T20:59:06+05:30" />
+<meta property="article:modified_time" content="2024-03-26T10:26:48+05:30" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="3 cool tricks to Automate Captcha In Selenium - GUVI Blogs" />
+<meta name="twitter:description" content="Is captcha handling in selenium difficult? Learn what is captcha? And Automate Captcha in Selenium in 3 simple methods. Read now!" />
+<meta name="twitter:site" content="@guviofficial" />
+<meta name="twitter:creator" content="@guviofficial" />
+<meta name="twitter:image" content="https://www.guvi.in/blog/wp-content/uploads/2022/06/How-to-automate-Captcha-in-Selenium.png" />
+<meta name="twitter:label1" content="Written by" />
+<meta name="twitter:data1" content="Archana" />
+<meta name="twitter:label2" content="Time to read" />
+<meta name="twitter:data2" content="6 minutes" />
+<script type="application/ld+json" class="rank-math-schema">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://www.guvi.in/blog/#organization","name":"GUVI Geek Networks","logo":{"@type":"ImageObject","@id":"https://www.guvi.in/blog/#logo","url":"http://blog.guvi.in/wp-content/uploads/2022/03/guvi-logo.png","contentUrl":"http://blog.guvi.in/wp-content/uploads/2022/03/guvi-logo.png","caption":"GUVI Blogs","inLanguage":"en-GB","width":"300","height":"168"}},{"@type":"WebSite","@id":"https://www.guvi.in/blog/#website","url":"https://www.guvi.in/blog","name":"GUVI Blogs","publisher":{"@id":"https://www.guvi.in/blog/#organization"},"inLanguage":"en-GB"},{"@type":"ImageObject","@id":"https://www.guvi.in/blog/wp-content/uploads/2022/06/How-to-automate-Captcha-in-Selenium.png","url":"https://www.guvi.in/blog/wp-content/uploads/2022/06/How-to-automate-Captcha-in-Selenium.png","width":"767","height":"424","caption":"Automate Captcha in Selenium","inLanguage":"en-GB"},{"@type":"BreadcrumbList","@id":"https://www.guvi.in/blog/how-to-automate-captcha-in-selenium/#breadcrumb","itemListElement":[{"@type":"ListItem","position":"1","item":{"@id":"https://www.guvi.in/blog/","name":"Home"}},{"@type":"ListItem","position":"2","item":{"@id":"https://www.guvi.in/blog/category/automation-and-testing/","name":"Software Automation &amp; Testing"}},{"@type":"ListItem","position":"3","item":{"@id":"https://www.guvi.in/blog/how-to-automate-captcha-in-selenium/","name":"3 cool tricks to Automate Captcha In Selenium"}}]},{"@type":["WebPage","FAQPage"],"@id":"https://www.guvi.in/blog/how-to-automate-captcha-in-selenium/#webpage","url":"https://www.guvi.in/blog/how-to-automate-captcha-in-selenium/","name":"3 cool tricks to Automate Captcha In Selenium - GUVI Blogs","datePublished":"2022-06-02T20:59:06+05:30","dateModified":"2024-03-26T10:26:48+05:30","isPartOf":{"@id":"https://www.guvi.in/blog/#website"},"primaryImageOfPage":{"@id":"https://www.guvi.in/blog/wp-content/uploads/2022/06/How-to-automate-Captcha-in-Selenium.png"},"inLanguage":"en-GB","breadcrumb":{"@id":"https://www.guvi.in/blog/how-to-automate-captcha-in-selenium/#breadcrumb"},"mainEntity":[{"@type":"Question","url":"https://www.guvi.in/blog/how-to-automate-captcha-in-selenium/#faq-question-1686047641928","name":"Can we automate Captcha using Automation Anywhere?","acceptedAnswer":{"@type":"Answer","text":"Yes! There is a feature named OCR<strong>(optical character recognition)</strong> in Automation Anywhere. OCR is used to extract text from the captcha image &amp; enables the automation of Captcha."}},{"@type":"Question","url":"https://www.guvi.in/blog/how-to-automate-captcha-in-selenium/#faq-question-1686048005280","name":"Is there any alternative to CAPTCHA?","acceptedAnswer":{"@type":"Answer","text":"Yes! 'Anti-spam Honeypot' can be an alternative for both reCAPTCHA and CAPTCHA. How does this Anti-spam Honeypot work? It is basically a security mechanism built with the purpose to misguide bots with a trap. This mechanism provides something, (say an empty space created using CSS or JavaScript) that is going to attract the bot, as \u201choney\u201d. This space appears hidden or invisible for human users."}},{"@type":"Question","url":"https://www.guvi.in/blog/how-to-automate-captcha-in-selenium/#faq-question-1686048683484","name":"How do I write a CAPTCHA code?","acceptedAnswer":{"@type":"Answer","text":"You can create a section for Captcha using HTML. And, with the use of a CSS file, we can add style and an image that can refresh with a click. JavaScript code will generate a new captcha by calling generate() method."}},{"@type":"Question","url":"https://www.guvi.in/blog/how-to-automate-captcha-in-selenium/#faq-question-1686049446674","name":"What is the most commonly used CAPTCHA?","acceptedAnswer":{"@type":"Answer","text":"<strong>Text-based CAPTCHA</strong>\u00a0is one of the most commonly used CAPTCHA. They usually need human understanding through translation as they usually are displayed in a distorted fashion or an odd style."}},{"@type":"Question","url":"https://www.guvi.in/blog/how-to-automate-captcha-in-selenium/#faq-question-1686049536581","name":"How do you solve a problem with a captcha?","acceptedAnswer":{"@type":"Answer","text":"When a CAPTCHA fails to validate in your browser, just clear the browser cache(press\u00a0<strong>Ctrl + Shift + Delete</strong>\u00a0simultaneously) &amp; redo the CAPTCHA. "}}]},{"@type":"Person","@id":"https://www.guvi.in/blog/author/archana/","name":"Archana","url":"https://www.guvi.in/blog/author/archana/","image":{"@type":"ImageObject","@id":"https://secure.gravatar.com/avatar/79b042a962ed687011dc6167297cc54a?s=96&amp;d=mm&amp;r=g","url":"https://secure.gravatar.com/avatar/79b042a962ed687011dc6167297cc54a?s=96&amp;d=mm&amp;r=g","caption":"Archana","inLanguage":"en-GB"},"worksFor":{"@id":"https://www.guvi.in/blog/#organization"}},{"@type":"BlogPosting","headline":"3 cool tricks to Automate Captcha In Selenium - GUVI Blogs","keywords":"Automate Captcha in Selenium","datePublished":"2022-06-02T20:59:06+05:30","dateModified":"2024-03-26T10:26:48+05:30","articleSection":"Selenium, Software Automation &amp; Testing","author":{"@id":"https://www.guvi.in/blog/author/archana/"},"publisher":{"@id":"https://www.guvi.in/blog/#organization"},"description":"Is captcha handling in selenium difficult? Learn what is captcha? And Automate Captcha in Selenium in 3 simple methods. Read now!","name":"3 cool tricks to Automate Captcha In Selenium - GUVI Blogs","@id":"https://www.guvi.in/blog/how-to-automate-captcha-in-selenium/#richSnippet","isPartOf":{"@id":"https://www.guvi.in/blog/how-to-automate-captcha-in-selenium/#webpage"},"image":{"@id":"https://www.guvi.in/blog/wp-content/uploads/2022/06/How-to-automate-Captcha-in-Selenium.png"},"inLanguage":"en-GB","mainEntityOfPage":{"@id":"https://www.guvi.in/blog/how-to-automate-captcha-in-selenium/#webpage"}}]}</script>
+<!-- /Rank Math WordPress SEO plugin -->
+
+<link rel='dns-prefetch' href='//www.guvi.in' />
+<link rel='dns-prefetch' href='//cdn.jsdelivr.net' />
+<link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+<link rel="alternate" type="application/rss+xml" title="GUVI Blogs &raquo; 3 cool tricks to Automate Captcha In Selenium Comments Feed" href="https://www.guvi.in/blog/how-to-automate-captcha-in-selenium/feed/" />
+<style>
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css' href='https://www.guvi.in/blog/wp-includes/css/dist/block-library/style.min.css?ver=6.3.2' media='all' />
+<style id='wp-block-library-inline-css'>
+.has-text-align-justify{text-align:justify;}
+</style>
+<style id='wp-block-library-theme-inline-css'>
+.wp-block-audio figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio figcaption{color:hsla(0,0%,100%,.65)}.wp-block-audio{margin:0 0 1em}.wp-block-code{border:1px solid #ccc;border-radius:4px;font-family:Menlo,Consolas,monaco,monospace;padding:.8em 1em}.wp-block-embed figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed figcaption{color:hsla(0,0%,100%,.65)}.wp-block-embed{margin:0 0 1em}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:hsla(0,0%,100%,.65)}.wp-block-image figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-image figcaption{color:hsla(0,0%,100%,.65)}.wp-block-image{margin:0 0 1em}.wp-block-pullquote{border-bottom:4px solid;border-top:4px solid;color:currentColor;margin-bottom:1.75em}.wp-block-pullquote cite,.wp-block-pullquote footer,.wp-block-pullquote__citation{color:currentColor;font-size:.8125em;font-style:normal;text-transform:uppercase}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;font-style:normal;position:relative}.wp-block-quote.has-text-align-right{border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote.has-text-align-center{border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote.is-style-plain{border:none}.wp-block-search .wp-block-search__label{font-weight:700}.wp-block-search__button{border:1px solid #ccc;padding:.375em .625em}:where(.wp-block-group.has-background){padding:1.25em 2.375em}.wp-block-separator.has-css-opacity{opacity:.4}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto}.wp-block-separator.has-alpha-channel-opacity{opacity:1}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table{margin:0 0 1em}.wp-block-table td,.wp-block-table th{word-break:normal}.wp-block-table figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video{margin:0 0 1em}.wp-block-template-part.has-background{margin-bottom:0;margin-top:0;padding:1.25em 2.375em}
+</style>
+<link rel='stylesheet' id='mediaelement-css' href='https://www.guvi.in/blog/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.17' media='all' />
+<link rel='stylesheet' id='wp-mediaelement-css' href='https://www.guvi.in/blog/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=6.3.2' media='all' />
+<style id='classic-theme-styles-inline-css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='main-css-css' href='https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/css/style.min.css?ver=1718876776' media='all' />
+<link rel='stylesheet' id='boostrap-css-css' href='https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/library/bootstrap/css/bootstrap.min.css' media='all' />
+<link rel='stylesheet' id='fonts-css-css' href='https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/fonts/fonts.css' media='all' />
+<link rel='stylesheet' id='intl-tel-inp-css-css' href='https://cdn.jsdelivr.net/npm/intl-tel-input@19.2.16/build/css/intlTelInput.min.css' media='all' />
+<link rel='stylesheet' id='jetpack_css-css' href='https://www.guvi.in/blog/wp-content/plugins/jetpack/css/jetpack.css?ver=11.6.1' media='all' />
+<script src='https://www.guvi.in/blog/wp-content/plugins/wp-reading-progress/wp-reading-progress.min.js?ver=1.5.1' id='ruigehond006_javascript-js'></script>
+<script src='https://www.guvi.in/blog/wp-includes/js/jquery/jquery.min.js?ver=3.7.0' id='jquery-core-js'></script>
+<script src='https://www.guvi.in/blog/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1' id='jquery-migrate-js'></script>
+<script src='https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/library/bootstrap/js/bootstrap.bundle.min.js' id='bootstrap-js-js'></script>
+<script src='https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/library/intltelinput/js/intlTelInput.min.js' id='intl-tel-inp-js-js'></script>
+<script src='https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/js/rank-math.js?ver=1710297744' id='rank-math-js-js'></script>
+<link rel="https://api.w.org/" href="https://www.guvi.in/blog/wp-json/" /><link rel="alternate" type="application/json" href="https://www.guvi.in/blog/wp-json/wp/v2/posts/9718" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.guvi.in/blog/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.3.2" />
+<link rel='shortlink' href='https://www.guvi.in/blog/?p=9718' />
+<link rel="alternate" type="application/json+oembed" href="https://www.guvi.in/blog/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.guvi.in%2Fblog%2Fhow-to-automate-captcha-in-selenium%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.guvi.in/blog/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.guvi.in%2Fblog%2Fhow-to-automate-captcha-in-selenium%2F&#038;format=xml" />
+	<style>img#wpstats{display:none}</style>
+		<style>.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style><style>#ruigehond006_wrap{z-index:10001;position:fixed;display:block;left:0;width:100%;margin:0;overflow:visible}#ruigehond006_inner{position:absolute;height:0;width:inherit;background-color:rgba(255,255,255,.2);-webkit-transition:height .4s;transition:height .4s}html[dir=rtl] #ruigehond006_wrap{text-align:right}#ruigehond006_bar{width:0;height:100%;background-color:transparent}</style><link rel="icon" href="https://www.guvi.in/blog/wp-content/uploads/2021/03/cropped-20210111091003159396O4KG1V112112pngcompguviwebsitemoengage-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://www.guvi.in/blog/wp-content/uploads/2021/03/cropped-20210111091003159396O4KG1V112112pngcompguviwebsitemoengage-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.guvi.in/blog/wp-content/uploads/2021/03/cropped-20210111091003159396O4KG1V112112pngcompguviwebsitemoengage-180x180.png" />
+<meta name="msapplication-TileImage" content="https://www.guvi.in/blog/wp-content/uploads/2021/03/cropped-20210111091003159396O4KG1V112112pngcompguviwebsitemoengage-270x270.png" />
+</head>
+
+
+<body class="post-template-default single single-post postid-9718 single-format-standard guvi-blog-theme" class='z-1'>
+
+    
+
+    <header id="master_head" class="site-header ">
+        <div id="desktop_container" class=" desktop_container container">
+            <div id="header_portside" class="header_portside">
+                <div class="header_logo" id="header_logo">
+                    <div id="header_logo_container" class="header_logo_container">
+                        <a href="/" class="header_logo_url" id="header_logo_url">
+                            <img loading="lazy" class="header_image" id="header_image" src="https://www.guvi.in/blog/wp-content/themes/guvi-blog\assets\images\guvi-logo.svg" alt="header_logo">
+                        </a>
+                    </div>
+
+                    <div id="guvi_logo_and_role_divider" class="guvi_logo_and_role_divider"></div>
+                    <a href="https://www.guvi.in/blog" class="page_role m-0 text-decoration-none text-dark" id="page_role">Blog</a>
+                </div>
+
+                                    <div id="search_bar_holder_desktop" class="search_bar_holder_desktop">
+                        
+<form class="search_posts_form" method="get" role="search">
+    <div id="search_input_holder" class="input-group bg-white mb-0 flex justify-content-center align-items-center">
+        <input autocomplete="off" type="text" class="form-control rounded-0 border-0 form_elsewhere_page" placeholder="What do you want to read?" value="" aria-label="Search post?" name="s" aria-describedby="button-addon2">
+        <button class="btn bg-white rounded-0 border-0 search_btn search_icon" type="button" id="button-addon2">
+            <img loading="lazy" class="bg-white" src="https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/images/icons/search.svg" alt="search" id="search_icon_toggler">
+        </button>
+    </div>
+</form>
+                    </div>
+                
+            </div>
+
+            <div id="mobile_search_auth" class="mobile_search_auth">
+                <span id="search_icon_caller" class="search_icon_caller">
+                    <img loading="lazy" src="https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/images/icons/search.svg" alt="search" id="seach_icon" class="search_icon">
+                </span>
+                <div id="authentication_btn">
+                    <a target="_blank" href="/register" id="signup_btn" class="text-decoration-none signup_btn m-0 fw-semibold text-capitalize text-white">Sign up</a>
+                    <h6 id="logout_btn" class="logout_btn m-0 text-capitalize">Log Out</h6>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <div class="progressbar-container"><span class="progressBar"></span></div>    <div class="container py-2 pt-3 position-sticky " id="search_bar_holder_mobile">
+        
+<form class="search_posts_form" method="get" role="search">
+    <div id="search_input_holder" class="input-group bg-white mb-0 flex justify-content-center align-items-center">
+        <input autocomplete="off" type="text" class="form-control rounded-0 border-0 form_elsewhere_page" placeholder="What do you want to read?" value="" aria-label="Search post?" name="s" aria-describedby="button-addon2">
+        <button class="btn bg-white rounded-0 border-0 search_btn search_icon" type="button" id="button-addon2">
+            <img loading="lazy" class="bg-white" src="https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/images/icons/search.svg" alt="search" id="search_icon_toggler">
+        </button>
+    </div>
+</form>
+    </div>
+
+    <div class="container mt-4">
+        <nav aria-label="breadcrumbs" class="rank-math-breadcrumb"><p><a href="https://www.guvi.in/blog/">Home</a><span class="separator"> &raquo; </span><a href="https://www.guvi.in/blog/category/automation-and-testing/">Software Automation &amp; Testing</a><span class="separator"> &raquo; </span><span class="last">3 cool tricks to Automate Captcha In Selenium</span></p></nav>    </div><main id="single-post">
+  <section class="container">
+    <div class="single-post-content">
+      <div id="sidebar" class="relative">
+        <div id="popular-articles" class="desktop-elements">
+  <h5 class="fw-semibold pb-2 border-bottom">Software Automation &amp; Testing Articles</h5><p class='border-bottom pb-3'><a target='_blank' href='https://www.guvi.in/blog/selenium-alternatives-for-test-automation/' class='text-decoration-none'>Top 8 Selenium Alternatives for Test Automation</a></p?<br/><p class='border-bottom pb-3'><a target='_blank' href='https://www.guvi.in/blog/software-testing-vs-quality-assurance/' class='text-decoration-none'>Software Testing vs. Quality Assurance (QA)</a></p?<br/><p class='border-bottom pb-3'><a target='_blank' href='https://www.guvi.in/blog/automation-test-engineer-resume-tips/' class='text-decoration-none'>Automation Test Engineer Resume: 10 Important Things To Consider</a></p?<br/><p class='border-bottom pb-3'><a target='_blank' href='https://www.guvi.in/blog/developer-vs-tester/' class='text-decoration-none'>Developer vs Tester: Roles, Collaboration, and Impact on Software</a></p?<br/></div>        <div id="zen-common-ads" class="my-5">
+          <div role='button' class='single-post-banner' data-link="https://guvi.in/zen-class">
+            <img loading="eager" id="zen-common-ads-img" src="https://static.guvi.in/blog/zenAdsWebp/commonZenAd.webp" width="100%" height="273" class="rounded" alt="zen common ads"/>
+          </div>
+          <div role='button' class='single-post-banner mt-5' data-link="https://www.guvi.in/mlp/premium-pass-10years?utm_source=blog&utm_medium=bannersidebar&utm_campaign=10yranniversary">
+            <img loading="eager" id="zen-common-ads-img" src="https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/images/ads/aniversary-pass-ads.webp" width="100%" height="420" class="rounded aniversary-ad" alt="zen common ads"/>
+          </div>
+        </div>
+        <div id="single_page_form" class="d-flex flex-column bg-white">
+    <h1 class="mt-0">
+        <span class="md-title text-white">Get In Touch For Details!</span>
+        <span class="sm-title">Request More Information</span>
+    </h1>
+    <form method="post" id="contact-form" class="d-flex flex-column form-container">
+        <div class="input-fields">
+            <label for="name">Name</label>
+            <input type="text" class="data" pattern="[A-Za-z\s]+" id="name" name="name" required>
+        </div>
+        <div class="input-fields">
+            <label for="email">Email ID</label>
+            <input type="email" id="email" class="data" name="email" required>
+        </div>
+        <div class="input-fields">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone_number" class="data" name="phone" required>
+        </div>
+        <div class="input-fields">
+            <label for="dropdown">Select your interested program</label>
+            <select id="program" class="data bg-white" name="dropdown" required>
+                <option value="" disabled selected hidden>Choose Program</option>
+                <option value='Full Stack Development'>Full Stack Developer</option><option value='iit-data-science'>Data Science</option><option value='selenium-automation-testing'>Automation Testing</option><option value='UI-UX-Course'>UI/UX</option><option value='data-engineering'>Data Engineering</option><option value='Java-Automation-Testing'>Java Automation Testing</option><option value='DevOps-Program'>DevOps</option><option value='Full-Stack-Appreneur-Program'>Appreneur Program</option><option value='Business Analytics with DM'>Business Analytics and Digital Marketing</option><option value='blockchain-course'>Blockchain</option><option value='IIT-Machine-Learning-Program'>AI & ML</option><option value='Mech-Cad-Course'>Autodesk CAD for Mechanical Engineers</option><option value='Civil-Cad-Course'>Autodesk CAD for Civil Engineers</option><option value='Animation-Course'>Motion Graphics</option><option value='Microsoft-Azure'>Cloud Computing with Microsoft Azure</option><option value='Java Full Stack Development'>Java Full Stack Development</option><option value='CAD & BIM Civil'>CAD & BIM</option><option value='Digital Marketing'>Digital Marketing</option><option value='do-not-know'>Don't know</option>            </select>
+        </div>
+        <span id="get-touch-toast"></span>
+        <button class='btn' type="submit" id="get-in-touch-form-submit">
+            <span id="get-in-touch-spinner" style="display: none" class="spinner-border spinner-border-sm me-2" aria-hidden="true"></span>
+            <span class="get-in-touch-sub-btn-label md-btn">Get In Touch</span>
+            <span class="get-in-touch-sub-btn-label d-md-none">Request Information</span>
+        </button>
+    </form>
+</div>      </div>
+      <div id="article">
+        <div id="post-thumbnail" class="my-4 border rounded-4">
+          <img width="695" height="384" src="https://www.guvi.in/blog/wp-content/uploads/2022/06/How-to-automate-Captcha-in-Selenium.png" class="img-fluid rounded w-100 wp-post-image" alt="Post thumbnail" decoding="sync" loading="eager" style="max-height: 24rem;" fetchpriority="high" srcset="https://www.guvi.in/blog/wp-content/uploads/2022/06/How-to-automate-Captcha-in-Selenium.png 767w, https://www.guvi.in/blog/wp-content/uploads/2022/06/How-to-automate-Captcha-in-Selenium-300x166.png 300w" sizes="(max-width: 695px) 100vw, 695px" />        </div>
+        <div class="post-head">
+          <a href="https://www.guvi.in/blog/category/automation-and-testing/" class="my-2 fw-medium text-decoration-none">SOFTWARE AUTOMATION &AMP; TESTING</a>
+          <h1 class="fw-semibold mt-3 fs-1 lh-sm" id="blog-post-title">3 cool tricks to Automate Captcha In Selenium</h1>
+          <div class="post-info d-flex border-bottom mb-4">
+            <div class="d-flex me-auto flex-column mt-2">
+              <p class="m-0 ">
+                <span class="right-border pe-3">Mar 26, 2024</span>
+                <span class="right-border px-2">4 Min Read</span>
+                <span class="ps-2">9072 Views</span>
+              </p>
+              <p id="post-last-updated"><i>(Last Updated)</i></p>
+            </div>
+            <div class="share-icons gap-2 d-flex">
+              <a style="cursor:pointer;" data-link="true" data-blank="true" target="_blank" data-sharer="whatsapp" data-title="CAPTCHA stands for &#8216;Completely Automated Public Turing Test to tell Computers and Humans Apart&#8217;. Captcha in Selenium is a problem that many testers struggle to find a solution for. This article will guide you to Automate Captcha In Selenium. Automating UI testing for web applications becomes tricky when Captcha comes into the picture. In fact, [&hellip;]" data-url="https://www.guvi.in/blog/how-to-automate-captcha-in-selenium/">
+                <img loading="lazy" src="https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/images/icons/whatsapp.svg" alt="Whatsapp logo" height="35" width="35" />
+              </a>
+              <a style="cursor:pointer;" data-link="true" data-blank="true" data-sharer="twitter" data-title="CAPTCHA stands for &#8216;Completely Automated Public Turing Test to tell Computers and Humans Apart&#8217;. Captcha in Selenium is a problem that many testers struggle to find a solution for. This article will guide you to Automate Captcha In Selenium. Automating UI testing for web applications becomes tricky when Captcha comes into the picture. In fact, [&hellip;]" data-hashtags="guvi_blogs" data-url="https://www.guvi.in/blog/how-to-automate-captcha-in-selenium/">
+                <img loading="lazy" src="https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/images/icons/twitter-black.svg" alt="X logo" height="35" width="35" />
+              </a>
+              <a style="cursor:pointer;" data-link="true" data-blank="true" data-title="CAPTCHA stands for &#8216;Completely Automated Public Turing Test to tell Computers and Humans Apart&#8217;. Captcha in Selenium is a problem that many testers struggle to find a solution for. This article will guide you to Automate Captcha In Selenium. Automating UI testing for web applications becomes tricky when Captcha comes into the picture. In fact, [&hellip;]" data-sharer="linkedin" data-url="https://www.guvi.in/blog/how-to-automate-captcha-in-selenium/">
+                <img loading="lazy" src="https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/images/icons/linkedin.svg" alt="LinkedIn logo" height="35" width="35" /></a>
+              </a>
+              <a style="cursor:pointer;" data-link="true" data-blank="true" data-sharer="facebook" data-hashtag="guvi_blogs" data-url="https://www.guvi.in/blog/how-to-automate-captcha-in-selenium/">
+                <img loading="lazy" src="https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/images/icons/facebook.svg" alt="Facebook logo" height="35" width="35" />
+              </a>
+              <img style="cursor: pointer;" src="https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/images/icons/copy-link.svg" alt="Copy link" class="copy-link-icon" height="35" width="35" />
+            </div>
+          </div>
+        </div>
+        <section id="article-content">
+          
+<p>CAPTCHA stands for &#8216;Completely Automated Public Turing Test to tell Computers and Humans Apart&#8217;. Captcha in Selenium is a problem that many testers struggle to find a solution for. This article will guide you to Automate Captcha In Selenium. </p>
+
+
+
+<p>Automating UI testing for web applications becomes tricky when Captcha comes into the picture. In fact, the whole point of enabling Captcha itself does not fall in line with automation. As we all know, Captcha intends to prohibit bots from interfering with the application. And that&#8217;s the reason why Captcha can create a hindrance in a test scenario. So, how can we go ahead and Automate Captcha with Selenium? Is it even possible?&nbsp;&nbsp;</p>
+
+
+
+<p>It is inevitable to handle Captcha efficiently, to ensure that tests run without pullbacks.&nbsp;</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter"><img decoding="async" src="https://www.webdigi.co.uk/blog/wp-content/uploads/2009/01/datastartrek.jpg" alt="what is captcha?"/ loading="lazy" decoding="async"></figure></div>
+
+
+<p>Well, to be upfront automating Captcha is not the best practice and it is not advisable from a security perspective. But you can try these three efficient ways of&nbsp;<strong>handling Captcha in Selenium</strong>:</p>
+
+
+
+<ol>
+<li><strong>Introduce a delay to the Webdriver &amp; then manually solve Captcha while testing</strong></li>
+
+
+
+<li><strong>Disable the Captcha in the testing environment</strong></li>
+
+
+
+<li><strong>Add a hook to click the Captcha checkbox</strong></li>
+</ol>
+
+
+
+<p><strong><span class="has-inline-color has-vivid-green-cyan-color">Find out:</span> <a href="https://www.guvi.in/blog/who-is-an-automation-testing-engineer-how-to-become-one/">Who Is An Automation Testing Engineer? &amp; How To Become One?</a></strong></p>
+
+
+
+<p>Before we walk through each of these methods, let&#8217;s understand the following:</p>
+
+
+
+<div class="table-of-contents toc-wrapper">
+          <h4 class="fw-semibold toc-text pt-4">Table of contents</h4>
+          <hr class="m-0 p-0">
+          <div class="toc-content"><ol><li data-eleid="what-is-captcha" class="table-contents-item">What is Captcha?</li><ul><li data-eleid="enter-some-disfigured-text" class="table-contents-item">Enter some disfigured text:</li><li data-eleid="click-on-a-set-of-similar-images-matching-the-image-in-the-captcha" class="table-contents-item">Click on a set of similar images matching the image in the Captcha:</li></ul><li data-eleid="handling-captcha-enabled-web-applications-in-selenium" class="table-contents-item">Handling Captcha-Enabled Web Applications in Selenium</li><ul><li data-eleid="introduce-a-delay-to-the-web-driver-then-manually-solve-captcha-while-testing" class="table-contents-item"> Introduce a delay to the Web driver &amp; then manually solve Captcha while testing</li><li data-eleid="disable-the-captcha-in-the-testing-environment" class="table-contents-item">Disable the Captcha in the testing environment</li><li data-eleid="add-a-hook-to-click-the-captcha-checkbox" class="table-contents-item">Add a hook to click the Captcha checkbox</li></ul><li data-eleid="so-now-do-you-know-how-to-automate-captcha-in-selenium" class="table-contents-item">So, now do you know how to Automate Captcha in Selenium?</li><li data-eleid="frequently-asked-questionsfaqs" class="table-contents-item">Frequently Asked Questions(FAQs)</li><ul><li data-eleid="can-we-automate-captcha-using-automation-anywhere" class="table-contents-item">Can we automate Captcha using Automation Anywhere?</li><li data-eleid="is-there-any-alternative-to-captcha" class="table-contents-item">Is there any alternative to CAPTCHA?</li><li data-eleid="how-do-i-write-a-captcha-code" class="table-contents-item">How do I write a CAPTCHA code?</li><li data-eleid="what-is-the-most-commonly-used-captcha" class="table-contents-item">What is the most commonly used CAPTCHA?</li><li data-eleid="how-do-you-solve-a-problem-with-a-captcha" class="table-contents-item">How do you solve a problem with a captcha?</li></ol></div>
+      </div><h2 class="wp-block-heading" id="what-is-captcha"><strong>What is Captcha?</strong></h2>
+
+
+
+<p>Automation is at its best in this digital era. But like every coin has two sides, these automation strategies can reverse the effect when taken over by Cybercriminals. As a prevention to these malicious attacks, Captcha or &#8220;<em>Completely Automated Public Turing test to tell Computers and Humans Apart</em>&#8221; is commonly used. </p>
+
+
+
+<p>In short, Captcha is an important UI element that helps in restricting bots from accessing a web application. However, it is posing a major challenge for Automation Experts performing <a href="http://guvi.spellzee.in/selenium_intro/" target="_blank" rel="noopener">UI testing using Selenium</a>. It is like, you purposely build something to create hindrance in the process and it in turn produces hindrance in the whole purpose! Funny! </p>
+
+
+
+<p><em>Before we proceed further, it&#8217;s essential to have a solid foundation in automation testing principles and selenium basics. If you&#8217;re eager to dive deep into software testing, consider joining <a href="https://www.guvi.in/zen-class/automation-testing-course/?utm_source=blog&amp;utm_medium=organic&amp;utm_campaign=3+cool+tricks+to+Automate+Captcha+In+Selenium" data-type="link" data-id="https://www.guvi.in/zen-class/automation-testing-course/?utm_source=blog&amp;utm_medium=organic&amp;utm_campaign=3+cool+tricks+to+Automate+Captcha+In+Selenium" target="_blank" rel="noreferrer noopener"><strong>GUVI&#8217;s Automation Testing with Selenium Career Program.</strong></a> In this program, you&#8217;ll learn the fundamentals of Selenium, Python, Java, Jenkins, JMeter, API Testing, and more. Gain hands-on experience with industry-standard tools and techniques to get into a professional career focusing on the quality of Product &amp; Process development.</em></p>
+
+
+
+<p><em>Also, if you want to explore Automation Testing with Python through a Self-paced course, try <a href="https://www.guvi.in/courses/software-testing-and-automation/selenium-with-python/?utm_source=blog&amp;utm_medium=organic&amp;utm_campaign=3+cool+tricks+to+Automate+Captcha+In+Selenium" data-type="link" data-id="https://www.guvi.in/courses/software-testing-and-automation/selenium-with-python/?utm_source=blog&amp;utm_medium=organic&amp;utm_campaign=3+cool+tricks+to+Automate+Captcha+In+Selenium" target="_blank" rel="noreferrer noopener"><strong>GUVI’s Self-Paced Selenium Automation with Python certification course</strong>.</a></em></p>
+
+
+
+<p>To verify whether the user is a human or a bot, the user is put to certain tasks via Captcha. The tasks may include:</p>
+
+
+
+<h3 class="wp-block-heading" id="enter-some-disfigured-text"><strong><span class="has-inline-color has-vivid-green-cyan-color">Enter some disfigured text</span></strong>:</h3>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter is-resized"><img decoding="async" src="https://www.arkoselabs.com/wp-content/uploads/Screen-Shot-2020-09-10-at-11.05.36-AM.png" alt="what is captcha" style="width:425px;height:274px"/ loading="lazy" decoding="async"></figure></div>
+
+
+<p>or</p>
+
+
+
+<h3 class="wp-block-heading" id="click-on-a-set-of-similar-images-matching-the-image-in-the-captcha"><mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-vivid-green-cyan-color"><strong>Click on a set of similar images matching the image in the Captcha</strong></mark>:</h3>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter is-resized"><img decoding="async" src="https://images-cdn.9gag.com/photo/aWEjW4n_700b.jpg" alt="captcha handling in selenium" style="width:473px;height:686px"/ loading="lazy" decoding="async"></figure></div>
+
+
+<p>Moreover, some variants of Captcha also support visually impaired individuals. They generate audio instead of images.</p>
+
+
+
+<p>Now, the trick is that the task is <strong>DYNAMIC</strong>. Yes! Only humans can take a call and answer the Captcha correctly. The correct interpretation of information is something that a bot fails to produce. </p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter is-resized"><img decoding="async" src="https://digipromedia.com/admin/fm/source/3846_adotlabs2/Blog_Images/CaptchaImg.png" alt="captcha automation in selenium" style="width:573px;height:573px"/ loading="lazy" decoding="async"></figure></div>
+
+
+<div data-link='/zen-class/python-automation-testing-course-august/?utm_source=blog&utm_medium=organic&utm_campaign=3-cool-tricks-to-automate-captcha-in-selenium&utm_id=banner' role='button' class='my-3 single-post-banner text-decoration-none'>
+        <picture>
+          <source srcset='https://static.guvi.in/blog/zenAdsWebpMobile/python-at.webp' media='(max-width: 560px)' />
+          <img class='rounded-4' decoding='async' loading='lazy' src='https://static.guvi.in/blog/zenAdsWebp/python-at.webp' alt='MDN' width='100%' height='auto' style='max-height: 280px'/>
+        </picture>
+      </div><h2 class="wp-block-heading" id="handling-captcha-enabled-web-applications-in-selenium"><strong>Handling Captcha-Enabled Web Applications in Selenium</strong></h2>
+
+
+
+<p>Learning to automate Captcha in Selenium would beat the complete purpose of holding Captcha in the first place to confirm human interaction with the UI, it is very tricky to Automate Captcha in&nbsp;Selenium.&nbsp;</p>
+
+
+
+<h3 class="wp-block-heading" id="introduce-a-delay-to-the-web-driver-then-manually-solve-captcha-while-testing"> <li><strong>Introduce a delay to the Web driver &amp; then manually solve Captcha while testing</strong></li></h3>
+
+
+
+<p>Let me tell you upfront that the technique of adding delay to the web driver is only a semi-automatic test; the reason being, that the user anyhow would have to solve and then enter the captcha manually. </p>
+
+
+
+<figure class="wp-block-image aligncenter size-full is-resized"><img decoding="async" width="311" height="162" src="https://www.guvi.in/blog/wp-content/uploads/2022/06/image.png" alt="Delay in code
+" class="wp-image-9725" style="width:417px;height:217px" srcset="https://www.guvi.in/blog/wp-content/uploads/2022/06/image.png 311w, https://www.guvi.in/blog/wp-content/uploads/2022/06/image-300x156.png 300w" sizes="(max-width: 311px) 100vw, 311px" / loading="lazy" decoding="async"></figure>
+
+
+
+<p>In this technique, you have to introduce a delay of 10 to 20 secs. Thereby, freezing the Captcha screen. Usually, when we implement automation testing on a web page, there is a time-lapse. It happens because automation testing happens to be much faster than the reCaptcha. So, while the Captcha screen is still frozen, we hold enough time to enter the password and automate the whole process without the Captcha break! That&#8217;s wonderful. Isn&#8217;t it?  </p>
+
+
+
+<p>Furthermore, using Python, you can easily insert a delay with time.sleep() command.  You should definitely code this one! </p>
+
+
+
+<h4 class="wp-block-heading"><strong>Wish to learn about Selenium Automation Testing: <a href="http://guvi.spellzee.in/who-is-an-automation-testing-engineer-how-to-become-one/" target="_blank" rel="noopener">Get Started here</a>!</strong></h4>
+
+
+
+<h3 class="wp-block-heading" id="disable-the-captcha-in-the-testing-environment"><li><strong>Disable the Captcha in the testing environment</strong></li></h3>
+
+
+
+<p>This is a simple tactic wherein we make sure that while testing a web application, the Captcha task is blocked-out! Yes! You can bypass Captcha altogether but only during the testing process is ongoing. By inserting the <a href="https://developers.google.com/recaptcha/docs/faq" target="_blank" rel="noreferrer noopener">Site Key and the Secret Key</a>, in Google’s open-source Captcha widget. Therefore, all verification requests will pass without any hindrances. And, you can automate your UI testing with no hurdles.&nbsp;</p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://ps.w.org/login-recaptcha/assets/screenshot-1.png?rev=1137538" alt="Login No Captcha reCAPTCHA – WordPress plugin | WordPress.org"/ loading="lazy" decoding="async"></figure>
+
+
+
+<p>Most importantly, while doing so, the reCAPTCHA widget will show a warning alert. This will ensure that the CAPTCHA is bypassed, notably only for testing purposes. &amp; BLING! Captcha would be back! So, this is a good option that will prevent Captcha while the Automation process takes place, bringing back Captcha, once the automation process gets over. </p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full is-resized"><img decoding="async" width="419" height="120" src="https://www.guvi.in/blog/wp-content/uploads/2022/06/image.jpeg" alt="" class="wp-image-9723" style="width:515px;height:147px" srcset="https://www.guvi.in/blog/wp-content/uploads/2022/06/image.jpeg 419w, https://www.guvi.in/blog/wp-content/uploads/2022/06/image-300x86.jpeg 300w" sizes="(max-width: 419px) 100vw, 419px" / loading="lazy" decoding="async"></figure></div>
+
+
+<p><strong><span class="has-inline-color has-vivid-green-cyan-color">Interested in Automation Testing: </span><a href="http://guvi.spellzee.in/data-driven-testing-in-selenium-using-jxl-part-2/" target="_blank" rel="noopener">Learn everything here</a>!</strong></p>
+
+
+
+<h3 class="wp-block-heading" id="add-a-hook-to-click-the-captcha-checkbox"><li><strong>Add a hook to click the Captcha checkbox</strong></li></h3>
+
+
+
+<p> This is another brilliant method of bypassing Captcha. We can add a hook to the code. </p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full is-resized"><img decoding="async" width="483" height="551" src="https://www.guvi.in/blog/wp-content/uploads/2022/06/Hook-in-the-code.png" alt="" class="wp-image-9724" style="width:342px;height:390px" srcset="https://www.guvi.in/blog/wp-content/uploads/2022/06/Hook-in-the-code.png 483w, https://www.guvi.in/blog/wp-content/uploads/2022/06/Hook-in-the-code-263x300.png 263w" sizes="(max-width: 483px) 100vw, 483px" / loading="lazy" decoding="async"></figure></div>
+
+
+<p>Do you know, how Captcha recognizes a bot clicking the checkbox element? It&#8217;s actually simple! The bot takes less time to click as compared to humans. </p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter"><img decoding="async" src="https://images.squarespace-cdn.com/content/v1/5b84e6c23917ee5ecfa435f0/1542017326425-LS5MCOJKJ55JZRURZWSM/imnotarobot.png" alt="Captchas: An Annoying Illustration of Static Versus Dynamic Security —  Chris Louie, CISSP"/ loading="lazy" decoding="async"></figure></div>
+
+
+<p>Now, this is the reason why automation testing Experts need to induce&nbsp;<em>WebDriverWait</em>. So, the element is clicked only when it becomes clickable. This, in turn, bypasses the Captcha. Problem solved!</p>
+
+
+
+<h2 class="wp-block-heading" id="so-now-do-you-know-how-to-automate-captcha-in-selenium"><strong>So, now do you know how to Automate Captcha in Selenium?</strong></h2>
+
+
+
+<p>You may automate your processes by inducing one of the above three methods and easily automate the captcha in selenium. Now that you know what is captcha and how to automate a captcha in Selenium, are you intrigued to take Automation Testing to the next level? </p>
+
+
+
+<p>Enroll in <strong><a href="https://www.guvi.in/zen-class/automation-testing-course/?utm_source=blog&amp;utm_medium=organic&amp;utm_campaign=3+cool+tricks+to+Automate+Captcha+In+Selenium" data-type="link" data-id="https://www.guvi.in/zen-class/automation-testing-course/?utm_source=blog&amp;utm_medium=organic&amp;utm_campaign=3+cool+tricks+to+Automate+Captcha+In+Selenium" target="_blank" rel="noreferrer noopener">GUVI&#8217;s Automation Testing Career Program</a></strong> to get your software testing career off to a great start. Here, you can master in-demand skills like Selenium, Python, Java, Jenkins, JMeter, API Testing, and more. </p>
+
+
+
+<p>Alternatively, if you want to explore Automation Testing with Python through a Self-paced course, try <a href="https://www.guvi.in/courses/software-testing-and-automation/selenium-with-python/?utm_source=blog&amp;utm_medium=organic&amp;utm_campaign=3+cool+tricks+to+Automate+Captcha+In+Selenium" data-type="link" data-id="https://www.guvi.in/courses/software-testing-and-automation/selenium-with-python/?utm_source=blog&amp;utm_medium=organic&amp;utm_campaign=3+cool+tricks+to+Automate+Captcha+In+Selenium" target="_blank" rel="noreferrer noopener"><strong>GUVI’s Self-Paced Selenium Automation with Python certification course</strong>.</a></p>
+
+
+
+<p>Have any doubts? Please share it in the comment section below. We will get back to you shortly! </p>
+
+
+
+<h2 class="wp-block-heading" id="frequently-asked-questionsfaqs">Frequently Asked Questions(FAQs)</h2>
+
+
+<div id="rank-math-faq" class="rank-math-block">
+<div class="rank-math-list ">
+<div id="faq-question-1686047641928" class="rank-math-list-item">
+<h3 class="rank-math-question " id="can-we-automate-captcha-using-automation-anywhere"><strong>Can we automate Captcha using Automation Anywhere?</strong></h3>
+<div class="rank-math-answer ">
+
+<p>Yes! There is a feature named OCR<strong>(optical character recognition)</strong> in Automation Anywhere. OCR is used to extract text from the captcha image &amp; enables the automation of Captcha.</p>
+
+</div>
+</div>
+<div id="faq-question-1686048005280" class="rank-math-list-item">
+<h3 class="rank-math-question " id="is-there-any-alternative-to-captcha"><strong>Is there any alternative to CAPTCHA?</strong></h3>
+<div class="rank-math-answer ">
+
+<p>Yes! &#8216;Anti-spam Honeypot&#8217; can be an alternative for both reCAPTCHA and CAPTCHA. How does this Anti-spam Honeypot work? It is basically a security mechanism built with the purpose to misguide bots with a trap. This mechanism provides something, (say an empty space created using CSS or JavaScript) that is going to attract the bot, as “honey”. This space appears hidden or invisible for human users.</p>
+
+</div>
+</div>
+<div id="faq-question-1686048683484" class="rank-math-list-item">
+<h3 class="rank-math-question " id="how-do-i-write-a-captcha-code"><strong>How do I write a CAPTCHA code?</strong></h3>
+<div class="rank-math-answer ">
+
+<p>You can create a section for Captcha using HTML. And, with the use of a CSS file, we can add style and an image that can refresh with a click. JavaScript code will generate a new captcha by calling generate() method.</p>
+
+</div>
+</div>
+<div id="faq-question-1686049446674" class="rank-math-list-item">
+<h3 class="rank-math-question " id="what-is-the-most-commonly-used-captcha"><strong>What is the most commonly used CAPTCHA?</strong></h3>
+<div class="rank-math-answer ">
+
+<p><strong>Text-based CAPTCHA</strong> is one of the most commonly used CAPTCHA. They usually need human understanding through translation as they usually are displayed in a distorted fashion or an odd style.</p>
+
+</div>
+</div>
+<div id="faq-question-1686049536581" class="rank-math-list-item">
+<div data-link='/zen-class/python-automation-testing-course-august/?utm_source=blog&utm_medium=organic&utm_campaign=3-cool-tricks-to-automate-captcha-in-selenium&utm_id=banner' role='button' class='my-3 single-post-banner text-decoration-none'>
+        <picture>
+          <source srcset='https://static.guvi.in/blog/zenAdsWebpMobile/python-at.webp' media='(max-width: 560px)' />
+          <img class='rounded-4' decoding='async' loading='lazy' src='https://static.guvi.in/blog/zenAdsWebp/python-at.webp' alt='MDN' width='100%' height='auto' style='max-height: 280px'/>
+        </picture>
+      </div><h3 class="rank-math-question " id="how-do-you-solve-a-problem-with-a-captcha"><strong>How do you solve a problem with a captcha?</strong></h3>
+<div class="rank-math-answer ">
+
+<p>When a CAPTCHA fails to validate in your browser, just clear the browser cache(press <strong>Ctrl + Shift + Delete</strong> simultaneously) &amp; redo the CAPTCHA. </p>
+
+</div>
+</div>
+</div>
+</div>        </section>
+        
+<section id="career-transition" class="position-relative">
+  <h3 class="fw-semibold mb-4">Career transition</h3>
+  <div id="career-transition-carousel" class="carousel carousel-dark slide">
+    <div class="carousel-inner">
+      <div class='carousel-item active'><div class='d-flex flex-row gap-3'><video controls class='video' width='33.333333333333%' preload='metadata' controlslist='nodownload noremoteplayback' poster='https://static.guvi.in/blog/career-transition/guruprakash-thumbnail.webp'>
+            <source src='https://static.guvi.in/blog/career-transition/Guruprakash.mp4' type='video/mp4' />
+          </video><video controls class='video' width='33.333333333333%' preload='metadata' controlslist='nodownload noremoteplayback' poster='https://static.guvi.in/blog/career-transition/ilavarasan-thumbnail.webp'>
+            <source src='https://static.guvi.in/blog/career-transition/Ilavarasan.mp4' type='video/mp4' />
+          </video><video controls class='video' width='33.333333333333%' preload='metadata' controlslist='nodownload noremoteplayback' poster='https://static.guvi.in/blog/career-transition/karthikeyan-thumbnail.webp'>
+            <source src='https://static.guvi.in/blog/career-transition/Karthikeyan.mp4' type='video/mp4' />
+          </video></div></div><div class='carousel-item '><div class='d-flex flex-row gap-3'><video controls class='video' width='33.333333333333%' preload='metadata' controlslist='nodownload noremoteplayback' poster='https://static.guvi.in/blog/career-transition/mathivathanan-thumbnail.webp'>
+            <source src='https://static.guvi.in/blog/career-transition/Mathivathanan.mp4' type='video/mp4' />
+          </video><video controls class='video' width='33.333333333333%' preload='metadata' controlslist='nodownload noremoteplayback' poster='https://static.guvi.in/blog/career-transition/varun-thumbnail.webp'>
+            <source src='https://static.guvi.in/blog/career-transition/Varun-Athithiya.mp4' type='video/mp4' />
+          </video></div></div>    </div>
+    <div class="d-flex my-4 flex-nowrap flex-row column-gap-4 align-items-center carousel-btns-indicators">
+                <button class="btn border-0 p-0 text-white" type="button" data-bs-target="#career-transition-carousel" data-bs-slide="prev">
+              <img src="https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/images/icons/carousel_prev.svg" loading="lazy" height="40" width="40" alt="left arrow icon" />
+            <span class="visually-hidden">Previous</span>
+          </button>
+  
+          <div class="carousel-indicators position-relative carousel-indicators-custom">
+            <button type='button' data-bs-target='#career-transition-carousel' data-bs-slide-to='0' class='active border-0 mx-1' aria-current='true' aria-label='Slide 0'></button><button type='button' data-bs-target='#career-transition-carousel' data-bs-slide-to='1' class='border-0 mx-1' aria-label='Slide 1'></button>          </div> 
+  
+          <button class="btn border-0 p-0" type="button" data-bs-target="#career-transition-carousel" data-bs-slide="next">
+              <img src="https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/images/icons/carousel_next.svg" loading="lazy" height="40" width="40" alt="left arrow icon" />
+            <span class="visually-hidden">Next</span>
+          </button>
+              </div>
+  </div>
+</section><section class="article-banner">
+<div class="container p-4 banner-container d-flex flex-nowrap align-items-center justify-content-center">
+    <div class="row">
+            <div class="col-md-3">
+            <div class='background avatar-container'>
+                <div class="avatar">
+                    <img src="https://secure.gravatar.com/avatar/79b042a962ed687011dc6167297cc54a?s=430&d=mm&r=g"alt="Author" class="img-fluid" loading="lazy" decoding="async" width="197" height="197">        
+                </div>
+            </div>
+        </div>
+                <div class="col-md-9">
+            <div class="author-info">
+                <h5 class="author-title" >About the Author</h5>
+                <a class="text-decoration-none text-white" href="https://www.guvi.in/blog/author/archana/" ><p class="author-name fs-3">Archana</p></a>
+                                <p>A traveler, and explorer, Archana is an active writer at GUVI. You can usually find her with a book/kindle binge-reading (with an affinity to the mystery/humor).</p>
+                                <hr class="author-divider">
+                <div class="social-links">
+                                            <div class="connect-text">
+                            <p class="m-0">Connect with me @</p>
+                        </div>
+                        <div class="social-icons">
+                            <div class="social-media-icons">
+                                                                                                    <a target="_blank" href="https://www.linkedin.com/in/archana-udayanan-8b35a029/"><img src="https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/images/icons/linkedin-color.png" alt="LinkedIn"></a>
+                                                                    
+                            </div>
+                        </div>
+                                    </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+<div class="container banner-footer">
+    <span></span>
+</div>
+</section>
+
+<section class="comment-form-container mb-0">
+    <h4 class="fw-semibold">Did you enjoy this article?</h4>
+    <form class="comment-form" id="comment-form" method="post">
+        <div class="name_email">
+            <div>
+                <label for="author" class="form-label">Name</label>
+                <input type="text" id="author" name="author" class="form-control" required />
+            </div>
+            <div>
+                <label for="email" class="form-label">Email</label>
+                <input type="email" id="email" name="email" class="form-control" required />
+            </div>
+        </div>
+        <div class="rating-div">
+            <label for="rating" class="form-label">Rate this Article</label>
+            <div class="stars">
+                <input type="radio" id="star5" name="rating" value="5" class="radioBtn">
+                <label for="star5">
+                    <img src="https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/images/icons/star_default.svg" alt="">
+                </label>
+                <input type="radio" id="star4" name="rating" value="4" class="radioBtn">
+                <label for="star4">
+                    <img src="https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/images/icons/star_default.svg" alt="">
+                </label>
+                <input type="radio" id="star3" name="rating" value="3" class="radioBtn">
+                <label for="star3">
+                    <img src="https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/images/icons/star_default.svg" alt="">
+                </label>
+                <input type="radio" id="star2" name="rating" value="2" class="radioBtn">
+                <label for="star2">
+                    <img src="https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/images/icons/star_default.svg" alt="">
+                </label>
+                <input type="radio" id="star1" name="rating" value="1" class="radioBtn">
+                <label for="star1">
+                    <img src="https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/images/icons/star_default.svg" alt="">
+                </label>
+            </div>
+        </div>
+        <div class="comment-box-div">
+            <label for="comment" class="form-label">Enter Your Comment</label>
+            <textarea id="comment" name="comment" cols="30" rows="6" required></textarea>
+        </div>
+        <input type="hidden" name="comment_post_ID" value="9718" />
+        <button type="submit" id="comment-form-submit-btn" class="btn">
+            <span id="comment-spinner" style="display: none" class="spinner-border spinner-border-sm me-2" aria-hidden="true"></span>
+            <span id='comment-status' role="status">Submit My Comment</span>
+        </button>
+    </form>
+</section>
+
+      </div>
+      <div>
+        
+<span class="share-container">
+    <span class="share-btn d-block d-md-none">
+        <img loading="lazy" src="https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/images/icons/share.svg" alt="Share logo">
+    </span>
+
+    <span class="share-icons-container d-none d-md-flex">
+        <a style="cursor:pointer;" data-link="true" data-blank="true" target="_blank" data-sharer="whatsapp" data-title="CAPTCHA stands for &#8216;Completely Automated Public Turing Test to tell Computers and Humans Apart&#8217;. Captcha in Selenium is a problem that many testers struggle to find a solution for. This article will guide you to Automate Captcha In Selenium. Automating UI testing for web applications becomes tricky when Captcha comes into the picture. In fact, [&hellip;]" data-url="https://www.guvi.in/blog/how-to-automate-captcha-in-selenium/">
+            <img loading="lazy" src="https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/images/icons/whatsapp.svg" alt="Whatsapp logo" height="35" width="35" />
+        </a>
+        <a style="cursor:pointer;" data-link="true" data-blank="true" data-sharer="twitter" data-title="CAPTCHA stands for &#8216;Completely Automated Public Turing Test to tell Computers and Humans Apart&#8217;. Captcha in Selenium is a problem that many testers struggle to find a solution for. This article will guide you to Automate Captcha In Selenium. Automating UI testing for web applications becomes tricky when Captcha comes into the picture. In fact, [&hellip;]" data-hashtags="guvi_blogs" data-url="https://www.guvi.in/blog/how-to-automate-captcha-in-selenium/">
+            <img loading="lazy" src="https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/images/icons/twitter-black.svg" alt="X logo" height="35" width="35" />
+        </a>
+        <a style="cursor:pointer;" data-link="true" data-blank="true" data-title="CAPTCHA stands for &#8216;Completely Automated Public Turing Test to tell Computers and Humans Apart&#8217;. Captcha in Selenium is a problem that many testers struggle to find a solution for. This article will guide you to Automate Captcha In Selenium. Automating UI testing for web applications becomes tricky when Captcha comes into the picture. In fact, [&hellip;]" data-sharer="linkedin" data-url="https://www.guvi.in/blog/how-to-automate-captcha-in-selenium/">
+            <img loading="lazy" src="https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/images/icons/linkedin.svg" alt="LinkedIn logo" height="35" width="35" /></a>
+        </a>
+        <a style="cursor:pointer;" data-link="true" data-blank="true" data-sharer="facebook" data-hashtag="guvi_blogs" data-url="https://www.guvi.in/blog/how-to-automate-captcha-in-selenium/">
+            <img loading="lazy" src="https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/images/icons/facebook.svg" alt="Facebook logo" height="35" width="35" />
+        </a>
+        <img style="cursor: pointer;" src="https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/images/icons/copy-link.svg" alt="Copy link" class="copy-link-icon" height="35" width="35" />
+    </span>
+</span>
+
+<div class="share-popup-container d-md-none">
+    <div class="share-popup">
+        <div class="d-flex justify-content-between">
+            <span class="share-text">Share this article</span>
+            <img id="share-popup-close" src="https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/images/icons/close.svg" alt="">
+        </div>
+        <div class="share-icons-popup">
+            <a data-link="true" data-blank="true" target="_blank" data-sharer="whatsapp" data-title="CAPTCHA stands for &#8216;Completely Automated Public Turing Test to tell Computers and Humans Apart&#8217;. Captcha in Selenium is a problem that many testers struggle to find a solution for. This article will guide you to Automate Captcha In Selenium. Automating UI testing for web applications becomes tricky when Captcha comes into the picture. In fact, [&hellip;]" data-url="https://www.guvi.in/blog/how-to-automate-captcha-in-selenium/">
+                <img loading="lazy" src="https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/images/icons/whatsapp.svg" alt="Whatsapp logo" height="45" width="45" />
+            </a>
+            <a data-link="true" data-blank="true" data-sharer="twitter" data-title="CAPTCHA stands for &#8216;Completely Automated Public Turing Test to tell Computers and Humans Apart&#8217;. Captcha in Selenium is a problem that many testers struggle to find a solution for. This article will guide you to Automate Captcha In Selenium. Automating UI testing for web applications becomes tricky when Captcha comes into the picture. In fact, [&hellip;]" data-hashtags="guvi_blogs" data-url="https://www.guvi.in/blog/how-to-automate-captcha-in-selenium/">
+                <img loading="lazy" src="https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/images/icons/twitter-black.svg" alt="X logo" height="45" width="45" />
+            </a>
+            <a data-link="true" data-blank="true" data-title="CAPTCHA stands for &#8216;Completely Automated Public Turing Test to tell Computers and Humans Apart&#8217;. Captcha in Selenium is a problem that many testers struggle to find a solution for. This article will guide you to Automate Captcha In Selenium. Automating UI testing for web applications becomes tricky when Captcha comes into the picture. In fact, [&hellip;]" data-sharer="linkedin" data-url="https://www.guvi.in/blog/how-to-automate-captcha-in-selenium/">
+                <img loading="lazy" src="https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/images/icons/linkedin.svg" alt="LinkedIn logo" height="45" width="45" /></a>
+            </a>
+            <a data-link="true" data-blank="true" data-sharer="facebook" data-hashtag="guvi_blogs" data-url="https://www.guvi.in/blog/how-to-automate-captcha-in-selenium/">
+                <img loading="lazy" src="https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/images/icons/facebook.svg" alt="Facebook logo" height="45" width="45" />
+            </a>
+            <img loading="lazy" src="https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/images/icons/copy-link.svg" alt="Copy link" class="copy-link-icon" height="45" width="45" />
+        </div>
+    </div>
+</div>
+      </div>
+    </div>
+  </section>
+  <section class="py-5 d-flex flex-column align-items-center browse_guvi_courses" id="recommended-courses">
+    <h2 class="fw-semibold mb-4 text-dark">
+      Recommended Courses
+    </h2>
+    <div class="navbar">
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active fw-normal" id="pills-career-programs-tab" data-bs-toggle="pill" data-bs-target="#pills-career-programs" type="button" role="tab" aria-controls="pills-career-programs" aria-selected="true">Career
+                    Programs
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link fw-normal" id="pills-mini-courses-tab" data-bs-toggle="pill" data-bs-target="#pills-mini-courses" type="button" role="tab" aria-controls="pills-mini-courses" aria-selected="false">Micro Courses
+                </button>
+            </li>
+        </ul>
+    </div>
+    <div class="tab-content w-100" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-career-programs" role="tabpanel" aria-labelledby="pills-career-programs-tab">
+            
+<section id="career_programs_carousel" class="mb-0 container _container">
+        <div id="carouselExampleDark_career_programs_carousel" class="carousel carousel-dark slide d-flex justify-content-center">
+        <div id="carousel_container" class="w-100 d-flex flex-column  justify-content-center align-items-center gap-3">
+            <div id="carousel_slider_with" class="w-100 d-flex justify-content-center">
+                
+                <div class="carousel-inner career_programs_carousel_carousel_inner">
+                    <div class='carousel-item active'><div class='d-flex justify-content-center gap-3'>
+<div class="card" id="career_course_card" style="width: 23rem;">
+    <div id="thumbnail">
+        <div id="overlay"></div>
+        <img loading="lazy"  decoding='async' src="https://static.guvi.in/blog/zenThumbnail/java-at.webp"
+             class="card-img-top" alt="thumbnail">
+        <div class="most_popular rounded-5 py-2 px-3">
+            <h6 class="fw-bold mb-0 text-uppercase">Most Popular</h6>
+        </div>
+    </div>
+    <div class="card-body">
+        <div id="certified_by" class="d-flex justify-content-center align-items-center gap-2">
+            <img loading="lazy" decoding="async" src="https://static.guvi.in/blog/logo/nsdc-logo.png" class="certifiedBy" id="certifiedBy" alt="certifiedBy"><img loading="lazy" decoding="async" src="https://static.guvi.in/blog/logo/guvi-logo.png" class="certifiedBy" id="certifiedBy" alt="certifiedBy">        </div>
+
+
+        <h5 class="card-title w-100 mb-0">Automation testing  Course with Java</h5>
+        <div class="career_course_available_languages">
+            <p class="available_text mb-0">Available in</p>
+            <ul class="available_languages_list mb-0">
+                <li class='language'>English</li><li class='language'>Tamil</li>            </ul>
+        </div>
+    </div>
+
+    <div id="career_divider"></div>
+
+    <ul class="list-group list-group-flush mb-0">
+        <li class="list-group-item">
+            <span id="description_icon">
+                <img loading="lazy" decoding="async"
+                     src="https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/images/icons/emi.png" alt="emi">
+            </span>
+            <p id="description">EMI Options Available</p>
+        </li>
+        <li class="list-group-item">
+            <span id="description_icon">
+                <img loading="lazy" decoding="async"
+                     src="https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/images/icons/placement.png"
+                     alt="placement">
+            </span>
+            <p id="description">Placement Guidance</p>
+        </li>
+        <li class="list-group-item">
+            <span id="description_icon">
+                <img loading="lazy" decoding="async"
+                     src="https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/images/icons/mentor.png"
+                     alt="mentor">
+            </span>
+            <p id="description">1:1 Mentor Doubt Clearing Sessions</p>
+        </li>
+    </ul>
+    <div id="redirects">
+        <a target="_blank" href="https://guvi.in/zen-class/java-automation-testing-course/" class="know_more card-link w-100 py-2">
+            <h6 class="fw-semibold">Know More</h6>
+            <span id="next_icon">
+                <img loading="lazy" decoding="async"
+                     src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1jaGV2cm9ucy1yaWdodCI+PHBhdGggZD0ibTYgMTcgNS01LTUtNSIvPjxwYXRoIGQ9Im0xMyAxNyA1LTUtNS01Ii8+PC9zdmc+"
+                     alt="next" class='text-white'>
+            </span>
+        </a>
+    </div>
+</div>
+
+
+
+<div class="card" id="career_course_card" style="width: 23rem;">
+    <div id="thumbnail">
+        <div id="overlay"></div>
+        <img loading="lazy"  decoding='async' src="https://static.guvi.in/blog/zenThumbnail/python-at.webp"
+             class="card-img-top" alt="thumbnail">
+        <div class="most_popular rounded-5 py-2 px-3">
+            <h6 class="fw-bold mb-0 text-uppercase">Most Popular</h6>
+        </div>
+    </div>
+    <div class="card-body">
+        <div id="certified_by" class="d-flex justify-content-center align-items-center gap-2">
+            <img loading="lazy" decoding="async" src="https://static.guvi.in/blog/logo/nsdc-logo.png" class="certifiedBy" id="certifiedBy" alt="certifiedBy"><img loading="lazy" decoding="async" src="https://static.guvi.in/blog/logo/guvi-logo.png" class="certifiedBy" id="certifiedBy" alt="certifiedBy">        </div>
+
+
+        <h5 class="card-title w-100 mb-0">Automation testing Course with Python</h5>
+        <div class="career_course_available_languages">
+            <p class="available_text mb-0">Available in</p>
+            <ul class="available_languages_list mb-0">
+                <li class='language'>English</li>            </ul>
+        </div>
+    </div>
+
+    <div id="career_divider"></div>
+
+    <ul class="list-group list-group-flush mb-0">
+        <li class="list-group-item">
+            <span id="description_icon">
+                <img loading="lazy" decoding="async"
+                     src="https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/images/icons/emi.png" alt="emi">
+            </span>
+            <p id="description">EMI Options Available</p>
+        </li>
+        <li class="list-group-item">
+            <span id="description_icon">
+                <img loading="lazy" decoding="async"
+                     src="https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/images/icons/placement.png"
+                     alt="placement">
+            </span>
+            <p id="description">Placement Guidance</p>
+        </li>
+        <li class="list-group-item">
+            <span id="description_icon">
+                <img loading="lazy" decoding="async"
+                     src="https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/images/icons/mentor.png"
+                     alt="mentor">
+            </span>
+            <p id="description">1:1 Mentor Doubt Clearing Sessions</p>
+        </li>
+    </ul>
+    <div id="redirects">
+        <a target="_blank" href="https://guvi.in/zen-class/python-automation-testing-course-august/" class="know_more card-link w-100 py-2">
+            <h6 class="fw-semibold">Know More</h6>
+            <span id="next_icon">
+                <img loading="lazy" decoding="async"
+                     src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1jaGV2cm9ucy1yaWdodCI+PHBhdGggZD0ibTYgMTcgNS01LTUtNSIvPjxwYXRoIGQ9Im0xMyAxNyA1LTUtNS01Ii8+PC9zdmc+"
+                     alt="next" class='text-white'>
+            </span>
+        </a>
+    </div>
+</div>
+
+
+</div></div>                </div>
+                            </div>
+                    </div>
+        </section>
+
+
+        </div>
+        <div class="tab-pane fade" id="pills-mini-courses" role="tabpanel" aria-labelledby="pills-mini-courses-tab">
+            
+<section id="micro_programs_carousel" class="mb-0 container _container">
+                <h6 class="fw-semibold text-center text-danger">No Courses Found!</h6>
+        </section>
+
+        </div>
+    </div>
+  </section>
+  <secction id="counselling" class="py-4 d-flex align-items-center justify-content-center endof-share-icons">
+    <h3 class="fw-bold m-0">Schedule 1:1 free counselling </h3>
+    <button type="button" data-bs-toggle="modal" data-bs-target="#counselling-modal" class="btn btn-white ms-5 px-4 py-2 fw-bold bg-white">Talk to Career Expert</button>
+  </secction>
+  
+  <section id="similar-articles" class="container">
+    <h2 class="fw-semibold my-5 text-black text-center">Similar Articles</h2>
+    <div id="carouselExampleDark" class="carousel carousel-dark slide">
+      <div class="d-flex align-items-center justify-content-between column-gap-4">
+        <!-- Desktop prev button -->
+                  <button class="btn border-0 p-0 text-white d-none d-md-block" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <img src="https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/images/icons/carousel_prev.svg" loading="lazy" height="40" width="40" alt="left arrow icon" />
+            <span class="visually-hidden">Previous</span>
+          </button>
+        
+        <div class="carousel-inner">
+          <div class='carousel-item active'><div class='d-flex justify-content-center gap-3'><div class="post-card trending-card">
+    <div class="card border-0 shadow-sm position-relative">
+        <a href="https://www.guvi.in/blog/developer-vs-tester/" class="card-img-top">
+            <img width="800" height="500" src="https://www.guvi.in/blog/wp-content/uploads/2023/11/Feature-image-Developer-vs.-Tester-Roles-Collaboration-and-Impact-on-Software.webp" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Feature image - Developer vs. Tester Roles, Collaboration, and Impact on Software" decoding="async" srcset="https://www.guvi.in/blog/wp-content/uploads/2023/11/Feature-image-Developer-vs.-Tester-Roles-Collaboration-and-Impact-on-Software.webp 800w, https://www.guvi.in/blog/wp-content/uploads/2023/11/Feature-image-Developer-vs.-Tester-Roles-Collaboration-and-Impact-on-Software-300x188.webp 300w, https://www.guvi.in/blog/wp-content/uploads/2023/11/Feature-image-Developer-vs.-Tester-Roles-Collaboration-and-Impact-on-Software-768x480.webp 768w, https://www.guvi.in/blog/wp-content/uploads/2023/11/Feature-image-Developer-vs.-Tester-Roles-Collaboration-and-Impact-on-Software-150x94.webp 150w" sizes="(max-width: 800px) 100vw, 800px" />        </a>
+
+        <div class="card-body" id="card-details">
+            <a class="card-title text-decoration-none text-dark fs-5 fw-semibold" href="https://www.guvi.in/blog/developer-vs-tester/">
+                Developer vs Tester: Roles, Collaboration, and Impact on Software            </a>
+                            <p class="card-author mt-2 mb-0"><span id="by">By</span>&nbsp;<a class='text-decoration-none' href="https://www.guvi.in/blog/author/meghana/">Meghana D</a></p>
+            
+            <div id="card-footer" class="mt-2 d-flex flex-row flex-nowrap justify-content-between">
+                <p class="mb-0 card-text">10 Jun, 2024</p>
+                <p class="mb-0 card-text">6 Min Read </p>
+            </div>
+        </div>
+
+        <div class="position-absolute" id="views-section">
+                                <div class="card-views d-flex px-2 py-1 align-items-center bg-white rounded-pill">
+                        <img loading="lazy" src="https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/images/icons/eye.svg" height="auto" width="auto" alt="eye-icon">&nbsp;
+                        <p class="m-0">3248</p>
+                    </div>
+                                    </div>
+    </div>
+</div><div class="post-card trending-card">
+    <div class="card border-0 shadow-sm position-relative">
+        <a href="https://www.guvi.in/blog/top-a-b-testing-tools/" class="card-img-top">
+            <img width="2400" height="1256" src="https://www.guvi.in/blog/wp-content/uploads/2022/09/b-testing-tools.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="top A/B Testing tools" decoding="async" srcset="https://www.guvi.in/blog/wp-content/uploads/2022/09/b-testing-tools.png 2400w, https://www.guvi.in/blog/wp-content/uploads/2022/09/b-testing-tools-300x157.png 300w, https://www.guvi.in/blog/wp-content/uploads/2022/09/b-testing-tools-1200x628.png 1200w, https://www.guvi.in/blog/wp-content/uploads/2022/09/b-testing-tools-768x402.png 768w, https://www.guvi.in/blog/wp-content/uploads/2022/09/b-testing-tools-1536x804.png 1536w, https://www.guvi.in/blog/wp-content/uploads/2022/09/b-testing-tools-2048x1072.png 2048w, https://www.guvi.in/blog/wp-content/uploads/2022/09/b-testing-tools-150x79.png 150w" sizes="(max-width: 2400px) 100vw, 2400px" />        </a>
+
+        <div class="card-body" id="card-details">
+            <a class="card-title text-decoration-none text-dark fs-5 fw-semibold" href="https://www.guvi.in/blog/top-a-b-testing-tools/">
+                Top A/B Testing Tools | Don&#8217;t miss the obvious 4th one            </a>
+                            <p class="card-author mt-2 mb-0"><span id="by">By</span>&nbsp;<a class='text-decoration-none' href="https://www.guvi.in/blog/author/archana/">Archana</a></p>
+            
+            <div id="card-footer" class="mt-2 d-flex flex-row flex-nowrap justify-content-between">
+                <p class="mb-0 card-text">16 Apr, 2024</p>
+                <p class="mb-0 card-text">7 Min Read </p>
+            </div>
+        </div>
+
+        <div class="position-absolute" id="views-section">
+                                <div class="card-views d-flex px-2 py-1 align-items-center bg-white rounded-pill">
+                        <img loading="lazy" src="https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/images/icons/eye.svg" height="auto" width="auto" alt="eye-icon">&nbsp;
+                        <p class="m-0">1039</p>
+                    </div>
+                                    </div>
+    </div>
+</div><div class="post-card trending-card">
+    <div class="card border-0 shadow-sm position-relative">
+        <a href="https://www.guvi.in/blog/choosing-automation-testing-as-a-career/" class="card-img-top">
+            <img width="800" height="500" src="https://www.guvi.in/blog/wp-content/uploads/2023/09/Feature-image-Is-Choosing-Automation-Testing-a-Good-Career-Opportunity.webp" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Feature image - Is Choosing Automation Testing a Good Career Opportunity" decoding="async" srcset="https://www.guvi.in/blog/wp-content/uploads/2023/09/Feature-image-Is-Choosing-Automation-Testing-a-Good-Career-Opportunity.webp 800w, https://www.guvi.in/blog/wp-content/uploads/2023/09/Feature-image-Is-Choosing-Automation-Testing-a-Good-Career-Opportunity-300x188.webp 300w, https://www.guvi.in/blog/wp-content/uploads/2023/09/Feature-image-Is-Choosing-Automation-Testing-a-Good-Career-Opportunity-768x480.webp 768w, https://www.guvi.in/blog/wp-content/uploads/2023/09/Feature-image-Is-Choosing-Automation-Testing-a-Good-Career-Opportunity-150x94.webp 150w" sizes="(max-width: 800px) 100vw, 800px" />        </a>
+
+        <div class="card-body" id="card-details">
+            <a class="card-title text-decoration-none text-dark fs-5 fw-semibold" href="https://www.guvi.in/blog/choosing-automation-testing-as-a-career/">
+                Is Choosing Automation Testing a Good Career Opportunity in 2024?            </a>
+                            <p class="card-author mt-2 mb-0"><span id="by">By</span>&nbsp;<a class='text-decoration-none' href="https://www.guvi.in/blog/author/isha/">Isha Sharma</a></p>
+            
+            <div id="card-footer" class="mt-2 d-flex flex-row flex-nowrap justify-content-between">
+                <p class="mb-0 card-text">16 Apr, 2024</p>
+                <p class="mb-0 card-text">3 Min Read </p>
+            </div>
+        </div>
+
+        <div class="position-absolute" id="views-section">
+                                <div class="card-views d-flex px-2 py-1 align-items-center bg-white rounded-pill">
+                        <img loading="lazy" src="https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/images/icons/eye.svg" height="auto" width="auto" alt="eye-icon">&nbsp;
+                        <p class="m-0">6121</p>
+                    </div>
+                                    </div>
+    </div>
+</div></div></div><div class='carousel-item '><div class='d-flex justify-content-center gap-3'><div class="post-card trending-card">
+    <div class="card border-0 shadow-sm position-relative">
+        <a href="https://www.guvi.in/blog/skills-required-to-become-an-rpa-developer/" class="card-img-top">
+            <img width="2400" height="1256" src="https://www.guvi.in/blog/wp-content/uploads/2022/07/skills-required-to-become-an-rpa-developer.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="skills required to become an rpa developer" decoding="async" srcset="https://www.guvi.in/blog/wp-content/uploads/2022/07/skills-required-to-become-an-rpa-developer.png 2400w, https://www.guvi.in/blog/wp-content/uploads/2022/07/skills-required-to-become-an-rpa-developer-300x157.png 300w, https://www.guvi.in/blog/wp-content/uploads/2022/07/skills-required-to-become-an-rpa-developer-1200x628.png 1200w, https://www.guvi.in/blog/wp-content/uploads/2022/07/skills-required-to-become-an-rpa-developer-768x402.png 768w, https://www.guvi.in/blog/wp-content/uploads/2022/07/skills-required-to-become-an-rpa-developer-1536x804.png 1536w, https://www.guvi.in/blog/wp-content/uploads/2022/07/skills-required-to-become-an-rpa-developer-2048x1072.png 2048w" sizes="(max-width: 2400px) 100vw, 2400px" />        </a>
+
+        <div class="card-body" id="card-details">
+            <a class="card-title text-decoration-none text-dark fs-5 fw-semibold" href="https://www.guvi.in/blog/skills-required-to-become-an-rpa-developer/">
+                12 Essential Skills Required to Become an RPA Developer            </a>
+                            <p class="card-author mt-2 mb-0"><span id="by">By</span>&nbsp;<a class='text-decoration-none' href="https://www.guvi.in/blog/author/ramkumar/">Ramkumar</a></p>
+            
+            <div id="card-footer" class="mt-2 d-flex flex-row flex-nowrap justify-content-between">
+                <p class="mb-0 card-text">16 Apr, 2024</p>
+                <p class="mb-0 card-text">4 Min Read </p>
+            </div>
+        </div>
+
+        <div class="position-absolute" id="views-section">
+                                <div class="card-views d-flex px-2 py-1 align-items-center bg-white rounded-pill">
+                        <img loading="lazy" src="https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/images/icons/eye.svg" height="auto" width="auto" alt="eye-icon">&nbsp;
+                        <p class="m-0">4956</p>
+                    </div>
+                                    </div>
+    </div>
+</div><div class="post-card trending-card">
+    <div class="card border-0 shadow-sm position-relative">
+        <a href="https://www.guvi.in/blog/automation-test-engineer-roles-and-responsibilities/" class="card-img-top">
+            <img width="800" height="500" src="https://www.guvi.in/blog/wp-content/uploads/2023/08/feature-image-Automation-Test-Engineer-Roles-and-Responsibilities.webp" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="feature image-Automation Test Engineer Roles and Responsibilities" decoding="async" srcset="https://www.guvi.in/blog/wp-content/uploads/2023/08/feature-image-Automation-Test-Engineer-Roles-and-Responsibilities.webp 800w, https://www.guvi.in/blog/wp-content/uploads/2023/08/feature-image-Automation-Test-Engineer-Roles-and-Responsibilities-300x188.webp 300w, https://www.guvi.in/blog/wp-content/uploads/2023/08/feature-image-Automation-Test-Engineer-Roles-and-Responsibilities-768x480.webp 768w, https://www.guvi.in/blog/wp-content/uploads/2023/08/feature-image-Automation-Test-Engineer-Roles-and-Responsibilities-150x94.webp 150w" sizes="(max-width: 800px) 100vw, 800px" />        </a>
+
+        <div class="card-body" id="card-details">
+            <a class="card-title text-decoration-none text-dark fs-5 fw-semibold" href="https://www.guvi.in/blog/automation-test-engineer-roles-and-responsibilities/">
+                Automation Test Engineer Roles and Responsibilities in 2024            </a>
+                            <p class="card-author mt-2 mb-0"><span id="by">By</span>&nbsp;<a class='text-decoration-none' href="https://www.guvi.in/blog/author/isha/">Isha Sharma</a></p>
+            
+            <div id="card-footer" class="mt-2 d-flex flex-row flex-nowrap justify-content-between">
+                <p class="mb-0 card-text">16 Apr, 2024</p>
+                <p class="mb-0 card-text">3 Min Read </p>
+            </div>
+        </div>
+
+        <div class="position-absolute" id="views-section">
+                                <div class="card-views d-flex px-2 py-1 align-items-center bg-white rounded-pill">
+                        <img loading="lazy" src="https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/images/icons/eye.svg" height="auto" width="auto" alt="eye-icon">&nbsp;
+                        <p class="m-0">6707</p>
+                    </div>
+                                    </div>
+    </div>
+</div><div class="post-card trending-card">
+    <div class="card border-0 shadow-sm position-relative">
+        <a href="https://www.guvi.in/blog/the-future-scope-of-automation-testing/" class="card-img-top">
+            <img width="800" height="500" src="https://www.guvi.in/blog/wp-content/uploads/2023/09/Feature-image-The-Future-Scope-of-Automation-Testing.webp" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Feature image - The Future Scope of Automation Testing" decoding="async" srcset="https://www.guvi.in/blog/wp-content/uploads/2023/09/Feature-image-The-Future-Scope-of-Automation-Testing.webp 800w, https://www.guvi.in/blog/wp-content/uploads/2023/09/Feature-image-The-Future-Scope-of-Automation-Testing-300x188.webp 300w, https://www.guvi.in/blog/wp-content/uploads/2023/09/Feature-image-The-Future-Scope-of-Automation-Testing-768x480.webp 768w, https://www.guvi.in/blog/wp-content/uploads/2023/09/Feature-image-The-Future-Scope-of-Automation-Testing-150x94.webp 150w" sizes="(max-width: 800px) 100vw, 800px" />        </a>
+
+        <div class="card-body" id="card-details">
+            <a class="card-title text-decoration-none text-dark fs-5 fw-semibold" href="https://www.guvi.in/blog/the-future-scope-of-automation-testing/">
+                The Future Scope of Automation Testing in 2024            </a>
+                            <p class="card-author mt-2 mb-0"><span id="by">By</span>&nbsp;<a class='text-decoration-none' href="https://www.guvi.in/blog/author/meghana/">Meghana D</a></p>
+            
+            <div id="card-footer" class="mt-2 d-flex flex-row flex-nowrap justify-content-between">
+                <p class="mb-0 card-text">15 Apr, 2024</p>
+                <p class="mb-0 card-text">8 Min Read </p>
+            </div>
+        </div>
+
+        <div class="position-absolute" id="views-section">
+                                <div class="card-views d-flex px-2 py-1 align-items-center bg-white rounded-pill">
+                        <img loading="lazy" src="https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/images/icons/eye.svg" height="auto" width="auto" alt="eye-icon">&nbsp;
+                        <p class="m-0">3913</p>
+                    </div>
+                                    </div>
+    </div>
+</div></div></div><div class='carousel-item '><div class='d-flex justify-content-center gap-3'><div class="post-card trending-card">
+    <div class="card border-0 shadow-sm position-relative">
+        <a href="https://www.guvi.in/blog/which-site-is-best-to-learn-automation-testing/" class="card-img-top">
+            <img width="700" height="411" src="https://www.guvi.in/blog/wp-content/uploads/2023/01/nurture5-animation.gif" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" />        </a>
+
+        <div class="card-body" id="card-details">
+            <a class="card-title text-decoration-none text-dark fs-5 fw-semibold" href="https://www.guvi.in/blog/which-site-is-best-to-learn-automation-testing/">
+                Which Site is best to learn automation Testing?            </a>
+                            <p class="card-author mt-2 mb-0"><span id="by">By</span>&nbsp;<a class='text-decoration-none' href="https://www.guvi.in/blog/author/tushar/">Tushar Vinocha</a></p>
+            
+            <div id="card-footer" class="mt-2 d-flex flex-row flex-nowrap justify-content-between">
+                <p class="mb-0 card-text">15 Apr, 2024</p>
+                <p class="mb-0 card-text">5 Min Read </p>
+            </div>
+        </div>
+
+        <div class="position-absolute" id="views-section">
+                                <div class="card-views d-flex px-2 py-1 align-items-center bg-white rounded-pill">
+                        <img loading="lazy" src="https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/images/icons/eye.svg" height="auto" width="auto" alt="eye-icon">&nbsp;
+                        <p class="m-0">2154</p>
+                    </div>
+                                    </div>
+    </div>
+</div><div class="post-card trending-card">
+    <div class="card border-0 shadow-sm position-relative">
+        <a href="https://www.guvi.in/blog/who-is-an-automation-testing-engineer-how-to-become-one/" class="card-img-top">
+            <img width="1519" height="649" src="https://www.guvi.in/blog/wp-content/uploads/2021/12/Start-an-Automation-Testing-Career.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Selenium Automation Testing" decoding="async" srcset="https://www.guvi.in/blog/wp-content/uploads/2021/12/Start-an-Automation-Testing-Career.png 1519w, https://www.guvi.in/blog/wp-content/uploads/2021/12/Start-an-Automation-Testing-Career-300x128.png 300w, https://www.guvi.in/blog/wp-content/uploads/2021/12/Start-an-Automation-Testing-Career-1200x513.png 1200w, https://www.guvi.in/blog/wp-content/uploads/2021/12/Start-an-Automation-Testing-Career-768x328.png 768w" sizes="(max-width: 1519px) 100vw, 1519px" />        </a>
+
+        <div class="card-body" id="card-details">
+            <a class="card-title text-decoration-none text-dark fs-5 fw-semibold" href="https://www.guvi.in/blog/who-is-an-automation-testing-engineer-how-to-become-one/">
+                Who is an Automation Testing Engineer? &#038; How To Become One?            </a>
+                            <p class="card-author mt-2 mb-0"><span id="by">By</span>&nbsp;<a class='text-decoration-none' href="https://www.guvi.in/blog/author/archana/">Archana</a></p>
+            
+            <div id="card-footer" class="mt-2 d-flex flex-row flex-nowrap justify-content-between">
+                <p class="mb-0 card-text">12 Apr, 2024</p>
+                <p class="mb-0 card-text">4 Min Read </p>
+            </div>
+        </div>
+
+        <div class="position-absolute" id="views-section">
+                                <div class="card-views d-flex px-2 py-1 align-items-center bg-white rounded-pill">
+                        <img loading="lazy" src="https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/images/icons/eye.svg" height="auto" width="auto" alt="eye-icon">&nbsp;
+                        <p class="m-0">2243</p>
+                    </div>
+                                    </div>
+    </div>
+</div><div class="post-card trending-card">
+    <div class="card border-0 shadow-sm position-relative">
+        <a href="https://www.guvi.in/blog/how-to-become-a-qa-automation-tester/" class="card-img-top">
+            <img width="1280" height="720" src="https://www.guvi.in/blog/wp-content/uploads/2023/05/QA-automation-tester-1.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" srcset="https://www.guvi.in/blog/wp-content/uploads/2023/05/QA-automation-tester-1.jpg 1280w, https://www.guvi.in/blog/wp-content/uploads/2023/05/QA-automation-tester-1-300x169.jpg 300w, https://www.guvi.in/blog/wp-content/uploads/2023/05/QA-automation-tester-1-1200x675.jpg 1200w, https://www.guvi.in/blog/wp-content/uploads/2023/05/QA-automation-tester-1-768x432.jpg 768w, https://www.guvi.in/blog/wp-content/uploads/2023/05/QA-automation-tester-1-150x84.jpg 150w" sizes="(max-width: 1280px) 100vw, 1280px" />        </a>
+
+        <div class="card-body" id="card-details">
+            <a class="card-title text-decoration-none text-dark fs-5 fw-semibold" href="https://www.guvi.in/blog/how-to-become-a-qa-automation-tester/">
+                How to Become a Successful QA Automation Tester            </a>
+                            <p class="card-author mt-2 mb-0"><span id="by">By</span>&nbsp;<a class='text-decoration-none' href="https://www.guvi.in/blog/author/srinithi/">Srinithi Sankar</a></p>
+            
+            <div id="card-footer" class="mt-2 d-flex flex-row flex-nowrap justify-content-between">
+                <p class="mb-0 card-text">12 Apr, 2024</p>
+                <p class="mb-0 card-text">6 Min Read </p>
+            </div>
+        </div>
+
+        <div class="position-absolute" id="views-section">
+                                <div class="card-views d-flex px-2 py-1 align-items-center bg-white rounded-pill">
+                        <img loading="lazy" src="https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/images/icons/eye.svg" height="auto" width="auto" alt="eye-icon">&nbsp;
+                        <p class="m-0">1721</p>
+                    </div>
+                                    </div>
+    </div>
+</div></div></div>        </div>
+
+        <!-- Desktop next button -->
+                  <button class="btn border-0 p-0 d-md-block d-none" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <img src="https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/images/icons/carousel_next.svg" loading="lazy" height="40" width="40" alt="left arrow icon" />
+            <span class="visually-hidden">Next</span>
+          </button>
+              </div>
+
+      <!-- Indicators and Mobile - Carousel controls -->
+      <div class="d-flex my-4 flex-nowrap flex-row column-gap-4 align-items-center carousel-btns-indicators">
+                  <button class="btn border-0 p-0 text-white d-md-none d-sm-block" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <img src="https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/images/icons/carousel_prev.svg" loading="lazy" height="40" width="40" alt="left arrow icon" />
+            <span class="visually-hidden">Previous</span>
+          </button>
+
+          <div class="carousel-indicators position-relative carousel-indicators-custom">
+            <button type='button' data-bs-target='#carouselExampleDark' data-bs-slide-to='0'class='active' aria-current='true' aria-label='Slide 0'></button><button type='button' data-bs-target='#carouselExampleDark' data-bs-slide-to='1' aria-current='true' aria-label='Slide 1'></button><button type='button' data-bs-target='#carouselExampleDark' data-bs-slide-to='2' aria-current='true' aria-label='Slide 2'></button>          </div>
+
+          <button class="btn border-0 p-0 d-md-none d-sm-block" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <img src="https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/images/icons/carousel_next.svg" loading="lazy" height="40" width="40" alt="left arrow icon" />
+            <span class="visually-hidden">Next</span>
+          </button>
+              </div>
+  </section>
+
+
+<div class="modal fade" id="download_syllabus_popup" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title text-white" id="staticBackdropLabel">Download Syllabus</h1>
+          <button type="button" class="btn close-btn" data-bs-dismiss="modal" aria-label="Close">&#10005;</button>
+      </div>
+      <div class="modal-body">
+        <form action="" class="download-syllabus-form">
+          <!-- Name Field -->
+          <div class="counselling-form-fields mb-3">
+            <label for="download_name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="download_name" pattern="[A-Za-z\s]{3,}" title="Only alphabets and space allowed and Should be minimum of 3 characters long" required />
+          </div>
+
+          <!-- Email Field -->
+          <div class="counselling-form-fields mb-3">
+            <label for="download_email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="download_email" required>
+          </div>
+
+          <!-- Phone Number Field -->
+          <div class="counselling-form-fields mb-3">
+            <label for="download_phone" class="form-label">Phone Number</label>
+            <input type="text" class="form-control" id="download_phone" required>
+          </div>
+
+          <!-- Education Qualification Field -->
+          <div class="counselling-form-fields mb-3">
+            <label for="download_qualification" class="form-label">Education Qualification</label>
+            <select class="form-select" id="download_qualification" required>
+              <option value="" disabled selected hidden>Choose qualification</option>
+              <option value='B.Sc / M.Sc'>B.Sc / M.Sc</option><option value='B.Com / M.Com'>B.Com / M.Com</option><option value='B.A / M.A'>B.A / M.A</option><option value='B.B.A / M.B.A'>B.B.A / M.B.A</option><option value='Higher Secondary'>Higher Secondary</option><option value='Diploma / ITI'>Diploma / ITI</option><option value='B.E / B.Tech Computer Science'>B.E / B.Tech Computer Science</option><option value='B.E / B.Tech Information Technology'>B.E / B.Tech Information Technology</option><option value='B.E / B.Tech EEE'>B.E / B.Tech EEE</option><option value='B.E / B.Tech ECE'>B.E / B.Tech ECE</option><option value='B.E / B.Tech Mechanical Engineering'>B.E / B.Tech Mechanical Engineering</option><option value='B.E / B.Tech Civil Engineering'>B.E / B.Tech Civil Engineering</option><option value='B.E / B.Tech (Others)'>B.E / B.Tech (Others)</option><option value='M.E / M.Tech Computer Science'>M.E / M.Tech Computer Science</option><option value='M.E / M.Tech Information Technology'>M.E / M.Tech Information Technology</option><option value='M.E / M.Tech EEE'>M.E / M.Tech EEE</option><option value='M.E / M.Tech ECE'>M.E / M.Tech ECE</option><option value='M.E / M.Tech Mechanical Engineering'>M.E / M.Tech Mechanical Engineering</option><option value='M.E / M.Tech Civil Engineering'>M.E / M.Tech Civil Engineering</option><option value='M.E / M.Tech (Others)'>M.E / M.Tech (Others)</option><option value='Others'>Others</option>            </select>
+          </div>
+
+          <!-- Profile Field -->
+          <div class="counselling-form-fields mb-3">
+            <label for="download_profile" class="form-label">Current Profile</label>
+            <select class="form-select" id="download_profile" required>
+              <option value="" disabled selected hidden>Select profile</option>
+              <option value='Student'>Student</option><option value='Graduated and Looking for a Career'>Graduated and Looking for a Career</option><option value='Working in IT Industry'>Working in IT Industry</option><option value='Working in Non IT Industry'>Working in Non IT Industry</option>            </select>
+          </div>
+
+          <button type="submit" class="btn text-white mb-3 w-100 px-3 py-2 mt-2 fw-semibold" id="download_btn_popup">
+            <span id="download-spinner" style="display: none" class="spinner-border spinner-border-sm me-2" aria-hidden="true"></span>
+            <span id='download-status' role="status">Download syllabus</span> 
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+</main>
+<div id="blog-spinner-overlay" class="bg-dark d-none fade show fixed-top opacity-25 w-100 h-100"></div>
+<div class="d-block d-none z-3 position-fixed w-100" style="top: 48%;" id="blog-spinner">
+  <div class="d-flex justify-content-center">
+    <div class="spinner-border text-dark" style="color: #0dba4b;" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
+</div><footer class="footer mt-4 pt-md-3">
+    <div class="container px-0 overflow-x-hidden px-md-3">
+        
+    <div class="d-flex flex-column flex-md-row justify-content-md-between pb-md-3">
+                        <!-- link-section is used in main.js to toggle dropdown -->
+                <div class="link-section " id="42624" onclick="toggleDropdown(this.id)">
+                    <div class="d-flex p-3 px-md-0 justify-content-between d-md-block fw-medium text-white link-section-title">
+                        Blog Categories                        <span class="d-block d-md-none">
+                            <img loading="lazy" src="https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/images/icons/dropdown.svg" alt="Close dropdown">
+                        </span>
+                    </div>
+                    <ul class="nav flex-column px-3 px-md-0  d-md-flex">
+                                                    <li class="nav-item mb-2">
+                                <a href="https://www.guvi.in/blog/category/data-science/" class="nav-link p-0 my-2 py-md-1 my-md-0 py-md-0 text-reset">
+                                    Data Science                                </a>
+                            </li>
+                                                    <li class="nav-item mb-2">
+                                <a href="https://www.guvi.in/blog/category/ai-ml/" class="nav-link p-0 my-2 py-md-1 my-md-0 py-md-0 text-reset">
+                                    AI &amp; ML                                </a>
+                            </li>
+                                                    <li class="nav-item mb-2">
+                                <a href="https://www.guvi.in/blog/category/blockchain/" class="nav-link p-0 my-2 py-md-1 my-md-0 py-md-0 text-reset">
+                                    Blockchain                                </a>
+                            </li>
+                                                    <li class="nav-item mb-2">
+                                <a href="https://www.guvi.in/blog/category/cad/" class="nav-link p-0 my-2 py-md-1 my-md-0 py-md-0 text-reset">
+                                    CAD                                </a>
+                            </li>
+                                                    <li class="nav-item mb-2">
+                                <a href="https://www.guvi.in/blog/category/cloud-computing/" class="nav-link p-0 my-2 py-md-1 my-md-0 py-md-0 text-reset">
+                                    Cloud Computing                                </a>
+                            </li>
+                                                    <li class="nav-item mb-2">
+                                <a href="https://www.guvi.in/blog/category/cyber-security/" class="nav-link p-0 my-2 py-md-1 my-md-0 py-md-0 text-reset">
+                                    Cyber Security                                </a>
+                            </li>
+                                                    <li class="nav-item mb-2">
+                                <a href="https://www.guvi.in/blog/category/digital-marketing/" class="nav-link p-0 my-2 py-md-1 my-md-0 py-md-0 text-reset">
+                                    Digital Marketing                                </a>
+                            </li>
+                                                    <li class="nav-item mb-2">
+                                <a href="https://www.guvi.in/blog/category/full-stack-development/" class="nav-link p-0 my-2 py-md-1 my-md-0 py-md-0 text-reset">
+                                    Full Stack Development                                </a>
+                            </li>
+                                            </ul>
+                </div>
+                <div class="separator d-flex d-md-none"></div>
+                        <!-- link-section is used in main.js to toggle dropdown -->
+                <div class="link-section " id="42635" onclick="toggleDropdown(this.id)">
+                    <div class="d-flex p-3 px-md-0 justify-content-between d-md-block fw-medium text-white link-section-title">
+                        Interview Questions                        <span class="d-block d-md-none">
+                            <img loading="lazy" src="https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/images/icons/dropdown.svg" alt="Close dropdown">
+                        </span>
+                    </div>
+                    <ul class="nav flex-column px-3 px-md-0  d-md-flex">
+                                                    <li class="nav-item mb-2">
+                                <a href="https://www.guvi.in/blog/general-interview-questions/" class="nav-link p-0 my-2 py-md-1 my-md-0 py-md-0 text-reset">
+                                    General Interview Questions                                </a>
+                            </li>
+                                                    <li class="nav-item mb-2">
+                                <a href="https://www.guvi.in/blog/java-interview-questions-and-answers/" class="nav-link p-0 my-2 py-md-1 my-md-0 py-md-0 text-reset">
+                                    Java Interview Questions                                </a>
+                            </li>
+                                                    <li class="nav-item mb-2">
+                                <a href="https://www.guvi.in/blog/top-python-interview-questions/" class="nav-link p-0 my-2 py-md-1 my-md-0 py-md-0 text-reset">
+                                    Python Interview Questions                                </a>
+                            </li>
+                                                    <li class="nav-item mb-2">
+                                <a href="https://www.guvi.in/blog/sql-interview-questions/" class="nav-link p-0 my-2 py-md-1 my-md-0 py-md-0 text-reset">
+                                    SQL Interview Questions                                </a>
+                            </li>
+                                                    <li class="nav-item mb-2">
+                                <a href="https://www.guvi.in/blog/selenium-interview-questions-and-answers/" class="nav-link p-0 my-2 py-md-1 my-md-0 py-md-0 text-reset">
+                                    Selenium Interview Questions                                </a>
+                            </li>
+                                                    <li class="nav-item mb-2">
+                                <a href="https://www.guvi.in/blog/amazon-data-scientist-interview-questions/" class="nav-link p-0 my-2 py-md-1 my-md-0 py-md-0 text-reset">
+                                    Data Science Interview Questions                                </a>
+                            </li>
+                                            </ul>
+                </div>
+                <div class="separator d-flex d-md-none"></div>
+                        <!-- link-section is used in main.js to toggle dropdown -->
+                <div class="link-section " id="42655" onclick="toggleDropdown(this.id)">
+                    <div class="d-flex p-3 px-md-0 justify-content-between d-md-block fw-medium text-white link-section-title">
+                        Salary blog                        <span class="d-block d-md-none">
+                            <img loading="lazy" src="https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/images/icons/dropdown.svg" alt="Close dropdown">
+                        </span>
+                    </div>
+                    <ul class="nav flex-column px-3 px-md-0  d-md-flex">
+                                                    <li class="nav-item mb-2">
+                                <a href="https://www.guvi.in/blog/ui-ux-designer-salary-in-india/" class="nav-link p-0 my-2 py-md-1 my-md-0 py-md-0 text-reset">
+                                    UI/UX Designer Salary                                </a>
+                            </li>
+                                                    <li class="nav-item mb-2">
+                                <a href="https://www.guvi.in/blog/everything-about-data-scientist-salary-in-india/" class="nav-link p-0 my-2 py-md-1 my-md-0 py-md-0 text-reset">
+                                    Data Scientist Salary                                </a>
+                            </li>
+                                                    <li class="nav-item mb-2">
+                                <a href="https://www.guvi.com/blog/salary-of-a-full-stack-developer-in-india/" class="nav-link p-0 my-2 py-md-1 my-md-0 py-md-0 text-reset">
+                                    Full-Stack Developer Salary                                </a>
+                            </li>
+                                                    <li class="nav-item mb-2">
+                                <a href="https://www.guvi.in/blog/motion-graphics-designer-salary/" class="nav-link p-0 my-2 py-md-1 my-md-0 py-md-0 text-reset">
+                                    Motion Graphics Designer Salary                                </a>
+                            </li>
+                                                    <li class="nav-item mb-2">
+                                <a href="https://www.guvi.in/blog/cloud-computing-engineer-salary-in-india/" class="nav-link p-0 my-2 py-md-1 my-md-0 py-md-0 text-reset">
+                                    Cloud Computing Engineer Salary                                </a>
+                            </li>
+                                                    <li class="nav-item mb-2">
+                                <a href="https://www.guvi.in/blog/digital-marketing-salary-in-india/" class="nav-link p-0 my-2 py-md-1 my-md-0 py-md-0 text-reset">
+                                    Digital Marketer Salary                                </a>
+                            </li>
+                                            </ul>
+                </div>
+                <div class="separator d-flex d-md-none"></div>
+                        <!-- link-section is used in main.js to toggle dropdown -->
+                <div class="link-section " id="42662" onclick="toggleDropdown(this.id)">
+                    <div class="d-flex p-3 px-md-0 justify-content-between d-md-block fw-medium text-white link-section-title">
+                        About us                        <span class="d-block d-md-none">
+                            <img loading="lazy" src="https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/images/icons/dropdown.svg" alt="Close dropdown">
+                        </span>
+                    </div>
+                    <ul class="nav flex-column px-3 px-md-0  d-md-flex">
+                                                    <li class="nav-item mb-2">
+                                <a href="https://www.guvi.in/about/" class="nav-link p-0 my-2 py-md-1 my-md-0 py-md-0 text-reset">
+                                    Our Story                                </a>
+                            </li>
+                                                    <li class="nav-item mb-2">
+                                <a href="https://www.guvi.in/current-openings" class="nav-link p-0 my-2 py-md-1 my-md-0 py-md-0 text-reset">
+                                    Careers                                </a>
+                            </li>
+                                                    <li class="nav-item mb-2">
+                                <a href="https://www.guvi.in/refund-policy/" class="nav-link p-0 my-2 py-md-1 my-md-0 py-md-0 text-reset">
+                                    Refund Policy                                </a>
+                            </li>
+                                                    <li class="nav-item mb-2">
+                                <a href="https://www.guvi.in/faq/" class="nav-link p-0 my-2 py-md-1 my-md-0 py-md-0 text-reset">
+                                    FAQs                                </a>
+                            </li>
+                                                    <li class="nav-item mb-2">
+                                <a href="https://www.guvi.in/contact/" class="nav-link p-0 my-2 py-md-1 my-md-0 py-md-0 text-reset">
+                                    Contact Us                                </a>
+                            </li>
+                                            </ul>
+                </div>
+                <div class="separator d-flex d-md-none"></div>
+            </div>
+    <div class="separator d-none d-md-flex"></div>
+
+        <div class="d-flex flex-column flex-md-row gap-3 gap-md-5 p-3 px-md-0 py-md-4">
+            <div class="d-flex flex-column gap-4 order-1">
+                <div class="d-flex justify-content-between">
+                    <a href="/" class="text-decoration-none">
+                        <img loading="lazy" style="width: fit-content;" src="https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/images/guvi-logo.webp" alt="GUVI Logo">
+                    </a>
+                    <a href="/referral" class="refer-earn px-4 text-center border border-white rounded-1 fw-medium text-white text-decoration-none d-flex d-md-none align-items-center">Refer &amp; Earn</a>
+                </div>
+                <div class="footer-about-guvi">
+                    GUVI – India’s Pioneering Vernacular EdTech, incubated by IIT-M, IIM-A, and a prestigious part of the HCL group. Empowering over 2.5 million global learners with top-tier educational solutions through a vernacular approach, we have revolutionized global tech education with strategic partnerships, including 'Google for Education,' AICTE, AWS, Google Cloud, IIT-M Pravartak, UiPath, and NASSCOM. GUVI is your trusted guide to inclusive and accredited learning experiences.
+                </div>
+            </div>
+            <div class="social-icons-container order-3 order-md-2">
+                <div class="follow-us-separator d-flex w-100 my-3 my-md-0">
+                    Follow us on
+                    <span class="d-none d-md-block">&colon;</span>
+                </div>
+                <div class="social-icons">
+                    <a target="_blank" href="https://www.facebook.com/guviofficial/">
+                        <img loading="lazy" src="https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/images/icons/facebook.svg" alt="Facebook logo" />
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/guviofficial/?hl=en">
+                        <img loading="lazy" src="https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/images/icons/instagram.svg" alt="Instagram logo" />
+                    </a>
+                    <a target="_blank" href="https://www.linkedin.com/authwall?trk=gf&trkInfo=AQEgArs_YSTThgAAAYBCewxQyJ3JLb1HApFlkCztFX48SjAZA6AZZVVJVmoxnp12isgB9WNsIdmiDiXs_uUAzPFkaP3cq7vSzaqDIS4A43L-9mlv9DSpLLnH9l16lKTUl6r8BmY=&originalReferer=https://www.guvi.in/&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fguviofficial%3ForiginalSubdomain%3Din">
+                        <img loading="lazy" src="https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/images/icons/linkedin.svg" alt="LinkedIn logo" />
+                    </a>
+                    <a target="_blank" href="https://twitter.com/guviofficial">
+                        <img loading="lazy" src="https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/images/icons/twitter.svg" alt="X logo" />
+                    </a>
+                    <a target="_blank" href="https://www.t.me/s/guvigeek">
+                        <img loading="lazy" src="https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/images/icons/telegram.svg" alt="Telegram logo" />
+                    </a>
+                    <a target="_blank" href="https://www.youtube.com/channel/UCduIoIMfD8tT3KoU0-zBRgQ">
+                        <img loading="lazy" src="https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/images/icons/youtube.svg" alt="Youtube logo" />
+                    </a>
+                </div>
+            </div>
+            <div class="d-flex flex-md-column gap-4 order-2 order-md-3 align-items-md-end">
+                <a target="_blank" href="https://www.guvi.in/referral/" class="refer-earn px-4 text-center border border-white rounded-1 fw-medium text-white text-decoration-none d-none d-md-block" style="width: 100%;">Refer &amp; Earn</a>
+                <div class="p-0 gap-4 gap-md-3 d-flex flex-grow-1 flex-md-grow-0 justify-content-between">
+                    <div class="store-badges d-flex justify-content-between flex-column flex-grow-0 flex-md-grow-0 gap-md-1">
+                        <div class="d-none d-md-block fw-medium">Scan to Download: </div>
+                        <a href="https://play.google.com/store/apps/details?id=com.guviapp&hl=en_IN&gl=US" class="bg-black rounded-2">
+                            <img loading="lazy" src="https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/images/google-play-badge.webp" alt="Google play badge" />
+                        </a>
+                    </div>
+                    <span class="footer-qrcode d-none d-md-flex flex-grow-0 justify-content-center rounded-3">
+                        <img loading="lazy" src="https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/images/play-store-link.webp" alt="QR code" width="85" height="85" />
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="separator"></div>
+        <div class="footer-meta-links nav py-2 px-3">
+            <a target="_blank" class="text-nowrap nav-link text-reset px-0" href="https://www.guvi.in/terms-of-service/">Terms and Conditions</a>
+            <a target="_blank" class="text-nowrap nav-link text-reset px-0" href="https://www.guvi.in/privacy-policy/">Privacy Policy</a>
+            <span class="text-nowrap">&copy; GUVI Geeks Network Pvt. Ltd</span>
+        </div>
+    </div>
+</footer>
+
+<div class="toast-container position-fixed bottom-0 start-50 translate-middle-x p-3">
+    <div id="toastMsg" class="toast text-white text-center success-toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-body">
+            <img src="https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/images/icons/success_toast.svg" alt="Sucess toast" />
+            <div id="toastContent"></div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/sharer.js@latest/sharer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@19.2.16/build/js/intlTelInput.min.js"></script>
+</body>
+
+<script id="rocket-browser-checker-js-after">
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+</script>
+<script id='rocket-preload-links-js-extra'>
+var RocketPreloadLinksConfig = {"excludeUris":"\/blog(\/(?:.+\/)?feed(?:\/(?:.+\/?)?)?$|\/(?:.+\/)?embed\/|\/(index.php\/)?(.*)wp-json(\/.*|$))|\/refer\/|\/go\/|\/recommend\/|\/recommends\/","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm","siteUrl":"https:\/\/www.guvi.in\/blog","onHoverDelay":"100","rateThrottle":"3"};
+</script>
+<script id="rocket-preload-links-js-after">
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+</script>
+<script id='main-js-js-extra'>
+var siteConfig = {"ajaxUrl":"https:\/\/www.guvi.in\/blog\/wp-admin\/admin-ajax.php","ajax_nonce":"7f11360635","API":"https:\/\/www.guvi.in\/model\/v2\/"};
+var author_vars = {"author_id":""};
+var GUVI_BLOG = ["https:\/\/www.guvi.in\/blog\/wp-content\/themes\/guvi-blog"];
+</script>
+<script src='https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/js/main.js?ver=1718876776' id='main-js-js'></script>
+<script id='single-js-js-extra'>
+var siteConfig = {"wpUrl":"https:\/\/www.guvi.in\/blog","API":"https:\/\/www.guvi.in\/model\/v2\/"};
+</script>
+<script src='https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/js/single-post.js?ver=1718876776' id='single-js-js'></script>
+	<script src='https://stats.wp.com/e-202427.js' defer></script>
+	<script>
+		_stq = window._stq || [];
+		_stq.push([ 'view', {v:'ext',blog:'191360660',post:'9718',tz:'5.5',srv:'www.guvi.in',j:'1:11.6.1'} ]);
+		_stq.push([ 'clickTrackerInit', '191360660', '9718' ]);
+	</script>
+</html>
+
+<span class="share-container">
+    <span class="share-btn d-block d-md-none">
+        <img loading="lazy" src="https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/images/icons/share.svg" alt="Share logo">
+    </span>
+
+    <span class="share-icons-container d-none d-md-flex">
+        <a style="cursor:pointer;" data-link="true" data-blank="true" target="_blank" data-sharer="whatsapp" data-title="It is not a secret that top tech companies have been transitioning from manual to automation testing rapidly in recent years.&nbsp; Automation testers will ensure that the end product of the business meets all the client requirements and close the development loop. They automate basic and repetitive tasks to save lots of time, money, and [&hellip;]" data-url="https://www.guvi.in/blog/how-to-become-a-qa-automation-tester/">
+            <img loading="lazy" src="https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/images/icons/whatsapp.svg" alt="Whatsapp logo" height="35" width="35" />
+        </a>
+        <a style="cursor:pointer;" data-link="true" data-blank="true" data-sharer="twitter" data-title="It is not a secret that top tech companies have been transitioning from manual to automation testing rapidly in recent years.&nbsp; Automation testers will ensure that the end product of the business meets all the client requirements and close the development loop. They automate basic and repetitive tasks to save lots of time, money, and [&hellip;]" data-hashtags="guvi_blogs" data-url="https://www.guvi.in/blog/how-to-become-a-qa-automation-tester/">
+            <img loading="lazy" src="https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/images/icons/twitter-black.svg" alt="X logo" height="35" width="35" />
+        </a>
+        <a style="cursor:pointer;" data-link="true" data-blank="true" data-title="It is not a secret that top tech companies have been transitioning from manual to automation testing rapidly in recent years.&nbsp; Automation testers will ensure that the end product of the business meets all the client requirements and close the development loop. They automate basic and repetitive tasks to save lots of time, money, and [&hellip;]" data-sharer="linkedin" data-url="https://www.guvi.in/blog/how-to-become-a-qa-automation-tester/">
+            <img loading="lazy" src="https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/images/icons/linkedin.svg" alt="LinkedIn logo" height="35" width="35" /></a>
+        </a>
+        <a style="cursor:pointer;" data-link="true" data-blank="true" data-sharer="facebook" data-hashtag="guvi_blogs" data-url="https://www.guvi.in/blog/how-to-become-a-qa-automation-tester/">
+            <img loading="lazy" src="https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/images/icons/facebook.svg" alt="Facebook logo" height="35" width="35" />
+        </a>
+        <img style="cursor: pointer;" src="https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/images/icons/copy-link.svg" alt="Copy link" class="copy-link-icon" height="35" width="35" />
+    </span>
+</span>
+
+<div class="share-popup-container d-md-none">
+    <div class="share-popup">
+        <div class="d-flex justify-content-between">
+            <span class="share-text">Share this article</span>
+            <img id="share-popup-close" src="https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/images/icons/close.svg" alt="">
+        </div>
+        <div class="share-icons-popup">
+            <a data-link="true" data-blank="true" target="_blank" data-sharer="whatsapp" data-title="It is not a secret that top tech companies have been transitioning from manual to automation testing rapidly in recent years.&nbsp; Automation testers will ensure that the end product of the business meets all the client requirements and close the development loop. They automate basic and repetitive tasks to save lots of time, money, and [&hellip;]" data-url="https://www.guvi.in/blog/how-to-become-a-qa-automation-tester/">
+                <img loading="lazy" src="https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/images/icons/whatsapp.svg" alt="Whatsapp logo" height="45" width="45" />
+            </a>
+            <a data-link="true" data-blank="true" data-sharer="twitter" data-title="It is not a secret that top tech companies have been transitioning from manual to automation testing rapidly in recent years.&nbsp; Automation testers will ensure that the end product of the business meets all the client requirements and close the development loop. They automate basic and repetitive tasks to save lots of time, money, and [&hellip;]" data-hashtags="guvi_blogs" data-url="https://www.guvi.in/blog/how-to-become-a-qa-automation-tester/">
+                <img loading="lazy" src="https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/images/icons/twitter-black.svg" alt="X logo" height="45" width="45" />
+            </a>
+            <a data-link="true" data-blank="true" data-title="It is not a secret that top tech companies have been transitioning from manual to automation testing rapidly in recent years.&nbsp; Automation testers will ensure that the end product of the business meets all the client requirements and close the development loop. They automate basic and repetitive tasks to save lots of time, money, and [&hellip;]" data-sharer="linkedin" data-url="https://www.guvi.in/blog/how-to-become-a-qa-automation-tester/">
+                <img loading="lazy" src="https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/images/icons/linkedin.svg" alt="LinkedIn logo" height="45" width="45" /></a>
+            </a>
+            <a data-link="true" data-blank="true" data-sharer="facebook" data-hashtag="guvi_blogs" data-url="https://www.guvi.in/blog/how-to-become-a-qa-automation-tester/">
+                <img loading="lazy" src="https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/images/icons/facebook.svg" alt="Facebook logo" height="45" width="45" />
+            </a>
+            <img loading="lazy" src="https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/images/icons/copy-link.svg" alt="Copy link" class="copy-link-icon" height="45" width="45" />
+        </div>
+    </div>
+</div>
+
+<div class="webinar-btn-container d-md-none">
+    <div class="webinar-btn">
+        Free Webinar
+    </div>
+</div>
+
+<div class="free-webinar-container">
+    <div class="free-webinar">
+        <div class="webinar-header">
+            <div class="webinar-title-container">
+                <img loading="lazy" src="https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/images/icons/free-webinar.svg" alt="Free Webinar Icon">
+                <div>
+                    <div class="webinar-title">Free Webinar</div>
+                    <div class="webinar-subtitle">Get the latest notifications! 🔔</div>
+                </div>
+            </div>
+            <img id="webinar-dropdown" loading="lazy" src="https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/images/icons/dropdown.svg" alt="close">
+        </div>
+        <form action="" class="free-webinar-form" id="free-webinar-form">
+            <input title="Only alphabetic characters and white spaces are allowed" pattern="^[a-zA-Z\s]+$" type="text" class="form-control" id="name_ip" placeholder="Name*" required>
+            <input type="email" class="form-control" id="email_id_ip" required placeholder="Email Address*">
+            <input type="tel" class="form-control" id="webinar-phone" required placeholder="Phone Number*">
+            <select required class="form-select" id="edu_qualification_ip">
+                <option value="" disabled selected hidden>Education Qualification*</option>
+                <option value="B.Sc / M.Sc">B.Sc / M.Sc</option>
+                <option value="B.Com / M.Com">B.Com / M.Com</option>
+                <option value="B.A / M.A">B.A / M.A</option>
+                <option value="B.B.A / M.B.A">B.B.A / M.B.A</option>
+                <option value="Higher Secondary">Higher Secondary</option>
+                <option value="Diploma / ITI">Diploma / ITI</option>
+                <option value="B.E / B.Tech Computer Science">B.E / B.Tech Computer Science</option>
+                <option value="B.E / B.Tech Information Technology">B.E / B.Tech Information Technology</option>
+                <option value="B.E / B.Tech EEE">B.E / B.Tech EEE</option>
+                <option value="B.E / B.Tech ECE">B.E / B.Tech ECE</option>
+                <option value="B.E / B.Tech Mechanical Engineering">B.E / B.Tech Mechanical Engineering</option>
+                <option value="B.E / B.Tech Civil Engineering">B.E / B.Tech Civil Engineering</option>
+                <option value="B.E / B.Tech (Others)">B.E / B.Tech (Others)</option>
+                <option value="M.E / M.Tech Computer Science">M.E / M.Tech Computer Science</option>
+                <option value="M.E / M.Tech Information Technology">M.E / M.Tech Information Technology</option>
+                <option value="M.E / M.Tech EEE">M.E / M.Tech EEE</option>
+                <option value="M.E / M.Tech ECE">M.E / M.Tech ECE</option>
+                <option value="M.E / M.Tech Mechanical Engineering">M.E / M.Tech Mechanical Engineering</option>
+                <option value="M.E / M.Tech Civil Engineering">M.E / M.Tech Civil Engineering</option>
+                <option value="M.E / M.Tech (Others)">M.E / M.Tech (Others)</option>
+                <option value="Others">Others</option>
+            </select>
+            <select required class="form-select" id="curr_profile_inp">
+                <option value="" disabled selected hidden>Current Profile*</option>
+                <option value="Student">Student</option>
+                <option value="Graduated and Looking for a Career">Graduated and Looking for a Career</option>
+                <option value="Working in IT Industry">Working in IT Industry</option>
+                <option value="Working in Non IT Industry">Working in Non IT Industry</option>
+            </select>
+            <span id="webinar-toast"></span>
+            <button class="btn" type="submit" id="webinar-submit">
+                <span id="webinar-spinner" style="display: none" class="spinner-border spinner-border-sm me-2" aria-hidden="true"></span>
+                <span id='webinar-status' role="status">Submit</span> 
+            </button>
+        </form>
+    </div>
+</div>
+
+
+<div class="toc-btn-container d-md-none">
+    <div class="toc-btn">
+        <img loading="lazy" src="https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/images/icons/toc.svg" alt="Table of contents">
+        <span>Table of contents</span>
+    </div>
+</div>
+<div class="toc-popup-container d-md-none">
+    <div class="toc-popup">
+        <div class="d-flex justify-content-between px-3 pt-3">
+            <span id="toc-tab" class="active-tab" onclick="switchTab(this.id)">Table of contents</span>
+            <span id="articles-tab" onclick="switchTab(this.id)">Articles</span>
+            <div class="position-relative">
+                <img id="toc-popup-close" src="https://www.guvi.in/blog/wp-content/themes/guvi-blog/assets/images/icons/close.svg" alt="Close button" style="">
+            </div>
+        </div>
+        <hr class="m-0" />
+        <div class="overflow-auto px-3 py-2">
+            <div class="table-of-contents">
+                <ol><li data-eleid="what-is-captcha" class="table-contents-item">What is Captcha?</li><ul><li data-eleid="enter-some-disfigured-text" class="table-contents-item">Enter some disfigured text:</li><li data-eleid="click-on-a-set-of-similar-images-matching-the-image-in-the-captcha" class="table-contents-item">Click on a set of similar images matching the image in the Captcha:</li></ul><li data-eleid="handling-captcha-enabled-web-applications-in-selenium" class="table-contents-item">Handling Captcha-Enabled Web Applications in Selenium</li><ul><li data-eleid="introduce-a-delay-to-the-web-driver-then-manually-solve-captcha-while-testing" class="table-contents-item"> Introduce a delay to the Web driver &amp; then manually solve Captcha while testing</li><li data-eleid="disable-the-captcha-in-the-testing-environment" class="table-contents-item">Disable the Captcha in the testing environment</li><li data-eleid="add-a-hook-to-click-the-captcha-checkbox" class="table-contents-item">Add a hook to click the Captcha checkbox</li></ul><li data-eleid="so-now-do-you-know-how-to-automate-captcha-in-selenium" class="table-contents-item">So, now do you know how to Automate Captcha in Selenium?</li><li data-eleid="frequently-asked-questionsfaqs" class="table-contents-item">Frequently Asked Questions(FAQs)</li><ul><li data-eleid="can-we-automate-captcha-using-automation-anywhere" class="table-contents-item">Can we automate Captcha using Automation Anywhere?</li><li data-eleid="is-there-any-alternative-to-captcha" class="table-contents-item">Is there any alternative to CAPTCHA?</li><li data-eleid="how-do-i-write-a-captcha-code" class="table-contents-item">How do I write a CAPTCHA code?</li><li data-eleid="what-is-the-most-commonly-used-captcha" class="table-contents-item">What is the most commonly used CAPTCHA?</li><li data-eleid="how-do-you-solve-a-problem-with-a-captcha" class="table-contents-item">How do you solve a problem with a captcha?</li></ol>            </div>
+            <div class="articles d-none">
+                <div id="popular-articles" class="desktop-elements">
+  <h5 class="fw-semibold pb-2 border-bottom">Career Articles</h5><p class='border-bottom pb-3'><a target='_blank' href='https://www.guvi.in/blog/aws-certified-developer-salary/' class='text-decoration-none'>AWS Certified Developer Salary in 2024</a></p?<br/><p class='border-bottom pb-3'><a target='_blank' href='https://www.guvi.in/blog/steps-to-get-sap-certification-on-aws/' class='text-decoration-none'>How to Get SAP Certification on AWS - Easy Steps</a></p?<br/><p class='border-bottom pb-3'><a target='_blank' href='https://www.guvi.in/blog/how-to-become-an-aws-data-engineer/' class='text-decoration-none'>AWS Data Engineer: Comprehensive Guide to Your New Career [2024]</a></p?<br/><p class='border-bottom pb-3'><a target='_blank' href='https://www.guvi.in/blog/aws-certification-exam-failure-and-success/' class='text-decoration-none'>Top 5 Reasons Why You Fail The AWS Certification Exam and How to Overcome Them</a></p?<br/></div>            </div>
+        </div>
+    </div>
+</div>
+<!-- Talk to Expert Modal -->
+<div class="modal fade" id="counselling-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="talkToExpertModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <p class="modal-title fw-semibold text-white fs-4" id="counselling-modal-title">Schedule 1:1 free counselling</p>
+        <button type="button" class="btn close-btn" data-bs-dismiss="modal" aria-label="Close">&#10005;</button>
+      </div>
+      <div class="modal-body">
+        <form action="" id="counselling-form">
+          <!-- Name Field -->
+          <div class="counselling-form-fields mb-3">
+            <label for="counselling-user-name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="counselling-user-name" pattern="[A-Za-z\s]{3,}" title="Only alphabets and space allowed and Should be minimum of 3 characters long" required />
+          </div>
+
+          <!-- Email Field -->
+          <div class="counselling-form-fields mb-3">
+            <label for="counselling-user-email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="counselling-user-email" required>
+          </div>
+
+          <!-- Phone Number Field -->
+          <div class="counselling-form-fields mb-3">
+            <label for="counselling-user-phone" class="form-label">Phone Number</label>
+            <input type="text" class="form-control" id="counselling-user-phone" required>
+          </div>
+
+          <!-- Education Qualification Field -->
+          <div class="counselling-form-fields mb-3">
+            <label for="counselling-user-qualification" class="form-label">Education Qualification</label>
+            <select class="form-select" id="counselling-user-qualification" aria-label="Default select example" required>
+              <option value="" disabled selected hidden>Choose qualification</option>
+              <option value='B.Sc / M.Sc'>B.Sc / M.Sc</option><option value='B.Com / M.Com'>B.Com / M.Com</option><option value='B.A / M.A'>B.A / M.A</option><option value='B.B.A / M.B.A'>B.B.A / M.B.A</option><option value='Higher Secondary'>Higher Secondary</option><option value='Diploma / ITI'>Diploma / ITI</option><option value='B.E / B.Tech Computer Science'>B.E / B.Tech Computer Science</option><option value='B.E / B.Tech Information Technology'>B.E / B.Tech Information Technology</option><option value='B.E / B.Tech EEE'>B.E / B.Tech EEE</option><option value='B.E / B.Tech ECE'>B.E / B.Tech ECE</option><option value='B.E / B.Tech Mechanical Engineering'>B.E / B.Tech Mechanical Engineering</option><option value='B.E / B.Tech Civil Engineering'>B.E / B.Tech Civil Engineering</option><option value='B.E / B.Tech (Others)'>B.E / B.Tech (Others)</option><option value='M.E / M.Tech Computer Science'>M.E / M.Tech Computer Science</option><option value='M.E / M.Tech Information Technology'>M.E / M.Tech Information Technology</option><option value='M.E / M.Tech EEE'>M.E / M.Tech EEE</option><option value='M.E / M.Tech ECE'>M.E / M.Tech ECE</option><option value='M.E / M.Tech Mechanical Engineering'>M.E / M.Tech Mechanical Engineering</option><option value='M.E / M.Tech Civil Engineering'>M.E / M.Tech Civil Engineering</option><option value='M.E / M.Tech (Others)'>M.E / M.Tech (Others)</option><option value='Others'>Others</option>            </select>
+          </div>
+
+          <!-- Profile Field -->
+          <div class="counselling-form-fields mb-3">
+            <label for="counselling-user-profile" class="form-label">Current Profile</label>
+            <select class="form-select" id="counselling-user-profile" required>
+              <option value="" disabled selected hidden>Select profile</option>
+              <option value='Student'>Student</option><option value='Graduated and Looking for a Career'>Graduated and Looking for a Career</option><option value='Working in IT Industry'>Working in IT Industry</option><option value='Working in Non IT Industry'>Working in Non IT Industry</option>            </select>
+          </div>
+
+          <!-- Toast -->
+          <span id="counselling-toast" class="text-center py-3 fw-semibold w-100"></span>
+
+          <button type="submit" class="btn text-white mb-3 w-100 px-3 py-2 mt-2 fw-semibold" id="request-callback-btn">
+            <span id="talk-to-expert-spinner" style="display: none" class="spinner-border spinner-border-sm me-2" aria-hidden="true"></span>
+            <span id='talk-to-expert-status' role="status">Request call back</span> 
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
