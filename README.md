@@ -1,6 +1,6 @@
 # Guvi Bot
 
-pipenv shell
-pipenv install
+pipenv shell \
+pipenv install \
 frontend/main.py <- using Streamlit run
 
